@@ -16,8 +16,10 @@ location: "Austin, TX, United States"
 ### Course Description:
 -----
 * This course introduces students to statistical models that are commonly used to analyze data collected in health care and behavioral research. The course covers the logic and mechanics of testing statistical hypotheses with these models, and the inferences that can be drawn from the results. One goal of this course is for students to develop a sufficient foundation from which they can begin to conduct their own analyses and critically evaluate the statistical analyses of others. Another goal is for students to acquire experience using statistical analysis software to conduct data analyses. SAS programming is introduced.
+[Download the syllabus here](https://kimyoungwon.github.io/personal_page/files/SDS332Syllabus.pdf)
 
 ### Software
 -----
 * SAS
+
 

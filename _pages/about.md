@@ -11,7 +11,7 @@ Welcome!
 
 I am currently a PhD candidate in Measurement & Statistics at University of Washington (UW) College of Education. I am also a statistical and programming consultant at the Center for Social Science Computation and Research (CSSCR) at UW. 
 
-My focal research interest is statistical methods for social networks and structural equation modeling combined with machine learning algorithms. I am skilled in multiple statistical modeling techniques including structural equation, multilevel, nonlinear, time series, and item response theory models as well as simulation and machine learning approaches. I have used many software packages including R, Python, SPSS, HLM, Stata, SAS, SQL, and Tableau.
+My focal research interest is statistical methods for social networks and structural equation modeling combined with machine learning algorithms. I am skilled in multiple statistical modeling techniques including structural equation, multilevel, nonlinear, time series, and item response theory models as well as simulation and machine learning approaches. I have used many software packages including R, Python, SPSS, HLM, Stata, SAS, SQL, Mplus, and Tableau.
 
 Research Projects
 ------

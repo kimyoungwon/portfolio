@@ -1,19 +1,33 @@
 ---
-title: "SDS 332: Statistical Models for the Health and Behavioral Sciences"
+title: "PSYCH 209: Fundamentals of Psychological Research"
 collection: teaching
-type: "Teaching Assistant (Dr. Jerry Manheimer)"
-permalink: /teaching/2017-SDS332-teaching
-venue: "Department of Statistics and Data Sciences, University of Texas at Austin"
-date: 2017-01-01
-location: "Austin, TX, United States"
+excerpt: 'Autumn quarter 2018 (Dr. Ann Culligan) and Winter quarter 2019 (Dr. Michael Passer)'
+type: "Teaching Assistant"
+permalink: /teaching/2018-PSYCH209-teaching
+venue: "Department of Psychology, University of Washington"
+date: 2018-09-30
+location: "Seattle, WA, United States"
 ---
 
-* Facilitated class discussions (120+ undergraduate students) as needed 
-* Monitored and taught via website, email, office hours, and in classroom
-* Taught how to analyze data with SAS and graded assignments and exams
+* Created exam questions, proctored exams, and graded them
+* Led two labs of 25+ undergraduate students and lectured on research design
+* Evaluated student’s work, providing substantial written and oral feedback
 
-### Course Description:
+### Course Description
+-----
+* This course will introduce you to the ways in which psychologists use the scientific method to ask and answer questions. The emphasis of this course is on building the skills needed to be a successful psychology major at the University of Washington, including information literacy, research ethics, scientific study design, and scientific reporting.
 
-* This course introduces students to statistical models that are commonly used to analyze data collected in health care and behavioral research. The course covers the logic and mechanics of testing statistical hypotheses with these models, and the inferences that can be drawn from the results. One goal of this course is for students to develop a sufficient foundation from which they can begin to conduct their own analyses and critically evaluate the statistical analyses of others. Another goal is for students to acquire experience using statistical analysis software to conduct data analyses. SAS programming is introduced.
+* _Course Learning Goals_: By the end of this course, students will:
+    1. Understand the major methods of psychological research and how to evaluate their strengths and weaknesses;
+    2. Improve their critical thinking about scientific research in psychology;
+    3. Be able to search for, read, comprehend, analyze, and evaluate scientific literature in psychology;
+    4. Develop scientific writing skills appropriate for the field of psychology;
+    5. Understand ethical issues surrounding research in psychology.
+
+* Download the syllabuses ([autumn](https://kimyoungwon.github.io/personal_page/files/PSYCH209Syllabus_autumn.pdf) and [winter](https://kimyoungwon.github.io/personal_page/files/PSYCH209Syllabus_winter.pdf)) here.
+
+### Software
+-----
+* SPSS, R
 
 

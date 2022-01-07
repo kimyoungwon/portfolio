@@ -21,5 +21,3 @@ location: "Austin, TX, United States"
 ### Software
 -----
 * Excel, StatTools (DecisionPro) for Excel, XLSTAT
-
-[Download the syllbus here](https://kimyoungwon.github.io/personal_page/files/SDS332Syllabus.pdf)
