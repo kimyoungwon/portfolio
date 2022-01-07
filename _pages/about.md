@@ -20,3 +20,5 @@ Research Projects
 1. Extends structural equation modeling using insights from machine/deep learning methods
 
 1. Examines international students’ professional development and well-being and their racism and discrimination experiences
+
+1. Investigates how to measure item process data with network analysis methods
