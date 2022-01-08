@@ -1,6 +1,6 @@
 ---
 title: "Identifying the Socioeconomic Factors Associated with Chronic Absenteeism in Rural India Using Eattendance"
-excerpt: "Analysis data from a biometric system of daily attendance tracking with multilevel modeling (Winter Quarter 2019) <br/> <img src='/images/attendance_system.png'>"
+excerpt: "Analysis data from a biometric system of daily attendance tracking with multilevel modeling (Winter Quarter 2019) <br/> <img src='/personal_page/images/attendance_system.png'>"
 date: 2019-03-18
 collection: portfolio
 ---
