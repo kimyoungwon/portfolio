@@ -1,5 +1,5 @@
 ---
-title: "EPM (Educational Process Mining)"
+title: "EPM (Educational Process Mining) Project"
 excerpt: "A web tool to make log data informative for students and instructors (Autumn Quarter 2021) <br/><img src='/personal_page/images/logo.png'>"
 date: 2021-12-15
 collection: portfolio

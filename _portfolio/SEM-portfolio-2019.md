@@ -1,6 +1,6 @@
 ---
-title: "Examining The Relationship between Students’  Perceived Academic Ability and Depression"
-excerpt: "Korean Children and Youth Panel Survey 2010 - 2016 Data (Winter Quarter 2020) <br/> <img src='/personal_page/images/student_depression.png'>"
+title: "Trajectories of Parents’ Socioeconomic Status, Child Parent Interaction, Children’s Self control, School Readiness, and Academic Performance"
+excerpt: "Korean Children and Youth Panel Survey 2010 - 2016 Data (AERA conference poster 2019) <br/> <img src='/personal_page/images/student_depression.png'>"
 date: 2020-06-04
 collection: portfolio
 ---
