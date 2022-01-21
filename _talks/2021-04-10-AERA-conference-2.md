@@ -1,7 +1,7 @@
 ---
 title: "Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model."
 collection: talks
-type: type: "Presentaion"
+type: "Presentaion"
 excerpt: 'This study investigated the effect of perceived academic achievement and psychosocial factors on adolescent depression across five years in a nationally representative sample of 1653 Korean adolescents.'
 permalink: /talks/2021-04-10-AERA-conference-2
 venue: "American Education Research Association (AERA)"
