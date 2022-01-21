@@ -1,7 +1,7 @@
 ---
 title: "Measuring item process data with network analysis methods."
 collection: talks
-type: "Online Conference"
+type: "Presentaion"
 excerpt: 'This paper proposes network analysis modeling as a novel approach for quantifying item process data at student, item, and student-item hybrid levels.'
 permalink: /talks/2021-06-11-NCME-conference
 venue: "National Council on Measurement in Education (NCME)"
