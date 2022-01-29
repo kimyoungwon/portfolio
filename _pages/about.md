@@ -9,9 +9,9 @@ redirect_from:
 ---
 Welcome! 
 
-I am currently a Ph.D. candidate in Measurement & Statistics at University of Washington (UW) College of Education. I am also a statistical and programming consultant at the Center for Social Science Computation and Research (CSSCR) at UW. 
+I am a Ph.D. candidate in Measurement & Statistics at the University of Washington (UW) College of Education (expected graduation 2023), and currently work as a computing consultant at the UW Center for Social Science Computation and Research (CSSCR). My quantitative methods interests center on predictive models, including multilevel, latent variable, and social network analysis. For my dissertation, I am focused on the intersection of latent variable modeling and machine learning. Through my graduate training, applied research projects, and consulting at CSSCR, I have become skilled in a variety of software, including R, Python, SPSS, HLM, Stata, SAS, SQL, and Tableau. 
 
-My focal research interest is statistical methods for social network and structural equation modelings combined with machine learning algorithms. I am skilled in multiple statistical modeling techniques including structural equation, multilevel, nonlinear, time series, and item response theory models as well as simulation and machine learning approaches. I have used many software packages including R, Python, SPSS, HLM, Stata, SAS, SQL, and Tableau.
+In addition to my methodological interests, I am passionate about educational and behavioral science research that promotes equity and social good. When I’m not working, I enjoy spending time with my family and friends and playing soccer.
 
 Research Projects
 ------
