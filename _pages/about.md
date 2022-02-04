@@ -17,7 +17,7 @@ Research Projects
 ------
 1. Compares the relative benefits of exponential random graph models with latent space models – two different approaches for predicting the formation of a tie in a network – including missing data handling ([see the project slides](https://docs.google.com/presentation/d/1jjG2msd5lHvbON4M5Z_K7eDaoxl7qJiyV_RHp9XzXYc/edit?usp=sharing))
 
-1. Extends structural equation modeling using insights from machine/deep learning methods
+1. Extends factor analysis using insights from machine/deep learning methods
 
 1. Examines international students’ professional development and well-being and their racism and discrimination experiences
 
