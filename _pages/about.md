@@ -7,13 +7,17 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Welcome! 
+Hello and welcome! 
 
-I am a passionate researcher with a Ph.D. in Measurement & Statistics from the University of Washington (UW) College of Education. Throughout my doctoral studies, my academic focus has centered on quantitative methods, with a particular emphasis on predictive models encompassing multilevel, latent variables, and social network analysis. In my dissertation, I conducted extensive research at the intersection of factor analysis and machine learning algorithms, specifically investigating the performance of novel exploratory factor modeling techniques using Monte Carlo simulation. I have also developed a strong proficiency in various software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been sharpened through my active involvement in applied research projects and my role as a statistical consultant at CSSCR. 
+I am an enthusiastic researcher holding a Ph.D. in Measurement & Statistics from the University of Washington (UW) College of Education. Currently, I am a postdoctoral fellow at the Harvard Graduate School of Education.
 
-In my upcoming role as a postdoctoral fellow, I am excited to further expand my expertise in quantitative methods by focusing on statistical methods for text analysis within randomized controlled trials (RCTs). I aim to contribute to the advancement of knowledge in the field by pushing the boundaries of research methodologies and enabling more comprehensive analysis and interpretation.
+My primary research focus centers around advancing statistical methods for text analysis within randomized controlled trials (RCTs). I am deeply committed to pushing the boundaries of research methodologies to make comprehensive analysis and interpretation more accessible. Additionally, I am dedicated to reducing the human coding burden while preserving the statistical power of treatment effects in RCTs by developing innovative R packages for text analysis.
 
-Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society. When I’m not working, I enjoy spending time with my family and friends, playing soccer, and learning new things.
+During my doctoral journey, I immersed myself in quantitative methods, with a strong emphasis on predictive models encompassing multilevel, latent variables, and social network analysis. My dissertation delved into the intersection of factor analysis and machine learning algorithms, particularly exploring the performance of novel exploratory factor modeling techniques using Monte Carlo simulation.
+
+My proficiency extends to a wide range of software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been honed through my active involvement in various research projects and my role as a statistical consultant at UW’s CSSCR.
+
+Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society.  In my free time, I enjoy spending time with family and friends, playing soccer, and learning new things.
 
 Research Projects
 ------
