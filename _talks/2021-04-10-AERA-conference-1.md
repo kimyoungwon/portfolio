@@ -1,7 +1,7 @@
 ---
 title: "What does it mean to be an Asian in a pandemic?: Exploring experiences of racism and discrimination among Asian international students in the united states during covid-19"
 collection: talks
-type: "Presentaion"
+type: "Presentation"
 excerpt: 'This paper examined students’ experiences on racism and discrimination during the COVID-19 pandemic.'
 permalink: /talks/2021-04-10-AERA-conference-1
 venue: "American Education Research Association (AERA)"

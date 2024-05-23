@@ -1,7 +1,7 @@
 ---
 title: "Exploratory Measurement Modeling with Lasso"
 collection: talks
-type: "Presentaion"
+type: "Presentation"
 excerpt: 'This paper examined exploratory approaches for measurement modeling with Lasso, Adaptive Lasso, and minimax concave penalty (MCP).'
 permalink: /talks/2023-07-24-IMPS-conference
 venue: "International Meeting of Psychometric Society (IMPS)"
