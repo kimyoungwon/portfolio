@@ -17,13 +17,14 @@ During my doctoral journey, I immersed myself in quantitative methods, with a st
 
 My proficiency extends to a wide range of software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been honed through my active involvement in various research projects and my role as a statistical consultant at UW’s CSSCR.
 
-Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society.  In my free time, I enjoy spending time with family and friends, playing soccer, and learning new things.
+Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society. In my free time, I enjoy spending time with family and friends, playing soccer, and learning new things.
 
 Research Projects
 ------
 1. Develops statistical methods for supporting text analysis in RCTs
 ([see the related projects](https://cares.gse.harvard.edu/research))
 
+1. Investigates the performance and accuracy of large language models (e.g., ChatGPT) versus machine learning algorithms (e.g., GBM, XGBoost) for automated essay scoring
 
 1. Extends factor analysis using insights from machine/deep learning methods
 ([see the project slides](https://docs.google.com/presentation/d/1UGTAg1l5WIWCy5OBOphn09PhGlXC0bmRONm0nwN57NA/edit#slide=id.p1))
