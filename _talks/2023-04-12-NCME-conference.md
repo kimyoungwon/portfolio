@@ -1,7 +1,7 @@
 ---
 title: "Exploratory Measurement Modeling with Lasso"
 collection: talks
-type: "Presentaion"
+type: "Presentation"
 excerpt: 'This paper examined exploratory approaches for measurement modeling.'
 permalink: /talks/2023-04-12-NCME-conference
 venue: "National Council on Measurement in Education (NCME)"

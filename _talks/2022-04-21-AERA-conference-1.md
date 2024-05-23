@@ -1,7 +1,7 @@
 ---
 title: "Strive to survive in a pandemic in a foreign country: Korean international students’ well-being during covid-19"
 collection: talks
-type: "Presentaion"
+type: "Presentation"
 excerpt: 'This paper examined students’ experiences on racism and discrimination during the COVID-19 pandemic.'
 permalink: /talks/2022-04-21-AERA-conference-1
 venue: "American Education Research Association (AERA)"

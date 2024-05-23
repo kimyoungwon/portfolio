@@ -1,7 +1,7 @@
 ---
 title: "Examining differences in the retention and mobility of teachers of color by racial/ethnic group"
 collection: talks
-type: "Presentaion"
+type: "Presentation"
 excerpt: 'This study involves a longitudinal statewide analysis of factors that impact the retention and mobility of teachers of color.'
 permalink: /talks/2021-04-11-AERA-conference-3
 venue: "American Education Research Association (AERA)"
