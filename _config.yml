@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "HOME"
 title_separator          : "-"
-name                     : &name "Youngwon(永遠) Kim"
+name                     : &name "Youngwon Kim"
 description              : &description "personal description"
 url                      : https://kimyoungwon.github.io/personal_page # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Youngwon Kim"
+  name             : "Youngwon(永遠) Kim"
   avatar           : "profile.jpg"
   bio              : "Ph.D., Measurement & Statistics, University of Washington"
   location         : "Seattle, WA"
