@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "PERSONAL PAGE"
+title                    : "YOUNGWON(永遠) KIM"
 title_separator          : "-"
 name                     : &name "Youngwon Kim"
 description              : &description "personal description"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=ruSO1P0AAAAJ&hl=en"
-  email            : "Youngwon_kim@gse.harvard.edu"
+  email            : "youngwon_kim@gse.harvard.edu"
   researchgate     : "https://www.researchgate.net/profile/Young-Won-Kim-3"
   uri              :
   bitbucket        :
