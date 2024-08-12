@@ -22,4 +22,4 @@ Deep Learning Components
 - CNN/LSTM
 - Baseline method (Persistence method, AR1 model)
 
-You can see the ENSO prediction project from [this website](https://docs.google.com/presentation/d/12yYrVOETeDXEHKlPZ1OPy8gSXGozRJ72/edit?usp=sharing&ouid=111659501692119805685&rtpof=true&sd=true).
+You can see the ENSO prediction project from [this website](https://docs.google.com/presentation/d/1MndQxPjnrq2BZow75nrupDYoeGLYB_RW/edit?usp=sharing&ouid=100810458405464282248&rtpof=true&sd=true).
