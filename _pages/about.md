@@ -9,27 +9,28 @@ redirect_from:
 ---
 Hello and welcome! 
 
-I am an enthusiastic researcher holding a Ph.D. in Measurement & Statistics from the University of Washington (UW) College of Education. Currently, I am a postdoctoral fellow at the Harvard Graduate School of Education.
+I am a passionate researcher with a Ph.D. in Measurement & Statistics from the University of Washington (UW) College of Education. Currently, I am pursuing my research interests as a postdoctoral fellow at the prestigious Harvard Graduate School of Education.
 
-My primary research focus centers around advancing statistical methods for text analysis within randomized controlled trials (RCTs). I am deeply committed to pushing the boundaries of research methodologies to make comprehensive analysis and interpretation more accessible. Additionally, I am dedicated to reducing the human coding burden while preserving the statistical power of treatment effects in RCTs by developing innovative R packages for text analysis.
+My primary research focus centers around advancing statistical methods for text analysis within randomized controlled trials (RCTs). I am deeply committed to pushing the boundaries of research methodologies to make comprehensive analysis and interpretation more accessible. Additionally, I am dedicated to minimizing the human coding burden in RCTs while maintaining statistical power through the development of innovative R packages tailored for text analysis.
 
-During my doctoral journey, I immersed myself in quantitative methods, with a strong emphasis on predictive models encompassing multilevel, latent variables, and social network analysis. My dissertation delved into the intersection of factor analysis and machine learning algorithms, particularly exploring the performance of novel exploratory factor modeling techniques using Monte Carlo simulation.
+Throughout my doctoral studies, I cultivated a deep expertise in quantitative methods, with a particular emphasis on predictive models incorporating multilevel analysis, latent variables, and social network analysis. My dissertation explored the intersection of factor analysis and machine learning algorithms, particularly exploring the performance of novel exploratory factor modeling techniques using Monte Carlo simulation.
 
-My proficiency extends to a wide range of software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been honed through my active involvement in various research projects and my role as a statistical consultant at UW’s CSSCR.
+My technical proficiency spans a wide array of software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been honed through my active involvement in various research projects and my role as a statistical consultant at UW’s CSSCR.
 
 Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society. In my free time, I enjoy spending time with family and friends, playing soccer, and learning new things.
 
 Research Projects
 ------
-1. Develops statistical methods for supporting text analysis in RCTs
+1. Developing Statistical Methods for Text Analysis in RCTs
 ([see the related projects](https://cares.gse.harvard.edu/research))
 
-1. Investigates the performance and accuracy of large language models (e.g., ChatGPT) versus machine learning algorithms (e.g., GBM, XGBoost) for automated essay scoring
+1. Investigating Large Language Models vs. Machine Learning for Automated Essay Scoring
+([see the project slides](https://docs.google.com/presentation/d/1Qow6V2T5yXQIqJ6AREyIINb4btEvS3xZ6yLCKvljYlc/edit?usp=sharing))
 
-1. Extends factor analysis using insights from machine/deep learning methods
+1. Extending Factor Analysis with Machine/Deep Learning Insights
 ([see the project slides](https://docs.google.com/presentation/d/1UGTAg1l5WIWCy5OBOphn09PhGlXC0bmRONm0nwN57NA/edit#slide=id.p1))
 
-1. Examines international students’ professional development and well-being and their racism and discrimination experiences
+1. Examining International Students' Professional Development, Well-being, and Experiences with Racism & Discrimination
 
-1. Compares the relative benefits of exponential random graph models with latent space models – two different approaches for predicting the formation of a tie in a network – including missing data handling ([see the project slides](https://docs.google.com/presentation/d/1jjG2msd5lHvbON4M5Z_K7eDaoxl7qJiyV_RHp9XzXYc/edit?usp=sharing))
+1. Comparing the relative benefits of exponential random graph models with latent space models – two different approaches for predicting the formation of a tie in a network – including missing data handling ([see the project slides](https://docs.google.com/presentation/d/1BIvLZYGrcZU0gLC6te9qHNCbPLWJbvH2rclsXa8zuxQ/edit?usp=sharing))
 
