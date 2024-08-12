@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "YOUNGWON(永遠) KIM"
+title                    : "HOME"
 title_separator          : "-"
-name                     : &name "Youngwon Kim"
+name                     : &name "Youngwon(永遠) Kim"
 description              : &description "personal description"
 url                      : https://kimyoungwon.github.io/personal_page # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
