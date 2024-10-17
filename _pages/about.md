@@ -7,20 +7,21 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hello and welcome! 
+Hello and welcome!
 
-I am a passionate researcher with a Ph.D. in Measurement & Statistics from the University of Washington (UW) College of Education. Currently, I am pursuing my research interests as a postdoctoral fellow at the prestigious Harvard Graduate School of Education.
+I'm a passionate researcher with a Ph.D. in Measurement \& Statistics from the University of Washington. Currently, I'm pursuing my research interests as a Machine Learning (ML) postdoctoral researcher at Truveta, where I focus on predicting cancer risk using predictive modeling techniques that leverage ML and large language models (LLMs) to analyze patients' medical histories with timestamps.
 
-My primary research focus centers around advancing statistical methods for text analysis within randomized controlled trials (RCTs). I am deeply committed to pushing the boundaries of research methodologies to make comprehensive analysis and interpretation more accessible. Additionally, I am dedicated to minimizing the human coding burden in RCTs while maintaining statistical power through the development of innovative R packages tailored for text analysis.
+During my doctoral studies, I developed a deep expertise in quantitative methods, with an emphasis on predictive models, multilevel analysis, latent variables, and social network analysis. My dissertation explored the intersection of factor analysis and machine learning, assessing the performance of novel exploratory factor modeling techniques through Monte Carlo simulations.
 
-Throughout my doctoral studies, I cultivated a deep expertise in quantitative methods, with a particular emphasis on predictive models incorporating multilevel analysis, latent variables, and social network analysis. My dissertation explored the intersection of factor analysis and machine learning algorithms, particularly exploring the performance of novel exploratory factor modeling techniques using Monte Carlo simulation.
+As a postdoctoral fellow at the Harvard Graduate School of Education, I advanced statistical methods for text analysis in randomized controlled trials (RCTs). I developed the R package 'rcttext' to automate human coding tasks and analyze large-scale text data from RCTs, applying advanced statistical techniques for more robust insights. I also led research comparing the performance of LLMs with traditional machine learning algorithms for writing quality estimation and stance classification.
 
-My technical proficiency spans a wide array of software tools, including R, Python, SPSS, MPlus, Stata, SAS, SQL, and Tableau. These skills have been honed through my active involvement in various research projects and my role as a statistical consultant at UW’s CSSCR.
+Beyond my methodological work, I am dedicated to educational, behavioral, and psychological science research that promotes equity and drives social change. I firmly believe in the transformative power of research to make a positive impact on society. In my free time, I enjoy spending time with family and friends, playing soccer, and continuously learning new things.
 
-Beyond my methodological expertise, I am deeply passionate about educational and behavioral science research that advances equity and fosters social good. I firmly believe in the transformative power of research to drive positive change in society. In my free time, I enjoy spending time with family and friends, playing soccer, and learning new things.
 
 Research Projects
 ------
+1.  Predicting Cancer Risk Using Medical Histories
+
 1. Developing Statistical Methods for Text Analysis in RCTs
 ([see the related projects](https://cares.gse.harvard.edu/research))
 
