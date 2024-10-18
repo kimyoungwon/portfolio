@@ -1,6 +1,6 @@
 ---
 title: "ENSO (El Nino-Southern Oscillation) prediction with Deep Learning"
-excerpt: "Comparing deep learning models to predict ENSO (Summer Quarter 2022) <br/><img src='/personal_page/images/oceanhwlogo.png'>"
+excerpt: "Comparing deep learning models to predict ENSO (Summer Quarter 2022) <br/><img src='/portfolio/images/oceanhwlogo.png'>"
 date: 2022-08-19
 collection: portfolio
 ---

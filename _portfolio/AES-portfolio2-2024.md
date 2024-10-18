@@ -1,6 +1,6 @@
 ---
 title: "The Art of Crafting Prompts for Essay Grading with ChatGPT"
-excerpt: "Blog2: Automated Essay Scoring with ChatGPT (2024) <br/><img src='/personal_page/images/prompt-engineering.png'>"
+excerpt: "Blog2: Automated Essay Scoring with ChatGPT (2024) <br/><img src='/portfolio/mages/prompt-engineering.png'>"
 date: 2024-06-03
 collection: portfolio
 ---

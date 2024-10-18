@@ -1,6 +1,6 @@
 ---
 title: "A Comprehensive Guide to Essay Grading with ChatGPT"
-excerpt: "Blog1: Automated Essay Scoring with ChatGPT (2024) <br/><img src='/personal_page/images/automated-essay-scoring.png'>"
+excerpt: "Blog1: Automated Essay Scoring with ChatGPT (2024) <br/><img src='/portfolio/images/automated-essay-scoring.png'>"
 date: 2024-05-29
 collection: portfolio
 ---

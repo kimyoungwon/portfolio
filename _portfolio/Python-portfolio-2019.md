@@ -1,6 +1,6 @@
 ---
 title: "The Influences of Caregiver’s Aggravation in Parenting and the Caregiver-Child Relationship on Social Behavior and Academic Performance"
-excerpt: "Data from the Fragile Families and Child Wellbeing Study of the Office of Population Research  (Spring Quarter 2019) <br/> <img src='/personal_page/images/Fragile_family.png'>"
+excerpt: "Data from the Fragile Families and Child Wellbeing Study of the Office of Population Research  (Spring Quarter 2019) <br/> <img src='/portfolio/images/Fragile_family.png'>"
 date: 2019-06-11
 collection: portfolio
 ---

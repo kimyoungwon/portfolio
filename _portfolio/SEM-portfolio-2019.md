@@ -1,6 +1,6 @@
 ---
 title: "Trajectories of Parents’ Socioeconomic Status, Child Parent Interaction, Children’s Self control, School Readiness, and Academic Performance"
-excerpt: "Korean Children and Youth Panel Survey 2010 - 2016 Data (AERA conference poster 2019) <br/> <img src='/personal_page/images/school_readiness.png'>"
+excerpt: "Korean Children and Youth Panel Survey 2010 - 2016 Data (AERA conference poster 2019) <br/> <img src='/portfolio/images/school_readiness.png'>"
 date: 2020-06-04
 collection: portfolio
 ---
