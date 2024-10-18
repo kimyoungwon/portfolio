@@ -9,7 +9,7 @@ redirect_from:
 ---
 Hello and welcome!
 
-I'm a passionate researcher with a Ph.D. in Measurement \& Statistics from the University of Washington. Currently, I'm pursuing my research interests as a Machine Learning (ML) postdoctoral researcher at Truveta, where I focus on predicting cancer risk using predictive modeling techniques that leverage ML and large language models (LLMs) to analyze patients' medical histories with timestamps.
+I'm a passionate researcher with a Ph.D. in Measurement & Statistics from the University of Washington. Currently, I'm pursuing my research interests as a Machine Learning (ML) postdoctoral researcher at Truveta, where I focus on predicting cancer risk using predictive modeling techniques that leverage ML and large language models (LLMs) to analyze patients' medical histories with timestamps.
 
 During my doctoral studies, I developed a deep expertise in quantitative methods, with an emphasis on predictive models, multilevel analysis, latent variables, and social network analysis. My dissertation explored the intersection of factor analysis and machine learning, assessing the performance of novel exploratory factor modeling techniques through Monte Carlo simulations.
 
