@@ -11,10 +11,10 @@ In this blog, we started with the fundamentals of the ChatGPT API and gradually 
 
 We will investigate the following aspects:
 
-* Understanding ChatGPT fine-tuning
-* Steps for the ChatGPT fine-tuning process for essay scoring
-* Steps for the ChatGPT fine-tuning process for essay classfication
-* Cost & Computation Times of fine-tuning
+- Understanding ChatGPT fine-tuning
+- Steps for the ChatGPT fine-tuning process for essay scoring
+- Steps for the ChatGPT fine-tuning process for essay classfication
+- Cost & Computation Times of fine-tuning
 
 
 Co-authors
