@@ -9,28 +9,35 @@ redirect_from:
 ---
 Hello and welcome!
 
-I'm a passionate researcher leveraging advanced statistics and machine learning (ML) to drive meaningful social change. 
+I am a Machine Learning Postdoctoral Researcher at Truveta, where I develop Clinical AI and foundation models to transform the patient journey. By leveraging large-scale, longitudinal Electronic Health Record (EHR) data, I build predictive architectures—including LLM-based risk models and oncology foundation models—designed to forecast disease progression and improve clinical outcomes for high-risk conditions such as cancer and heart failure.
 
-Currently, as an ML Postdoctoral Researcher at Truveta, I focus on patient journey projects, utilizing large-scale, timestamped EHR data with ML and large language models (LLMs). My work involves building foundational language models and developing predictive models to forecast patient future status and improve outcomes for at-risk individuals with conditions such as cancer or heart failure.
+My approach is defined by a rigorous foundation in Measurement & Statistics (Ph.D., University of Washington) and advanced causal inference training (Postdoc, Harvard University). My background is uniquely multidisciplinary; I have successfully pivoted from a deep focus on psychometrics and human behavior to high-dimensional healthcare analytics. This evolution allows me to blend classical techniques, such as latent variable modeling and multilevel analysis, with modern AI workflows like Model Context Protocol (MCP) and automated prompt optimization.
 
-My background includes a Ph.D. in Measurement & Statistics from the University of Washington and a postdoctoral fellowship at the Harvard Graduate School of Education. During my doctoral studies, I developed deep expertise in quantitative methods, including ML modeling, multilevel analysis, latent variable modeling, and social network analysis. At Harvard, I advanced statistical text analysis for randomized controlled trials, creating the 'rcttext' R package to automate human coding and enhance large-scale analysis. I also conducted research on writing quality estimation and stance classification using ML and LLMs.
+🚀 Core Expertise & Impact
+Clinical AI & Foundation Models: I architect longitudinal ML/LLM systems to predict health state transitions. This includes building Chain-of-Agents frameworks for oncology risk prediction (specifically early-onset colorectal cancer) and developing automated frameworks for clinical outcome estimation, such as KCCQ scores in heart failure.
 
-My commitment lies in advancing equity and delivering impactful research in healthcare, education, behavioral science, and psychology. My ultimate goal is to use data and technology to not only gain insights, but to improve lives and foster positive societal change. 
+NLP & Automated Evaluation: I specialize in applying language models to complex, human-centric data. At Harvard, I developed the 'rcttext' R package to integrate NLP into randomized controlled trials (RCTs) and led comparative research on LLMs versus traditional ML for high-stakes tasks like automated essay scoring.
 
-I'm always happy to connect with fellow researchers and professionals enthusiastic about leveraging data for social good. Outside of work, I enjoy spending time with family and friends, playing soccer, and continuously learning.
+Advanced Statistical Methodology: Rooted in my doctoral research on factor analysis and modern prediction algorithms, I bridge the gap between classical statistics and modern AI. My focus is on improving model interpretability and ensuring algorithms are used to drive equitable societal change.
+
+💡 My Mission
+My mission is to advance the frontier of Clinical AI while maintaining a steadfast commitment to equity and social good. Whether identifying disparities in teacher retention or predicting health state transitions in oncology, I aim to foster positive societal change through technological innovation.
+
+I am always eager to collaborate with peers dedicated to the intersection of data science, healthcare, and human behavior.
 
 Current Research Projects
 ------
 
-1. Building foundation models for patient journey.
+1. Developing large-scale foundation models using longitudinal EHR data to characterize complex health-state transitions
 
-1. Developing predictive models to forecast patient future status and improve patient outcomes.
+1. Architecting Longitudinal Risk Models for Oncology & Cardiology
 
-1. Developing Statistical Methods for Text Analysis in RCTs
-([see the related projects](https://cares.gse.harvard.edu/research))
+1. Designing and implementing MCP tools to bridge the gap between AI predictive models and clinical utility
 
 Previous Research Projects
 ------
+1. Developing Statistical Methods for Text Analysis in RCTs
+([see the related projects](https://cares.gse.harvard.edu/research))
 
 1. Investigating Large Language Models vs. Machine Learning for Automated Essay Scoring
 ([see the project slides](https://docs.google.com/presentation/d/1Qow6V2T5yXQIqJ6AREyIINb4btEvS3xZ6yLCKvljYlc/edit?usp=sharing))
