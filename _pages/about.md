@@ -9,22 +9,19 @@ redirect_from:
 ---
 Hello and welcome!
 
-I am a **Measurement Scientist and Machine Learning Researcher** dedicated to building and evaluating high-stakes AI systems. Currently, as a Postdoctoral Researcher at **Truveta**, I develop clinical AI and foundation models designed to transform the patient journey through longitudinal data analysis and predictive modeling.
+I'm a **Machine Learning Researcher and Measurement Scientist** focused on one core challenge: building AI systems that actually work in high-stakes settings — reliably, rigorously, and equitably. Currently, as a Postdoctoral ML Researcher at Truveta, I develop and evaluate clinical AI and foundation models that predict how patients' health evolves over time, working across oncology risk modeling, clinical NLU, and longitudinal EHR data
 
-My approach is defined by a rigorous foundation in **Measurement & Statistics** (Ph.D., University of Washington) and advanced **Causal Inference** training (Postdoc, Harvard University). My background is uniquely multidisciplinary; I have pivoted from a deep focus on psychometrics and human behavior to high-dimensional healthcare analytics. This evolution allows me to treat AI evaluation as a rigorous scientific discipline—applying psychometric theory, latent variable modeling, and validity frameworks to ensure that modern AI systems are reliable, calibrated, and impactful.
+What sets my approach apart is an unusual combination of depth and breadth. My Ph.D. in Measurement & Statistics (University of Washington) and postdoctoral training at Harvard gave me a foundation most ML researchers don't have — grounded in rigorous evaluation frameworks, latent variable modeling, and validity theory. I've applied that foundation across domains, from education and human behavior to high-dimensional healthcare analytics.
 
-🚀 Core Expertise & Impact
+🚀 **What I work on:**
+* Clinical AI & Foundation Models — training, fine-tuning, and deploying LLMs and foundation models on large-scale EHR data; building clinical NLU pipelines that extract structured disease status and patient trajectories from messy real-world data
+* AI Evaluation — designing frameworks to validate complex AI outputs, including LLM-as-judge systems, benchmark quality, evaluator calibration, bias detection, and uncertainty quantification
+* Productionizing Research — bridging the gap between research methods and engineering workflows through MCP-based tools, agentic systems, and end-to-end pipeline monitoring
 
-* **Scientific AI Evaluation:** I develop frameworks to validate complex AI outputs. By establishing the validity and reliability of automated metrics, I ensure that "model-as-judge" systems and automated benchmarks are psychometrically sound. At Harvard, I developed the **'rcttext'** R package to integrate NLP into randomized controlled trials (RCTs) and led comparative research on LLMs versus traditional ML for high-stakes assessment tasks.
-* **Foundation Models & Longitudinal Systems:** I architect longitudinal ML/LLM systems to predict state transitions in high-dimensional data. This includes building **Chain-of-Agents** frameworks for oncology risk prediction and developing automated frameworks for clinical outcome estimation, such as predicting KCCQ scores in heart failure.
-* **Advanced Statistical Methodology:** Rooted in my doctoral research on factor analysis and prediction algorithms, I bridge the gap between classical statistics and modern AI. My focus is on improving model interpretability and building scalable infrastructure, such as **Model Context Protocol (MCP)** tools, to integrate predictive models into real-world production workflows.
 
+The through-line across all of it: I treat AI evaluation as a rigorous scientific discipline. High performance isn't enough. Models need to be calibrated, interpretable, and built on solid evidentiary ground — especially when the stakes involve patient outcomes.
 
-💡 **My Mission**
-
-My mission is to advance the frontier of AI by bringing measurement rigor to technical innovation. Whether identifying patterns in educational equity or predicting health-state transitions in oncology, I aim to ensure that algorithms are not only high-performing but also grounded in scientific evidence to drive positive societal change.
-
-I am always eager to collaborate with peers dedicated to the intersection of data science, measurement, and human behavior.
+I am always eager to collaborate with peers dedicated to the intersection of machine learning, measurement, and real-world impact.
 
 Current Research Projects
 ------
