@@ -1,0 +1,19 @@
+<% const order = ["Lecturer", "Computing Assistant", "Teaching Assistant"];
+   const seen  = [...new Set(items.map(i => i.role))];
+   const roles = order.filter(r => seen.includes(r)).concat(seen.filter(r => !order.includes(r))); %>
+<% for (const role of roles) { %>
+<section class="yk-section">
+<h2><%= role %></h2>
+<% for (const item of items.filter(i => i.role === role)) { %>
+<div class="yk-row">
+<div class="yk-row__when"><%= item.when %></div>
+<div>
+<div class="yk-row__what"><%- item.title %></div>
+<p class="yk-row__where"><%- item.venue %><% if (item.location) { %> · <%- item.location %><% } %></p>
+<% if (item.note) { %><p class="yk-row__where"><%- item.note %></p><% } %>
+</div>
+<div class="yk-row__aside"><% if (item.links) { for (const [j, l] of item.links.entries()) { %><% if (j>0) { %><span class="yk-dot">·</span><% } %><a href="<%= l.url %>"><%= l.text %></a><% } } %></div>
+</div>
+<% } %>
+</section>
+<% } %>

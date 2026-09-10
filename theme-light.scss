@@ -1,0 +1,47 @@
+/*-- scss:defaults --*/
+
+// ── Typefaces ────────────────────────────────────────────────────────────────
+// Instrument Serif ships ONE weight (400). Never bold it — the browser will
+// synthesize a fake bold. Emphasis comes from size and italic instead.
+$font-family-sans-serif: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$font-family-monospace:  "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
+$headings-font-family:   "Instrument Serif", Georgia, "Times New Roman", serif !default;
+$headings-font-weight:   400 !default;
+
+$font-size-root:   16px !default;
+$font-size-base:   1.0625rem !default;   // 17px
+$line-height-base: 1.65 !default;
+
+// ── Palette: warm paper + ink blue ───────────────────────────────────────────
+$body-bg:      #FCFCFA !default;
+$body-color:   #14161A !default;
+$primary:      #2B4ACB !default;
+$link-color:   #2B4ACB !default;
+$link-hover-color: #1E3699 !default;
+$border-color: #E4E3DD !default;
+
+$navbar-bg:            #FCFCFA !default;
+$navbar-fg:            #5A6270 !default;
+$navbar-hl:            #2B4ACB !default;
+$footer-bg:            #FCFCFA !default;
+$footer-fg:            #5A6270 !default;
+
+/*-- scss:rules --*/
+
+:root {
+  color-scheme: light;
+
+  --yk-bg:            #FCFCFA;
+  --yk-surface:       #F5F4F0;
+  --yk-text:          #14161A;
+  --yk-text-muted:    #5A6270;
+  --yk-text-faint:    #8C9099;
+  --yk-border:        #{$border-color};
+  --yk-accent:        #2B4ACB;
+  --yk-accent-hover:  #1E3699;
+
+  // Derived: survives either theme because it is mixed from --yk-text.
+  --yk-rule:  color-mix(in oklab, var(--yk-text) 12%, transparent);
+  --yk-tint:  color-mix(in oklab, var(--yk-text) 3.5%, transparent);
+  --yk-ring:  color-mix(in oklab, var(--yk-accent) 55%, transparent);
+}

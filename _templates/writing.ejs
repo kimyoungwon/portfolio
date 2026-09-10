@@ -1,0 +1,18 @@
+<% const order = ["Research write-ups", "Earlier coursework"];
+   const seen  = [...new Set(items.map(i => i.group))];
+   const groups = order.filter(g => seen.includes(g)).concat(seen.filter(g => !order.includes(g))); %>
+<% for (const group of groups) { %>
+<section class="yk-section">
+<h2><%= group %></h2>
+<div class="yk-grid">
+<% for (const item of items.filter(i => i.group === group)) { %>
+<article class="yk-card">
+<% if (item.image) { %><% if (item.url) { %><a href="<%= item.url %>"><img class="yk-card__thumb dim" src="<%= item.image %>" alt=""></a><% } else { %><img class="yk-card__thumb dim" src="<%= item.image %>" alt=""><% } %><% } %>
+<h3 class="yk-card__title"><% if (item.url) { %><a href="<%= item.url %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></h3>
+<p class="yk-card__desc"><%= item.desc %></p>
+<p class="yk-eyebrow" style="margin:0"><%= item.when %><% if (item.tags) { %> · <%= item.tags %><% } %></p>
+</article>
+<% } %>
+</div>
+</section>
+<% } %>

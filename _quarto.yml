@@ -1,0 +1,62 @@
+project:
+  type: website
+  # Built into docs/ and committed, so GitHub Pages can serve it straight from
+  # the branch with no CI. .nojekyll stops Pages trying to Jekyll-build it.
+  output-dir: docs
+  post-render:
+    - touch docs/.nojekyll
+
+website:
+  title: "Youngwon Kim"
+  description: "Measurement scientist and machine learning researcher bringing psychometric rigor to the evaluation of high-stakes AI systems."
+  site-url: https://kimyoungwon.github.io
+  navbar:
+    logo: ""
+    title: "Youngwon Kim"
+    left:
+      - href: index.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: presentations.qmd
+        text: Presentations
+      - href: teaching.qmd
+        text: Teaching
+      - href: writing.qmd
+        text: Writing
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/kimyoungwon
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/kimyw/
+        aria-label: LinkedIn
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=ruSO1P0AAAAJ&hl=en
+        aria-label: Google Scholar
+  page-footer:
+    border: false
+    left: |
+      &copy; 2026 Youngwon Kim
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    respect-user-color-scheme: true
+    toc: false
+    anchor-sections: true
+    link-external-newwindow: true
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400..600&family=Geist+Mono:wght@400..500&display=swap" rel="stylesheet">

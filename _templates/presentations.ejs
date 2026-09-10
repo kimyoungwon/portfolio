@@ -1,0 +1,13 @@
+<div class="yk-rows">
+<% for (const item of items) { %>
+<div class="yk-row">
+<div class="yk-row__when"><%= item.when %></div>
+<div>
+<div class="yk-row__what"><%= item.title %></div>
+<p class="yk-row__where"><%= item.venue %><% if (item.location) { %> · <%= item.location %><% } %></p>
+<% if (item.note) { %><p class="yk-row__where"><%= item.note %></p><% } %>
+</div>
+<div class="yk-row__aside"><% const ls=[]; if(item.paper) ls.push(['Paper',item.paper]); if(item.abstract) ls.push(['Abstract',item.abstract]); if(item.writeup) ls.push(['Write-up',item.writeup]); if(item.slides) ls.push(['Slides',item.slides]); if(item.video) ls.push(['Video',item.video]); for (let j=0;j<ls.length;j++) { %><% if (j>0) { %><span class="yk-dot">·</span><% } %><a href="<%= ls[j][1] %>"><%= ls[j][0] %></a><% } %></div>
+</div>
+<% } %>
+</div>

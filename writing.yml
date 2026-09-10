@@ -1,0 +1,144 @@
+# ADDING A PROJECT: copy a block. `image` is optional; omit it and the card
+# renders text-only rather than showing a placeholder.
+
+- group: "Research write-ups"
+  title: "Can a generative patient journey foundation model alleviate the burden of cancer screening?"
+  date: 2026-05-17
+  when: "2026"
+  desc: "A foundation model evaluated on 1.42M patient records reached 0.89–0.98 specificity across four cancer types with no labeled training data."
+  tags: "Foundation models · Screening · ISPOR 2026"
+  url: "https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/"
+  image: "assets/images/screening-foundation-model.svg"
+
+- group: "Research write-ups"
+  title: "Multi-agent LLM framework predicts one-year risk across multiple cancers"
+  date: 2026-05-29
+  when: "2026"
+  desc: "TrajOnco estimates one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80."
+  tags: "LLM · Oncology · ASCO 2026"
+  url: "https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/"
+  image: "assets/images/trajonco-multicancer.svg"
+
+- group: "Research write-ups"
+  title: "Zero-shot chain-of-agents predicts one-year lung cancer risk from longitudinal EHR"
+  date: 2026-05-20
+  when: "2026"
+  desc: "AUROC 0.871 with no model training and no feature engineering, while remaining clinically interpretable."
+  tags: "LLM · Oncology · ISPOR 2026"
+  url: "https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/"
+  image: "assets/images/trajonco-lung.svg"
+
+- group: "Research write-ups"
+  title: "Patient journey foundation models improve EHR data quality"
+  date: 2026-05-19
+  when: "2026"
+  desc: "98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units."
+  tags: "Foundation models · Data quality · ISPOR 2026"
+  url: "https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/"
+  image: "assets/images/uom-imputation.svg"
+
+- group: "Research write-ups"
+  title: "Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records"
+  date: 2026-05-18
+  when: "2026"
+  desc: "Deriving oncology patient-journey state transitions empirically from longitudinal records."
+  tags: "Markov models · Oncology · ISPOR 2026"
+  url: "https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/"
+  image: "assets/images/markov-schematic.svg"
+
+- group: "Research write-ups"
+  title: "Predicting early-onset colorectal cancer with large language models"
+  date: 2025-11-15
+  when: "2025"
+  desc: "The AMIA proceedings work: a fine-tuned LLM reached 73% sensitivity at 91% specificity in adults aged 18–44."
+  tags: "LLM · EHR · AMIA 2025"
+  url: "https://www.truveta.com/blog/research/predicting-early-onset-colorectal-cancer-with-large-language-models/"
+  image: "assets/images/eocrc-performance.svg"
+
+- group: "Research write-ups"
+  title: "Machine learning risk prediction for early-onset colorectal cancer"
+  date: 2025-05-30
+  when: "2025"
+  desc: "Development and validation across 30 US health systems, presented at ASCO 2025."
+  tags: "ML · EHR · ASCO 2025"
+  url: "https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer"
+  image: "assets/images/eocrc-asco2025.svg"
+
+- group: "Research write-ups"
+  title: "Fine-tuning ChatGPT for essay grading"
+  date: 2024-11-24
+  when: "2024"
+  desc: "Third in a series on automated essay scoring: what fine-tuning buys you over prompting."
+  tags: "LLM · Assessment"
+  url: "https://cares-blog.gse.harvard.edu/post/fine-tuning/"
+  image: "assets/images/fine-tuning.png"
+
+- group: "Research write-ups"
+  title: "The art of crafting prompts for essay grading"
+  date: 2024-06-03
+  when: "2024"
+  desc: "Prompt design for automated essay scoring, and how much of the variance it actually explains."
+  tags: "LLM · Assessment"
+  url: "https://cares-blog.gse.harvard.edu/post/crafting-prompts/"
+  image: "assets/images/prompt-engineering.png"
+
+- group: "Research write-ups"
+  title: "A comprehensive guide to essay grading with ChatGPT"
+  date: 2024-05-29
+  when: "2024"
+  desc: "End-to-end walkthrough of grading and classifying essays via the ChatGPT API, with cost and runtime comparisons against human raters."
+  tags: "LLM · Assessment"
+  url: "https://cares-blog.gse.harvard.edu/post/essay-grading-with-chatgpt/"
+  image: "assets/images/automated-essay-scoring.png"
+
+- group: "Earlier coursework"
+  title: "ENSO prediction with deep learning"
+  date: 2022-08-19
+  when: "2022"
+  desc: "Comparing deep learning architectures for forecasting the El Niño–Southern Oscillation."
+  tags: "Deep learning · Time series"
+  url: "https://docs.google.com/presentation/d/1MndQxPjnrq2BZow75nrupDYoeGLYB_RW/edit?usp=sharing&ouid=100810458405464282248&rtpof=true&sd=true"
+  image: "assets/images/oceanhwlogo.png"
+
+- group: "Earlier coursework"
+  title: "Educational process mining"
+  date: 2021-12-15
+  when: "2021"
+  desc: "A web tool that turns raw learning-platform log data into something students and instructors can act on."
+  tags: "Learning analytics · Web tool"
+  image: "assets/images/logo.png"
+
+- group: "Earlier coursework"
+  title: "Perceived academic ability and adolescent depression"
+  date: 2020-06-04
+  when: "2020"
+  desc: "Time-series modeling of the Korean Children and Youth Panel Survey, 2010–2016."
+  tags: "Longitudinal · Psychometrics"
+  image: "assets/images/student_depression.png"
+
+- group: "Earlier coursework"
+  title: "Trajectories of socioeconomic status, self-control, and school readiness"
+  date: 2020-06-03
+  when: "2019"
+  desc: "Structural equation modeling of parent–child interaction and academic performance. AERA conference poster."
+  tags: "SEM · Longitudinal"
+  url: "https://docs.google.com/presentation/d/1ZN4aDZzsOtd8FRu4JvSlWoBJdMQNfzAx7QQ1aIHmZ0A/edit?usp=sharing"
+  image: "assets/images/school_readiness.png"
+
+- group: "Earlier coursework"
+  title: "Caregiver aggravation, child relationships, and academic performance"
+  date: 2019-06-11
+  when: "2019"
+  desc: "Analysis of the Fragile Families and Child Wellbeing Study."
+  tags: "Python · Survey data"
+  url: "https://docs.google.com/presentation/d/1CBdOoMyH-GIANb6Vf_ko4P8so9EJc3fdPcAZZKdaoEA/edit?usp=sharing"
+  image: "assets/images/Fragile_family.png"
+
+- group: "Earlier coursework"
+  title: "Chronic absenteeism in rural India"
+  date: 2019-03-18
+  when: "2019"
+  desc: "Multilevel modeling of biometric daily-attendance data to identify socioeconomic predictors of absenteeism."
+  tags: "Multilevel modeling"
+  url: "https://docs.google.com/presentation/d/1xWyIKLULrzOS5wAj4eYEbivaBweT0370/edit?usp=sharing&ouid=100810458405464282248&rtpof=true&sd=true"
+  image: "assets/images/attendance_system.png"

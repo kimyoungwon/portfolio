@@ -1,0 +1,19 @@
+---
+title: "Writing"
+listing:
+  - id: writing
+    contents: writing.yml
+    type: custom
+    template: _templates/writing.ejs
+    sort: "date desc"
+    filter-ui: false
+    sort-ui: false
+    page-size: 100
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose">
+  <p>Research write-ups and project reports.</p>
+</div>
+```

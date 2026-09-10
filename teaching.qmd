@@ -1,0 +1,19 @@
+---
+title: "Teaching"
+listing:
+  - id: teaching
+    contents: teaching.yml
+    type: custom
+    template: _templates/teaching.ejs
+    sort: "date desc"
+    filter-ui: false
+    sort-ui: false
+    page-size: 100
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose">
+  <p>Courses taught and supported, grouped by role.</p>
+</div>
+```

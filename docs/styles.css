@@ -1,0 +1,316 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Shared component layer. Every color comes from a --yk-* token defined in
+   theme-light.scss / theme-dark.scss, so this file works in both themes.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Spacing ramp ──────────────────────────────────────────────────────────
+   Use --s-4 and below INSIDE a component; --s-7 and up BETWEEN components.
+   Skipping the middle of the ramp is what makes grouping visible.          */
+:root {
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.5rem;   --s-6: 2rem;     --s-7: 3rem;     --s-8: 4rem;
+  --s-9: 6rem;
+
+  --measure: 64ch;
+}
+
+/* ── Type scale ─────────────────────────────────────────────────────────── */
+h1, .h1 {
+  font-size: clamp(2.125rem, 1.55rem + 2.4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+h2, .h2 { font-size: 1.75rem;  line-height: 1.20; letter-spacing: -0.02em; }
+h3, .h3 { font-size: 1.375rem; line-height: 1.30; letter-spacing: -0.01em; }
+
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li          { text-wrap: pretty; }
+
+body {
+  background: var(--yk-bg);
+  color: var(--yk-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Every digit that sits in a column lines up. */
+time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
+
+/* ── Utility: the mono metadata label ───────────────────────────────────── */
+.yk-eyebrow {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--yk-text-muted);
+  margin: 0 0 var(--s-4);
+}
+
+/* ── Prose measure ──────────────────────────────────────────────────────── */
+.yk-prose  { max-width: var(--measure); }
+.yk-prose p:last-child { margin-bottom: 0; }
+
+/* ── Home: above the fold ───────────────────────────────────────────────── */
+.yk-hero {
+  display: grid;
+  gap: var(--s-6);
+  grid-template-columns: 1fr;
+  align-items: start;
+  padding-block: var(--s-7) var(--s-8);
+}
+@media (min-width: 48rem) {
+  .yk-hero { grid-template-columns: 1fr 9rem; gap: var(--s-8); }
+  .yk-hero__portrait { order: 2; }
+  .yk-hero__body     { order: 1; }
+}
+
+.yk-hero__claim {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.875rem, 1.4rem + 2vw, 2.625rem);
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  max-width: 26ch;
+  margin: 0 0 var(--s-4);
+}
+.yk-hero__identity {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--yk-text-muted);
+  margin: 0 0 var(--s-5);
+}
+.yk-hero__portrait img {
+  width: 100%;
+  max-width: 9rem;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+.yk-hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+  margin-top: var(--s-5);
+  font-size: 0.9375rem;
+}
+
+/* ── Section rhythm ─────────────────────────────────────────────────────── */
+.yk-section { padding-block: var(--s-7); border-top: 1px solid var(--yk-rule); }
+.yk-section > h2 { margin: 0 0 var(--s-5); }
+
+/* ── Publications: hanging index + hairlines ───────────────────────────── */
+.yk-pubs { display: block; }
+
+.yk-pub {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  padding-block: var(--s-5);
+}
+.yk-pub + .yk-pub { border-top: 1px solid var(--yk-rule); }
+
+.yk-index {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--yk-text-faint);
+  padding-top: 0.45em;          /* optical align to the first baseline */
+}
+
+/* The title is the heaviest thing in the entry — that is what people scan. */
+.yk-pub__title {
+  font-family: var(--bs-font-sans-serif, sans-serif);
+  font-size: 1.0625rem;
+  font-weight: 550;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  margin: 0 0 var(--s-2);
+}
+.yk-pub__title a { color: var(--yk-text); text-decoration: none; }
+.yk-pub__title a:hover {
+  color: var(--yk-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.yk-pub__authors {
+  font-size: 0.9375rem;
+  color: var(--yk-text-muted);
+  margin: 0 0 var(--s-1);
+}
+.yk-pub__authors b,
+.yk-pub__authors strong { font-weight: 600; color: var(--yk-text); }
+
+.yk-pub__meta {
+  font-size: 0.875rem;
+  color: var(--yk-text-muted);
+  margin: 0 0 var(--s-3);
+}
+.yk-pub__meta .venue { font-style: italic; }
+
+/* Dot-separated text links, never pill buttons. */
+.yk-pub__links {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+.yk-pub__links a { color: var(--yk-accent); text-decoration: none; }
+.yk-pub__links a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+
+.yk-dot { color: var(--yk-text-faint); margin-inline: 0.5em; }
+
+@media (max-width: 40rem) {
+  .yk-pub  { grid-template-columns: 1fr; }
+  .yk-index { padding-top: 0; margin-bottom: var(--s-2); }
+}
+
+/* ── Talks / tabular rows ──────────────────────────────────────────────── */
+.yk-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr auto;
+  gap: var(--s-4);
+  align-items: baseline;        /* baseline, not center — multi-line cells align */
+  padding-block: var(--s-4);
+}
+.yk-row + .yk-row { border-top: 1px solid var(--yk-rule); }
+
+.yk-row__when {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--yk-text-muted);
+}
+.yk-row__what   { font-size: 1rem; font-weight: 500; line-height: 1.45; }
+.yk-row__where  { font-size: 0.875rem; color: var(--yk-text-muted); margin: var(--s-1) 0 0; }
+.yk-row__aside  {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 40rem) {
+  .yk-row { grid-template-columns: 1fr; gap: var(--s-2); }
+}
+
+/* ── Projects grid ─────────────────────────────────────────────────────── */
+.yk-grid {
+  display: grid;
+  gap: var(--s-6);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40rem) { .yk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.yk-card__thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;           /* no shadow, no border — the image is the object */
+  display: block;
+  margin-bottom: var(--s-3);
+  background: var(--yk-surface);
+}
+.yk-card__title  { font-size: 1rem; font-weight: 550; line-height: 1.4; margin: 0 0 var(--s-2); }
+.yk-card__title a { color: var(--yk-text); text-decoration: none; }
+.yk-card__title a:hover { color: var(--yk-accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.yk-card__desc   { font-size: 0.9375rem; color: var(--yk-text-muted); margin: 0 0 var(--s-2); }
+
+/* ── Research themes ───────────────────────────────────────────────────── */
+.yk-theme { padding-block: var(--s-6); }
+.yk-theme + .yk-theme { border-top: 1px solid var(--yk-rule); }
+.yk-theme__title { font-size: 1.5rem; line-height: 1.25; margin: 0 0 var(--s-3); }
+.yk-theme__related {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--yk-text-muted);
+  margin: var(--s-3) 0 0;
+}
+
+/* ── Focus, selection, motion ──────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--yk-ring);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+::selection { background: color-mix(in oklab, var(--yk-accent) 25%, transparent); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Wide content scrolls in its own container; the page body never does. */
+.table-responsive, .yk-scroll { overflow-x: auto; }
+
+/* Linked row titles read as titles, not as links — ink at rest, accent on hover. */
+.yk-row__what a { color: var(--yk-text); text-decoration: none; }
+.yk-row__what a:hover {
+  color: var(--yk-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Quarto adds its own heading margins; the hero grid owns this spacing. */
+.yk-hero__claim { margin-top: 0; }
+.yk-hero__portrait { align-self: start; }
+.yk-hero__portrait img { margin: 0.4rem 0 0; }
+
+/* Hero links: accent, but underline only on hover so five in a row don't shout. */
+.yk-hero__links a { text-decoration: none; }
+.yk-hero__links a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* Card titles inherit h3's serif, which has only weight 400 — force the sans
+   stack so font-weight:550 is a real weight and not a synthesized bold. */
+.yk-card__title { font-family: var(--bs-font-sans-serif, sans-serif); }
+
+/* The claim is a div (so Quarto can't hoist it as the page title), so it needs
+   balanced wrapping declared explicitly rather than inheriting from h1. */
+.yk-hero__claim { text-wrap: balance; }
+
+/* ── Navbar brand ─────────────────────────────────────────────────────────
+   Was rendering in the default sans at body size, which read generic. Mono,
+   uppercase and letterspaced ties it to the site's metadata language and
+   reads deliberate. It already links to index.html (Quarto's default).     */
+.navbar-brand .navbar-title {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--yk-text);
+}
+.navbar-brand:hover .navbar-title { color: var(--yk-accent); }
+
+/* ── Portrait ─────────────────────────────────────────────────────────────
+   The photo's cream studio wall clashed with the paper ground. A warm
+   monochrome pulls it into the palette; hover restores the full-colour
+   original, so the real photo is still one gesture away.                   */
+.yk-hero__portrait img {
+  filter: grayscale(1) sepia(0.28) saturate(1.12) contrast(1.05);
+  transition: filter 0.45s cubic-bezier(.22,1,.36,1);
+  max-width: 10rem;
+  border-radius: 2px;
+}
+.yk-hero__portrait img:hover { filter: none; }
+@media (min-width: 48rem) { .yk-hero { grid-template-columns: 1fr 10rem; } }
+
+/* ── Nav links ────────────────────────────────────────────────────────────
+   Matched to the brand so the whole header reads as one mono system, and
+   kept small and quiet so the opening claim stays the loudest thing.       */
+.navbar-nav .nav-link {
+  font-family: var(--bs-font-monospace, monospace);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--yk-text-muted) !important;
+  padding-inline: 0.62rem;
+  transition: color 0.18s ease;
+}
+.navbar-nav .nav-link:hover { color: var(--yk-text) !important; }
+.navbar-nav .nav-link.active { color: var(--yk-accent) !important; }

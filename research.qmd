@@ -1,0 +1,88 @@
+---
+title: "Research"
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose" style="margin-bottom:2rem">
+  <p>Four threads. Two are about building systems that predict something useful
+  from messy clinical data; two are about knowing whether to believe them. They
+  are not separable problems, and treating them as one job is the whole approach.</p>
+</div>
+
+<article class="yk-theme">
+  <h2 class="yk-theme__title">Foundation models trained on patient journeys can predict what happens next — if the modeling respects the data</h2>
+  <div class="yk-prose">
+    <p>On Truveta's AI &amp; Workflows team I train oncology foundation models on
+    longitudinal electronic health records, and build the LLM and machine learning
+    systems that turn them into risk predictions. <strong>TrajOnco</strong>, a
+    training-free multi-agent framework, does temporal reasoning over sequential
+    clinical events and reaches AUROCs of 0.64–0.80 across 15 cancer types with no
+    task-specific training; a zero-shot chain-of-agents variant reaches 0.871 for
+    one-year lung cancer risk.</p>
+    <p>The same patient-journey models do less glamorous but equally necessary
+    work: imputing missing units of measure at 98% accuracy across 438 UCUM units,
+    and deriving health-state transition matrices empirically rather than by
+    assumption. High-dimensional temporal EHR data is not clean, and a model that
+    pretends otherwise will be confidently wrong.</p>
+  </div>
+  <p class="yk-theme__related">
+    Related: <a href="publications.html">TrajOnco (arXiv)</a><span class="yk-dot">·</span><a href="presentations.html">ASCO 2026</a><span class="yk-dot">·</span><a href="presentations.html">ISPOR 2026</a><span class="yk-dot">·</span><a href="writing.html">Write-ups</a>
+  </p>
+</article>
+
+<article class="yk-theme">
+  <h2 class="yk-theme__title">An evaluation is a measurement instrument, and should be validated like one</h2>
+  <div class="yk-prose">
+    <p>Benchmarks and model-as-judge systems are instruments that almost never
+    report their psychometric properties. I build the frameworks that establish
+    validity and reliability before a metric is used to make a claim — including
+    clinical validity evaluation for the oncology foundation models above, and
+    <strong>EHR-based estimation of KCCQ scores</strong> in heart failure, where
+    the whole question is whether a model-derived score means what the
+    patient-reported instrument means.</p>
+    <p>Earlier: the <strong>rcttext</strong> R package for bringing NLP into
+    randomized controlled trials at Harvard, and a comparative study of large
+    language models against tree-based machine learning for high-stakes essay
+    scoring — which is the same question wearing different clothes.</p>
+  </div>
+  <p class="yk-theme__related">
+    Related: <a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">AEFP &amp; JSM 2024</a>
+  </p>
+</article>
+
+<article class="yk-theme">
+  <h2 class="yk-theme__title">Tooling decides whether a good model ever reaches anyone</h2>
+  <div class="yk-prose">
+    <p>A model that only runs in a notebook has not been deployed. I architect
+    <strong>Model Context Protocol</strong> tools that put predictive models
+    directly into interactive analysis and clinical workflows, alongside
+    <strong>automated prompt optimization</strong> and interactive data
+    visualization — so that the people making decisions can interrogate a
+    prediction rather than just receive it.</p>
+    <p>This is engineering, not methodology, and I think it is underrated. Most of
+    the distance between a promising result and a used one is infrastructure.</p>
+  </div>
+  <p class="yk-theme__related">
+    Related: <a href="cv.html">MCP tooling</a><span class="yk-dot">·</span><a href="writing.html">Educational process mining</a>
+  </p>
+</article>
+
+<article class="yk-theme">
+  <h2 class="yk-theme__title">Classical measurement theory and modern machine learning improve each other</h2>
+  <div class="yk-prose">
+    <p>My doctoral work was on factor analysis and prediction algorithms, and I
+    keep returning to the seam between them: gradient boosting to improve
+    factor-retention decisions under measurement error, penalized estimation
+    (Lasso, adaptive Lasso, and the minimax concave penalty) for exploratory
+    measurement modeling, and network analysis for quantifying item process
+    data.</p>
+    <p>Latent variable models were built to handle noisy, partial, indirect
+    observation of something you cannot measure directly. That is also a fair
+    description of an electronic health record.</p>
+  </div>
+  <p class="yk-theme__related">
+    Related: <a href="presentations.html">AERA 2024</a><span class="yk-dot">·</span><a href="presentations.html">IMPS 2023</a><span class="yk-dot">·</span><a href="presentations.html">NCME 2021</a>
+  </p>
+</article>
+```

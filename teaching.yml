@@ -1,0 +1,61 @@
+# ADDING A COURSE: copy a block. `role` groups the list.
+# Roles render in this order: Lecturer, Computing Assistant, Teaching Assistant.
+
+- role: "Lecturer"
+  date: 2021-07-01
+  when: "Summers 2020, 2021"
+  title: "Online Summer Workshop on Applied Statistics"
+  venue: "Handong Global University"
+  location: "Pohang, South Korea"
+  links:
+    - text: "Syllabus 2020"
+      url: "assets/files/HDsummerwork_2020.pdf"
+    - text: "Syllabus 2021"
+      url: "assets/files/HDsummerwork_2021.pdf"
+
+- role: "Computing Assistant"
+  date: 2021-10-01
+  when: "Autumn 2021"
+  title: "EDPSY 576: Multilevel Modeling"
+  venue: "College of Education, University of Washington"
+  location: "Seattle, WA"
+  note: "Supported 20+ graduate students in fitting and interpreting multilevel models in R."
+  links:
+    - text: "Syllabus"
+      url: "assets/files/EDPSY576Syllabus.pdf"
+
+- role: "Teaching Assistant"
+  date: 2019-04-01
+  when: "Spring 2019"
+  title: "PSYCH 315: Understanding Statistics in Psychology"
+  venue: "Department of Psychology, University of Washington"
+  location: "Seattle, WA"
+
+- role: "Teaching Assistant"
+  date: 2018-09-30
+  when: "Autumn 2018, Winter 2019"
+  title: "PSYCH 209: Fundamentals of Psychological Research"
+  venue: "Department of Psychology, University of Washington"
+  location: "Seattle, WA"
+  links:
+    - text: "Syllabus"
+      url: "assets/files/PSYCH209Syllabus.pdf"
+
+- role: "Teaching Assistant"
+  date: 2017-01-01
+  when: "Spring 2017"
+  title: "SDS 332: Statistical Models for the Health and Behavioral Sciences"
+  venue: "Department of Statistics and Data Sciences, University of Texas at Austin"
+  location: "Austin, TX"
+  links:
+    - text: "Syllabus (Autumn)"
+      url: "assets/files/SDS332Syllabus_autumn.pdf"
+    - text: "Syllabus (Winter)"
+      url: "assets/files/SDS332Syllabus_winter.pdf"
+
+- role: "Teaching Assistant"
+  date: 2015-09-01
+  when: "Fall 2015, 2016"
+  title: "MKT 282: Marketing Analytics & Applications"
+  venue: "McCombs School of Business, University of Texas at Austin"
+  location: "Austin, TX"

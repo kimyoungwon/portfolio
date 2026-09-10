@@ -1,0 +1,20 @@
+<% const selfFor = (k) => k === "Conference proceedings" ? "Kim, Y." : "Kim, Y. W.";
+   const order = ["Preprints & under review", "Journal articles", "Conference proceedings", "Working papers"];
+   const seen  = [...new Set(items.map(i => i.kind))];
+   const kinds = order.filter(k => seen.includes(k)).concat(seen.filter(k => !order.includes(k))); %>
+<% for (const kind of kinds) { %>
+<section class="yk-section">
+<h2><%= kind %></h2>
+<% for (const item of items.filter(i => i.kind === kind)) { %>
+<article class="yk-pub">
+<div class="yk-index"><%= item.year %></div>
+<div class="yk-pub__body">
+<h3 class="yk-pub__title"><% if (item.url) { %><a href="<%= item.url %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></h3>
+<p class="yk-pub__authors"><% const SELF = selfFor(item.kind); const parts = String(item.authors).split(SELF); for (let i = 0; i < parts.length; i++) { %><%= parts[i] %><% if (i < parts.length - 1) { %><b><%= SELF %></b><% } } %></p>
+<p class="yk-pub__meta"><span class="venue"><%= item.venue %></span><% if (item.detail) { %><span class="yk-dot">·</span><%= item.detail %><% } %></p>
+<p class="yk-pub__links"><% const ls=[]; if(item.url) ls.push([item.kind==="Journal articles"?"DOI":"Link",item.url]); if(item.pdf) ls.push(['PDF',item.pdf]); if(item.code) ls.push(['Code',item.code]); for (let j=0;j<ls.length;j++) { %><% if (j>0) { %><span class="yk-dot">·</span><% } %><a href="<%= ls[j][1] %>"><%= ls[j][0] %></a><% } %></p>
+</div>
+</article>
+<% } %>
+</section>
+<% } %>

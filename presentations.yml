@@ -1,0 +1,140 @@
+# ADDING A TALK: copy a block. `when` is what displays; `date` only sorts.
+# `kind` groups the list: invited | conference
+
+- when: "2026 · May"
+  date: 2026-05-17
+  kind: conference
+  title: "Can a generative patient journey foundation model alleviate the burden of cancer screening?"
+  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
+  location: "Philadelphia, PA"
+  note: "Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data."
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/"
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097"
+
+- when: "2026 · May"
+  date: 2026-05-29
+  kind: conference
+  title: "Multi-agent LLM framework predicts one-year risk across multiple cancers"
+  venue: "American Society of Clinical Oncology (ASCO)"
+  location: "Chicago, IL"
+  note: "TrajOnco estimated one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80."
+  writeup: "https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/"
+  abstract: "https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.16_suppl.10501"
+
+- when: "2026 · May"
+  date: 2026-05-20
+  kind: conference
+  title: "Zero-shot chain-of-agents framework predicts one-year lung cancer risk directly from longitudinal EHR"
+  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
+  location: "Philadelphia, PA"
+  note: "AUROC 0.871 (95% CI 0.855–0.885) with no model training or feature engineering."
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/"
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043"
+
+- when: "2026 · May"
+  date: 2026-05-19
+  kind: conference
+  title: "Patient journey foundation models improve EHR data quality through unit of measure imputation"
+  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
+  location: "Philadelphia, PA"
+  note: "98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units."
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/"
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055"
+
+- when: "2026 · May"
+  date: 2026-05-18
+  kind: conference
+  title: "Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records"
+  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
+  location: "Philadelphia, PA"
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/"
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667"
+
+- when: "2025 · Nov"
+  date: 2025-11-15
+  kind: conference
+  title: "Predicting early-onset colorectal cancer with large language models"
+  venue: "American Medical Informatics Association (AMIA)"
+  location: "Atlanta, GA"
+  note: "Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients."
+  writeup: "https://www.truveta.com/blog/research/predicting-early-onset-colorectal-cancer-with-large-language-models/"
+  paper: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/"
+
+- when: "2025 · May"
+  date: 2025-05-30
+  kind: conference
+  title: "Development and validation of machine learning risk prediction models for detection of early-onset colorectal cancer: Data from 30 health systems in the United States"
+  venue: "American Society of Clinical Oncology (ASCO)"
+  location: "Chicago, IL"
+  writeup: "https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/"
+  abstract: "https://ascopubs.org/doi/abs/10.1200/JCO.2025.43.16_suppl.3613"
+
+- when: "2024 · Aug"
+  date: 2024-08-05
+  kind: conference
+  title: "ChatGPT vs. machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring"
+  venue: "Joint Statistical Meetings (JSM)"
+  location: "Portland, OR"
+
+- when: "2024 · Apr"
+  date: 2024-04-11
+  kind: conference
+  title: "Enhancing factor analysis: Evaluating factor retention accuracy with measurement error"
+  venue: "American Educational Research Association (AERA)"
+  location: "Philadelphia, PA"
+
+- when: "2024 · Mar"
+  date: 2024-03-14
+  kind: conference
+  title: "ChatGPT vs. machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring"
+  venue: "Association for Education Finance & Policy (AEFP)"
+  location: "Baltimore, MD"
+
+- when: "2023 · Jul"
+  date: 2023-07-24
+  kind: conference
+  title: "Exploratory measurement modeling with Lasso"
+  venue: "International Meeting of the Psychometric Society (IMPS)"
+  location: "College Park, MD"
+
+- when: "2023 · Apr"
+  date: 2023-04-12
+  kind: conference
+  title: "Exploratory measurement modeling with Lasso"
+  venue: "National Council on Measurement in Education (NCME)"
+  location: "Chicago, IL"
+
+- when: "2022 · Apr"
+  date: 2022-04-21
+  kind: conference
+  title: "Strive to survive in a pandemic in a foreign country: Korean international students' well-being during COVID-19"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Diego, CA"
+
+- when: "2021 · Jun"
+  date: 2021-06-11
+  kind: conference
+  title: "Measuring item process data with network analysis methods"
+  venue: "National Council on Measurement in Education (NCME)"
+  location: "Online"
+
+- when: "2021 · Apr"
+  date: 2021-04-11
+  kind: conference
+  title: "Examining differences in the retention and mobility of teachers of color by racial/ethnic group"
+  venue: "American Educational Research Association (AERA)"
+  location: "Online"
+
+- when: "2021 · Apr"
+  date: 2021-04-09
+  kind: conference
+  title: "Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model"
+  venue: "American Educational Research Association (AERA)"
+  location: "Online"
+
+- when: "2021 · Apr"
+  date: 2021-04-08
+  kind: conference
+  title: "What does it mean to be an Asian in a pandemic? Exploring experiences of racism and discrimination among Asian international students in the United States during COVID-19"
+  venue: "American Educational Research Association (AERA)"
+  location: "Online"

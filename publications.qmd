@@ -1,0 +1,21 @@
+---
+title: "Publications"
+listing:
+  - id: pubs
+    contents: publications.yml
+    type: custom
+    template: _templates/pubs.ejs
+    sort: "date desc"
+    filter-ui: false
+    sort-ui: false
+    page-size: 50
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose">
+  <p>Also on
+  <a href="https://scholar.google.com/citations?user=ruSO1P0AAAAJ&amp;hl=en">Google Scholar</a>
+  and <a href="https://orcid.org/0000-0002-6815-6920">ORCID</a>.</p>
+</div>
+```

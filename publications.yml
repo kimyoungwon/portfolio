@@ -1,0 +1,160 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ADDING A PUBLICATION: copy a block, edit the six fields, done.
+#   year  — the printed/citation year. Also drives the left rail.
+#   date  — sort key only. Use <citation year>-MM-DD.
+#   authors — plain text. Your own name is bolded automatically.
+#   kind    — groups the page: Journal articles / Conference proceedings / Working papers.
+# ─────────────────────────────────────────────────────────────────────────────
+
+- kind: "Conference proceedings"
+  title: "Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records"
+  authors: "Kim, Y., Lau, W., Alipour, E., Zeng, S., Oka, A., & Nanduri, J."
+  venue: "Value in Health"
+  detail: "ISPOR 2026 abstract"
+  year: 2026
+  date: 2026-05-16
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667"
+
+- kind: "Conference proceedings"
+  title: "Zero-shot lung cancer risk prediction from longitudinal electronic health records with chain-of-agents framework"
+  authors: "Alipour, E., Lau, W., Kim, Y., Zeng, S., Oka, A., & Nanduri, J."
+  venue: "Value in Health"
+  detail: "ISPOR 2026 abstract"
+  year: 2026
+  date: 2026-05-15
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043"
+
+- kind: "Conference proceedings"
+  title: "Patient journey foundation models improve EHR data quality through unit of measure imputation"
+  authors: "Alipour, E., Lau, W., Kim, Y., Zeng, S., Oka, A., & Nanduri, J."
+  venue: "Value in Health"
+  detail: "ISPOR 2026 abstract"
+  year: 2026
+  date: 2026-05-14
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055"
+
+- kind: "Preprints & under review"
+  title: "TrajOnco: A multi-agent framework for temporal reasoning over longitudinal EHR for multi-cancer early detection"
+  authors: "Zeng, S., Kim, Y. W., Lau, W., Alipour, E., Etzioni, R., Yetisgen, M., & Oka, A."
+  venue: "arXiv preprint"
+  detail: "arXiv:2604.10386"
+  year: 2026
+  date: 2026-04-12
+  url: "https://arxiv.org/abs/2604.10386"
+
+- kind: "Preprints & under review"
+  title: "Electronic health record-based estimation of Kansas City Cardiomyopathy Questionnaire scores in heart failure"
+  authors: "Kim, Y. W., Lau, W., Patel, N., Kendrick, K., Wu, A., Feldman, T., Ahern, R., & Oka, A."
+  venue: "medRxiv preprint"
+  detail: "2026.04.03.26350138"
+  year: 2026
+  date: 2026-04-05
+  url: "https://www.medrxiv.org/content/10.64898/2026.04.03.26350138v1"
+
+- kind: "Conference proceedings"
+  title: "Can a generative patient journey foundation model alleviate the burden of cancer screening?"
+  authors: "Lau, W., Alipour, E., Kim, Y., Zeng, S., Oka, A., & Nanduri, J."
+  venue: "Value in Health"
+  detail: "ISPOR 2026 abstract"
+  year: 2026
+  date: 2026-05-17
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097"
+
+- kind: "Conference proceedings"
+  title: "Predicting early-onset colorectal cancer with large language models"
+  authors: "Lau, W., Kim, Y., Parasa, S., Haque, M. E., Oka, A., & Nanduri, J."
+  venue: "AMIA Annual Symposium Proceedings"
+  detail: "2025, 653–662"
+  year: 2025
+  date: 2025-11-15
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/"
+
+- kind: "Working papers"
+  title: "ChatGPT vs. machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring"
+  authors: "Kim, Y. W., Mozer, R., Al-Adeimi, S., & Miratrix, L."
+  venue: "EdWorkingPapers, Annenberg Institute at Brown University"
+  detail: "No. 25-1335"
+  year: 2025
+  date: 2025-11-01
+  url: "https://eric.ed.gov/?id=ED678295"
+
+- kind: "Journal articles"
+  title: "Are self-compassionate writers more feedback literate? Exploring undergraduates' perceptions of feedback constructiveness"
+  authors: "Fong, C. J., Schallert, D. L., Williamson, Z. H., Lin, S., Williams, K. M., & Kim, Y. W."
+  venue: "Assessing Writing"
+  detail: "57, 100761"
+  year: 2023
+  date: 2023-07-01
+  url: "https://doi.org/10.1016/j.asw.2023.100761"
+
+- kind: "Journal articles"
+  title: "How retention and mobility rates differ for teachers of colour"
+  authors: "Elfers, A., Plecki, M., Kim, Y. W., & Bei, N."
+  venue: "Teachers and Teaching: Theory and Practice"
+  detail: "28, 724–741"
+  year: 2022
+  date: 2022-07-21
+  url: "https://doi.org/10.1080/13540602.2022.2098271"
+
+- kind: "Journal articles"
+  title: "Making feedback constructive: The interplay of undergraduates' motivation with perceptions of feedback specificity and friendliness"
+  authors: "Fong, C. J., Schallert, D. L., Williams, K. M., Williamson, Z. H., Lin, S., Kim, Y. W., & Chen, L. H."
+  venue: "Educational Psychology"
+  detail: "1–19"
+  year: 2021
+  date: 2021-07-16
+  url: "https://doi.org/10.1080/01443410.2021.1951671"
+
+- kind: "Journal articles"
+  title: "\"It's my fault\": Exploring experiences and mental wellness among Korean international graduate students"
+  authors: "Koo, K., Kim, Y. W., Lee, J., & Nyunt, G."
+  venue: "Journal of International Students"
+  detail: "11(4), 790–811"
+  year: 2021
+  date: 2021-03-06
+  url: "https://doi.org/10.32674/jis.v11i4.2801"
+
+- kind: "Journal articles"
+  title: "A clash of constructs? Re-examining grit in light of academic buoyancy and future time perspective"
+  authors: "Fong, C. J., & Kim, Y. W."
+  venue: "Current Psychology"
+  detail: "40(4), 1824–1837"
+  year: 2021
+  date: 2021-01-07
+  url: "https://doi.org/10.1007/s12144-018-0120-4"
+
+- kind: "Journal articles"
+  title: "\"Inside out\": Student appraisals for achievement emotions regarding constructive criticism, positive feedback, and negative feedback on writing"
+  authors: "Fong, C. J., Williams, K. M., Williamson, Z. H., Lin, S., Kim, Y. W., & Schallert, D. L."
+  venue: "Motivation and Emotion"
+  detail: "42, 236–257"
+  year: 2018
+  date: 2018-12-19
+  url: "https://doi.org/10.1007/s11031-017-9658-y"
+
+- kind: "Journal articles"
+  title: "When feedback signals failure but offers hope for improvement: A process model of constructive criticism"
+  authors: "Fong, C. J., Schallert, D. L., Williams, K. M., Williamson, Z. H., Warner, J. R., Lin, S., & Kim, Y. W."
+  venue: "Thinking Skills and Creativity"
+  detail: "30, 42–53"
+  year: 2018
+  date: 2018-02-14
+  url: "https://doi.org/10.1016/j.tsc.2018.02.014"
+
+- kind: "Journal articles"
+  title: "A meta-analysis on critical thinking and community college student success"
+  authors: "Fong, C. J., Kim, Y., Davis, C. W., Hoang, T., & Kim, Y. W."
+  venue: "Thinking Skills and Creativity"
+  detail: "26, 71–83"
+  year: 2017
+  date: 2017-06-06
+  url: "https://doi.org/10.1016/j.tsc.2017.06.002"
+
+- kind: "Journal articles"
+  title: "Psychosocial factors and community college student success: A meta-analytic investigation"
+  authors: "Fong, C. J., Davis, C. W., Kim, Y., Kim, Y. W., Marriott, L. A., & Kim, S."
+  venue: "Review of Educational Research"
+  detail: "87(2), 388–424"
+  year: 2017
+  date: 2017-06-01
+  url: "https://doi.org/10.3102/0034654316653479"

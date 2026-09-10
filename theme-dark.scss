@@ -1,0 +1,53 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$font-family-monospace:  "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
+$headings-font-family:   "Instrument Serif", Georgia, "Times New Roman", serif !default;
+$headings-font-weight:   400 !default;
+
+$font-size-root:   16px !default;
+$font-size-base:   1.0625rem !default;
+$line-height-base: 1.65 !default;
+
+$body-bg:      #0E0F11 !default;
+$body-color:   #EDEDE8 !default;
+$primary:      #8FADFF !default;
+$link-color:   #8FADFF !default;
+$link-hover-color: #B0C4FF !default;
+$border-color: #272A2F !default;
+
+$navbar-bg:            #0E0F11 !default;
+$navbar-fg:            #9BA1AB !default;
+$navbar-hl:            #8FADFF !default;
+$footer-bg:            #0E0F11 !default;
+$footer-fg:            #9BA1AB !default;
+
+/*-- scss:rules --*/
+
+:root {
+  color-scheme: dark;
+
+  --yk-bg:            #0E0F11;
+  --yk-surface:       #17191C;
+  --yk-text:          #EDEDE8;
+  --yk-text-muted:    #9BA1AB;
+  --yk-text-faint:    #6C7078;
+  --yk-border:        #{$border-color};
+  --yk-accent:        #8FADFF;
+  --yk-accent-hover:  #B0C4FF;
+
+  // Dark dividers need MORE alpha than light ones to read at all.
+  --yk-rule:  color-mix(in oklab, var(--yk-text) 16%, transparent);
+  --yk-tint:  color-mix(in oklab, var(--yk-text) 6%, transparent);
+  --yk-ring:  color-mix(in oklab, var(--yk-accent) 55%, transparent);
+}
+
+// Figures exported on a white canvas punch holes in a dark page. Opt in per image.
+img.dim { filter: brightness(0.86) contrast(1.04); }
+
+// Portrait: same warm monochrome as light, pulled down so it doesn't glare
+// against a near-black ground. Hover still restores the full-colour photo.
+.yk-hero__portrait img {
+  filter: grayscale(1) sepia(0.24) saturate(1.05) contrast(1.02) brightness(0.82) !important;
+}
+.yk-hero__portrait img:hover { filter: brightness(0.94) !important; }

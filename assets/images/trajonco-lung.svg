@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="ONE-YEAR LUNG CANCER RISK. 0.871 AUROC · 95% CI 0.855–0.885. NO MODEL TRAINING · NO FEATURE ENGINEERING">
+<rect width="640" height="360" fill="#F3F2ED"/>
+<text x="32" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.1" fill="#5A6270">ONE-YEAR LUNG CANCER RISK</text>
+<text x="32" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.1" fill="#8C9099">CHAIN-OF-AGENTS · ZERO-SHOT</text>
+<line x1="32" y1="96" x2="608" y2="96" stroke="#DAD7CE" stroke-width="1"/>
+<text x="32" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" fill="#14161A">0.871</text>
+<text x="32" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="1.1" fill="#5A6270">AUROC · 95% CI 0.855–0.885</text>
+<rect x="150.0" y="242" width="390.0" height="10" rx="3" fill="#E1DFD8"/>
+<rect x="426.9" y="245" width="23.4" height="4" fill="#2B4ACB" opacity="0.45"/>
+<rect x="437.9" y="236" width="3" height="22" rx="1.5" fill="#2B4ACB"/>
+<text x="439.4" y="228" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#2B4ACB">0.871</text>
+<text x="150.0" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#A9ADB4">0.5</text>
+<text x="540.0" y="274" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#A9ADB4">1</text>
+<line x1="32" y1="292" x2="608" y2="292" stroke="#DAD7CE" stroke-width="1"/>
+<text x="32" y="318" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="0.4" fill="#5A6270">NO MODEL TRAINING · NO FEATURE ENGINEERING</text>
+<text x="32" y="338" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="0.4" fill="#8C9099">ISPOR 2026</text>
+</svg>

@@ -1,0 +1,19 @@
+---
+title: "Presentations"
+listing:
+  - id: presentations
+    contents: presentations.yml
+    type: custom
+    template: _templates/presentations.ejs
+    sort: "date desc"
+    filter-ui: false
+    sort-ui: false
+    page-size: 100
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose">
+  <p>Conference talks, posters, and abstracts, most recent first.</p>
+</div>
+```

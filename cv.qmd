@@ -1,0 +1,67 @@
+---
+title: "Curriculum Vitae"
+page-layout: article
+---
+
+```{=html}
+<div class="yk-prose">
+  <p>Machine learning researcher building and validating clinical AI: foundation
+  models on longitudinal EHR, LLM and multi-agent risk prediction, evaluation
+  frameworks, and the MCP tooling that moves models into production. Ph.D. in
+  Measurement &amp; Statistics (University of Washington), postdoctoral training in
+  causal inference (Harvard University).</p>
+</div>
+
+<p class="yk-eyebrow" style="margin-top:1.5rem">
+  <a href="assets/files/Kim_Youngwon_CV.pdf">Download PDF ↗</a>
+</p>
+
+<section class="yk-section">
+  <h2>Positions</h2>
+  <div class="yk-row">
+    <div class="yk-row__when">2024 –</div>
+    <div>
+      <div class="yk-row__what">Postdoctoral Researcher</div>
+      <p class="yk-row__where">AI &amp; Workflows team, Truveta · Bellevue, WA</p>
+    </div>
+    <div class="yk-row__aside"></div>
+  </div>
+  <div class="yk-row">
+    <div class="yk-row__when">2023 – 2024</div>
+    <div>
+      <div class="yk-row__what">Postdoctoral Fellow, Causal Inference</div>
+      <p class="yk-row__where">Harvard University · Cambridge, MA</p>
+    </div>
+    <div class="yk-row__aside"></div>
+  </div>
+</section>
+
+<section class="yk-section">
+  <h2>Education</h2>
+  <div class="yk-row">
+    <div class="yk-row__when">Ph.D.</div>
+    <div>
+      <div class="yk-row__what">Measurement &amp; Statistics</div>
+      <p class="yk-row__where">University of Washington · Seattle, WA</p>
+    </div>
+    <div class="yk-row__aside"></div>
+  </div>
+  <div class="yk-row">
+    <div class="yk-row__when">M.A.</div>
+    <div>
+      <div class="yk-row__what">Educational Psychology</div>
+      <p class="yk-row__where">University of Texas at Austin · Austin, TX</p>
+    </div>
+    <div class="yk-row__aside"></div>
+  </div>
+</section>
+
+<section class="yk-section">
+  <h2>More</h2>
+  <div class="yk-prose">
+    <p>Full publication list on <a href="publications.html">Publications</a>,
+    presentations on <a href="presentations.html">Presentations</a>, and courses on
+    <a href="teaching.html">Teaching</a>.</p>
+  </div>
+</section>
+```

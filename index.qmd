@@ -1,0 +1,106 @@
+---
+title: ""
+page-layout: article
+---
+
+```{=html}
+<section class="yk-hero">
+  <div class="yk-hero__portrait">
+    <img src="assets/images/profile.jpg" alt="Youngwon Kim">
+  </div>
+  <div class="yk-hero__body">
+    <div class="yk-hero__claim" role="heading" aria-level="1">I build clinical AI systems — and the evidence that they work.</div>
+    <p class="yk-hero__identity">Postdoctoral Researcher · Truveta · Seattle, WA</p>
+    <div class="yk-prose">
+      <p>I am a machine learning researcher working on high-stakes clinical AI. On
+      Truveta's AI &amp; Workflows team I train <strong>foundation models</strong> on
+      longitudinal electronic health records, build LLM and multi-agent systems for
+      cancer risk prediction, and architect the <strong>Model Context Protocol</strong>
+      tooling that puts them in front of the people making decisions.</p>
+      <p>My training is in <strong>measurement and statistics</strong> (Ph.D.,
+      University of Washington) and <strong>causal inference</strong> (postdoc,
+      Harvard University) — which is why I also build the benchmarks and evaluation
+      frameworks that decide whether any of it can be trusted. Validity is not a
+      final step; it is a design constraint.</p>
+    </div>
+    <nav class="yk-hero__links">
+      <a href="cv.html">CV&nbsp;↗</a>
+      <a href="mailto:youngwonkim.ywk@gmail.com">Email&nbsp;↗</a>
+      <a href="https://scholar.google.com/citations?user=ruSO1P0AAAAJ&amp;hl=en">Google&nbsp;Scholar&nbsp;↗</a>
+      <a href="https://github.com/kimyoungwon">GitHub&nbsp;↗</a>
+      <a href="https://orcid.org/0000-0002-6815-6920">ORCID&nbsp;↗</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ── Recent ──────────────────────────────────────────────────────────────
+     Add a row at the top; drop the bottom one. Keep this to 3-4 items.      -->
+<section class="yk-section">
+<h2>Recent</h2>
+
+<div class="yk-row">
+<div class="yk-row__when">2026 · May</div>
+<div>
+<div class="yk-row__what">Multi-agent LLM framework predicts one-year risk across multiple cancers</div>
+<p class="yk-row__where">American Society of Clinical Oncology (ASCO) · Chicago, IL</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<div class="yk-row">
+<div class="yk-row__when">2026 · May</div>
+<div>
+<div class="yk-row__what">Four presentations on patient-journey foundation models and oncology risk</div>
+<p class="yk-row__where">International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<div class="yk-row">
+<div class="yk-row__when">2026 · Apr</div>
+<div>
+<div class="yk-row__what">Two preprints posted: TrajOnco (arXiv) and EHR-based KCCQ estimation (medRxiv)</div>
+<p class="yk-row__where">Under review</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<p class="yk-eyebrow" style="margin-top:1.5rem"><a href="presentations.html">All presentations ↗</a></p>
+</section>
+
+<!-- ── Selected work ───────────────────────────────────────────────────────
+     Leads with clinical AI / LLM work, then the methods and meta-analytic
+     record. Mixes talks, write-ups and papers on purpose.                   -->
+<section class="yk-section">
+<h2>Selected work</h2>
+
+<div class="yk-row">
+<div class="yk-row__when">2026</div>
+<div>
+<div class="yk-row__what"><a href="https://arxiv.org/abs/2604.10386">TrajOnco: multi-agent temporal reasoning over longitudinal EHR for multi-cancer early detection</a></div>
+<p class="yk-row__where">A training-free multi-agent LLM framework reaching AUROCs of 0.64–0.80 across 15 cancer types. arXiv preprint; presented at ASCO 2026.</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<div class="yk-row">
+<div class="yk-row__when">2025</div>
+<div>
+<div class="yk-row__what"><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer">Predicting early-onset colorectal cancer with large language models</a></div>
+<p class="yk-row__where">A fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients from 30 US health systems — a population current screening guidelines exclude on age alone. ASCO &amp; AMIA 2025.</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<div class="yk-row">
+<div class="yk-row__when">2024</div>
+<div>
+<div class="yk-row__what"><a href="https://cares-blog.gse.harvard.edu/post/essay-grading-with-chatgpt/">Large language models vs. machine learning for automated essay scoring</a></div>
+<p class="yk-row__where">Whether LLM graders are psychometrically sound enough for high-stakes assessment. Three-part series; presented at AEFP and JSM 2024.</p>
+</div>
+<div class="yk-row__aside"></div>
+</div>
+
+<p class="yk-eyebrow" style="margin-top:1.5rem"><a href="publications.html">All publications ↗</a></p>
+</section>
+```
