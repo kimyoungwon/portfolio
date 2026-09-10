@@ -67,9 +67,10 @@ The mapping lives in `_templates/pubs.ejs` (`selfFor`).
 
 ### Publication groups
 
-Rendered in this order: **Preprints & under review** → **Journal articles** →
-**Conference proceedings** → **Working papers**. Change the order in
-`_templates/pubs.ejs`.
+Rendered in this order: **Preprints & under review** → **Conference proceedings** →
+**Working papers** → **Journal articles**. The journal articles sit last because they
+are mostly earlier educational-psychology work, not the current clinical-AI record.
+Change the order in `_templates/pubs.ejs`.
 
 ---
 

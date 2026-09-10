@@ -1,5 +1,5 @@
 <% const selfFor = (k) => k === "Conference proceedings" ? "Kim, Y." : "Kim, Y. W.";
-   const order = ["Preprints & under review", "Journal articles", "Conference proceedings", "Working papers"];
+   const order = ["Preprints & under review", "Conference proceedings", "Working papers", "Journal articles"];
    const seen  = [...new Set(items.map(i => i.kind))];
    const kinds = order.filter(k => seen.includes(k)).concat(seen.filter(k => !order.includes(k))); %>
 <% for (const kind of kinds) { %>
