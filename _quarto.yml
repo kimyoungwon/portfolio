@@ -8,7 +8,7 @@ project:
 
 website:
   title: "Youngwon Kim"
-  description: "Measurement scientist and machine learning researcher bringing psychometric rigor to the evaluation of high-stakes AI systems."
+  description: "Machine learning researcher building and validating clinical AI: foundation models on longitudinal EHR, LLM and multi-agent risk prediction, and the evaluation frameworks that decide whether to trust them."
   site-url: https://kimyoungwon.github.io
   navbar:
     logo: ""

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Youngwon Kim</title>
+<title>Presentations – Youngwon Kim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,10 +73,68 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-presentations .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-when','listing-date','listing-kind','listing-title','listing-venue','listing-location','listing-note','listing-writeup','listing-paper','listing-abstract',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-when","listing-date","listing-kind","listing-title","listing-venue","listing-location","listing-note","listing-writeup","listing-paper","listing-abstract"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400..600&amp;family=Geist+Mono:wght@400..500&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -268,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -280,7 +340,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html"> 
+    <a class="nav-link active" href="./presentations.html" aria-current="page"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
@@ -326,115 +386,327 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Presentations</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-
-<section class="yk-hero">
-  <div class="yk-hero__portrait">
-    <img src="assets/images/profile.jpg" alt="Youngwon Kim">
+    
+  
+    
   </div>
-  <div class="yk-hero__body">
-    <div class="yk-hero__claim" role="heading" aria-level="1">I build clinical AI systems — and the evidence that they work.</div>
-    <p class="yk-hero__identity">Postdoctoral Researcher · Truveta · Seattle, WA</p>
-    <div class="yk-prose">
-      <p>I am a machine learning researcher working on high-stakes clinical AI. On
-      Truveta's AI &amp; Workflows team I train <strong>foundation models</strong> on
-      longitudinal electronic health records, build LLM, multi-agent, and clinical NLU
-      systems for oncology and cardiology risk prediction, and architect the <strong>Model Context Protocol</strong>
-      tooling that puts them in front of the people making decisions.</p>
-      <p>My training is in <strong>measurement and statistics</strong> (Ph.D.,
-      University of Washington) and <strong>causal inference</strong> (postdoc,
-      Harvard University) — which is why I also build the benchmarks and evaluation
-      frameworks that decide whether any of it can be trusted. Validity is not a
-      final step; it is a design constraint.</p>
-    </div>
-    <nav class="yk-hero__links">
-      <a href="cv.html">CV&nbsp;↗</a>
-      <a href="mailto:youngwonkim.ywk@gmail.com">Email&nbsp;↗</a>
-      <a href="https://scholar.google.com/citations?user=ruSO1P0AAAAJ&amp;hl=en">Google&nbsp;Scholar&nbsp;↗</a>
-      <a href="https://github.com/kimyoungwon">GitHub&nbsp;↗</a>
-      <a href="https://orcid.org/0000-0002-6815-6920">ORCID&nbsp;↗</a>
-    </nav>
-  </div>
-</section>
+  
 
-<!-- ── Recent ──────────────────────────────────────────────────────────────
-     Add a row at the top; drop the bottom one. Keep this to 3-4 items.      -->
-<section class="yk-section">
-<h2 class="anchored">Recent</h2>
 
+</header>
+
+
+<div class="yk-prose">
+  <p>Conference talks, posters, and abstracts, most recent first.</p>
+</div>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-presentations">
+<div class="yk-rows">
 <div class="yk-row">
-<div class="yk-row__when">2026 · May</div>
+<div class="yk-row__when">
+2026 · May
+</div>
 <div>
-<div class="yk-row__what">Multi-agent LLM framework predicts one-year risk across multiple cancers</div>
-<p class="yk-row__where">American Society of Clinical Oncology (ASCO) · Chicago, IL</p>
+<div class="yk-row__what">
+Multi-agent LLM framework predicts one-year risk across multiple cancers
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+American Society of Clinical Oncology (ASCO) · Chicago, IL
+</p>
+<p class="yk-row__where">
+TrajOnco estimated one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80.
+</p>
 </div>
-
+<div class="yk-row__aside">
+<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.16_suppl.10501">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/">Write-up</a>
+</div>
+</div>
 <div class="yk-row">
-<div class="yk-row__when">2026 · May</div>
+<div class="yk-row__when">
+2026 · May
+</div>
 <div>
-<div class="yk-row__what">Four presentations on patient-journey foundation models and oncology risk</div>
-<p class="yk-row__where">International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA</p>
+<div class="yk-row__what">
+Zero-shot chain-of-agents framework predicts one-year lung cancer risk directly from longitudinal EHR
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+</p>
+<p class="yk-row__where">
+AUROC 0.871 (95% CI 0.855–0.885) with no model training or feature engineering.
+</p>
 </div>
-
+<div class="yk-row__aside">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/">Write-up</a>
+</div>
+</div>
 <div class="yk-row">
-<div class="yk-row__when">2026 · Apr</div>
+<div class="yk-row__when">
+2026 · May
+</div>
 <div>
-<div class="yk-row__what">Two preprints posted: TrajOnco (arXiv) and EHR-based KCCQ estimation (medRxiv)</div>
-<p class="yk-row__where">Under review</p>
+<div class="yk-row__what">
+Patient journey foundation models improve EHR data quality through unit of measure imputation
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+</p>
+<p class="yk-row__where">
+98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units.
+</p>
 </div>
-
-<p class="yk-eyebrow" style="margin-top:1.5rem"><a href="presentations.html">All presentations ↗</a></p>
-</section>
-
-<!-- ── Selected work ───────────────────────────────────────────────────────
-     Leads with clinical AI / LLM work, then the methods and meta-analytic
-     record. Mixes talks, write-ups and papers on purpose.                   -->
-<section class="yk-section">
-<h2 class="anchored">Selected work</h2>
-
+<div class="yk-row__aside">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/">Write-up</a>
+</div>
+</div>
 <div class="yk-row">
-<div class="yk-row__when">2026</div>
+<div class="yk-row__when">
+2026 · May
+</div>
 <div>
-<div class="yk-row__what"><a href="https://arxiv.org/abs/2604.10386">TrajOnco: multi-agent temporal reasoning over longitudinal EHR for multi-cancer early detection</a></div>
-<p class="yk-row__where">A training-free multi-agent LLM framework reaching AUROCs of 0.64–0.80 across 15 cancer types. arXiv preprint; presented at ASCO 2026.</p>
+<div class="yk-row__what">
+Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+</p>
 </div>
-
+<div class="yk-row__aside">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/">Write-up</a>
+</div>
+</div>
 <div class="yk-row">
-<div class="yk-row__when">2025</div>
+<div class="yk-row__when">
+2026 · May
+</div>
 <div>
-<div class="yk-row__what"><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer">Predicting early-onset colorectal cancer with large language models</a></div>
-<p class="yk-row__where">A fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients from 30 US health systems — a population current screening guidelines exclude on age alone. ASCO &amp; AMIA 2025.</p>
+<div class="yk-row__what">
+Can a generative patient journey foundation model alleviate the burden of cancer screening?
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+</p>
+<p class="yk-row__where">
+Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data.
+</p>
 </div>
-
+<div class="yk-row__aside">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/">Write-up</a>
+</div>
+</div>
 <div class="yk-row">
-<div class="yk-row__when">2024</div>
+<div class="yk-row__when">
+2025 · Nov
+</div>
 <div>
-<div class="yk-row__what"><a href="https://cares-blog.gse.harvard.edu/post/essay-grading-with-chatgpt/">Large language models vs. machine learning for automated essay scoring</a></div>
-<p class="yk-row__where">Whether LLM graders are psychometrically sound enough for high-stakes assessment. Three-part series; presented at AEFP and JSM 2024.</p>
+<div class="yk-row__what">
+Predicting early-onset colorectal cancer with large language models
 </div>
-<div class="yk-row__aside"></div>
+<p class="yk-row__where">
+American Medical Informatics Association (AMIA) · Atlanta, GA
+</p>
+<p class="yk-row__where">
+Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients.
+</p>
 </div>
+<div class="yk-row__aside">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/predicting-early-onset-colorectal-cancer-with-large-language-models/">Write-up</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2025 · May
+</div>
+<div>
+<div class="yk-row__what">
+Development and validation of machine learning risk prediction models for detection of early-onset colorectal cancer: Data from 30 health systems in the United States
+</div>
+<p class="yk-row__where">
+American Society of Clinical Oncology (ASCO) · Chicago, IL
+</p>
+</div>
+<div class="yk-row__aside">
+<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2025.43.16_suppl.3613">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/">Write-up</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2024 · Aug
+</div>
+<div>
+<div class="yk-row__what">
+ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
+</div>
+<p class="yk-row__where">
+Joint Statistical Meetings (JSM) · Portland, OR
+</p>
+</div>
+<div class="yk-row__aside">
 
-<p class="yk-eyebrow" style="margin-top:1.5rem"><a href="publications.html">All publications ↗</a></p>
-</section>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2024 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Enhancing factor analysis: Evaluating factor retention accuracy with measurement error
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Philadelphia, PA
+</p>
+</div>
+<div class="yk-row__aside">
 
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2024 · Mar
+</div>
+<div>
+<div class="yk-row__what">
+ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
+</div>
+<p class="yk-row__where">
+Association for Education Finance &amp; Policy (AEFP) · Baltimore, MD
+</p>
+</div>
+<div class="yk-row__aside">
 
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2023 · Jul
+</div>
+<div>
+<div class="yk-row__what">
+Exploratory measurement modeling with Lasso
+</div>
+<p class="yk-row__where">
+International Meeting of the Psychometric Society (IMPS) · College Park, MD
+</p>
+</div>
+<div class="yk-row__aside">
 
-</main> <!-- /main -->
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2023 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Exploratory measurement modeling with Lasso
+</div>
+<p class="yk-row__where">
+National Council on Measurement in Education (NCME) · Chicago, IL
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2022 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Strive to survive in a pandemic in a foreign country: Korean international students’ well-being during COVID-19
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Diego, CA
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2021 · Jun
+</div>
+<div>
+<div class="yk-row__what">
+Measuring item process data with network analysis methods
+</div>
+<p class="yk-row__where">
+National Council on Measurement in Education (NCME) · Online
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2021 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Examining differences in the retention and mobility of teachers of color by racial/ethnic group
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Online
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2021 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Online
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2021 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+What does it mean to be an Asian in a pandemic? Exploring experiences of racism and discrimination among Asian international students in the United States during COVID-19
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Online
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

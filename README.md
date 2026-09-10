@@ -123,13 +123,35 @@ Jekyll-build the output.
 
 ```sh
 quarto render
+./publish-root.sh     # temporary — see below
 git add -A && git commit -m "Update site"
 git push
 ```
 
-**One-time setup:** in the repo's Settings → Pages, set Source to *Deploy from a branch*,
-branch `master`, folder **`/docs`**. It was previously serving the repo root as a Jekyll
-site, so this must be changed or the site will not update.
+### Why `publish-root.sh` exists
+
+GitHub Pages is currently serving this repo's **root**, not `docs/`. With no
+`index.html` at the root, Pages renders `README.md` as the homepage — which is what
+visitors were seeing. `publish-root.sh` copies the built pages and `site_libs/` up to
+the root (and writes `.nojekyll`) so the real site is served at
+`kimyoungwon.github.io/portfolio/`.
+
+It deliberately does **not** copy `assets/` or `styles.css`: those already exist at the
+root as source, and the built HTML references them by the same relative paths.
+
+Do **not** wire this into `post-render`. It writes into the directory `quarto preview`
+watches, which causes an endless render loop.
+
+### The permanent fix
+
+In the repo's **Settings → Pages**, set Source to *Deploy from a branch*, branch
+`master`, folder **`/docs`**. Then clean up the shim:
+
+```sh
+rm publish-root.sh .nojekyll ./*.html
+rm -rf site_libs
+git add -A && git commit -m "Serve from /docs" && git push
+```
 
 ---
 

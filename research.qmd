@@ -20,7 +20,9 @@ page-layout: article
     clinical events and reaches AUROCs of 0.64–0.80 across 15 cancer types with no
     task-specific training; a zero-shot chain-of-agents variant reaches 0.871 for
     one-year lung cancer risk.</p>
-    <p>The same patient-journey models do less glamorous but equally necessary
+    <p>Alongside the risk models sit <strong>clinical NLU pipelines</strong> that pull
+    structured disease status and patient trajectories out of messy real-world text.
+    And the same patient-journey models do less glamorous but equally necessary
     work: imputing missing units of measure at 98% accuracy across 438 UCUM units,
     and deriving health-state transition matrices empirically rather than by
     assumption. High-dimensional temporal EHR data is not clean, and a model that
@@ -36,8 +38,10 @@ page-layout: article
   <div class="yk-prose">
     <p>Benchmarks and model-as-judge systems are instruments that almost never
     report their psychometric properties. I build the frameworks that establish
-    validity and reliability before a metric is used to make a claim — including
-    clinical validity evaluation for the oncology foundation models above, and
+    validity and reliability before a metric is used to make a claim: <strong>evaluator
+    calibration</strong>, benchmark quality, bias detection, and uncertainty
+    quantification — including clinical validity evaluation for the oncology
+    foundation models above, and
     <strong>EHR-based estimation of KCCQ scores</strong> in heart failure, where
     the whole question is whether a model-derived score means what the
     patient-reported instrument means.</p>
@@ -57,9 +61,9 @@ page-layout: article
     <p>A model that only runs in a notebook has not been deployed. I architect
     <strong>Model Context Protocol</strong> tools that put predictive models
     directly into interactive analysis and clinical workflows, alongside
-    <strong>automated prompt optimization</strong> and interactive data
-    visualization — so that the people making decisions can interrogate a
-    prediction rather than just receive it.</p>
+    <strong>automated prompt optimization</strong>, agentic systems, interactive
+    data visualization, and end-to-end pipeline monitoring — so that the people
+    making decisions can interrogate a prediction rather than just receive it.</p>
     <p>This is engineering, not methodology, and I think it is underrated. Most of
     the distance between a promising result and a used one is infrastructure.</p>
   </div>
