@@ -58,12 +58,12 @@ page-layout: article
 <article class="yk-theme">
   <h2 class="yk-theme__title">Tooling decides whether a good model ever reaches anyone</h2>
   <div class="yk-prose">
-    <p>A model that only runs in a notebook has not been deployed. I architect
-    <strong>Model Context Protocol</strong> tools that put predictive models
-    directly into interactive analysis and clinical workflows, alongside
-    <strong>automated prompt optimization</strong>, agentic systems, interactive
-    data visualization, and end-to-end pipeline monitoring — so that the people
-    making decisions can interrogate a prediction rather than just receive it.</p>
+    <p>A model that only runs in a notebook has not been deployed. I build the layer
+    that carries one into use: <strong>agent frameworks</strong> — multi-agent and
+    deep-agent architectures, LangChain pipelines — alongside automated prompt
+    optimization, Model Context Protocol servers, interactive data visualization, and
+    end-to-end pipeline monitoring, so that the people making decisions can interrogate
+    a prediction rather than just receive it.</p>
     <p>This is engineering, not methodology, and I think it is underrated. Most of
     the distance between a promising result and a used one is infrastructure.</p>
   </div>
