@@ -24,8 +24,14 @@ quarto render      # one-off build into docs/
 > **Do not run `quarto render` while `quarto preview` is running.** Render deletes and
 > recreates the output directory underneath the preview's file watcher, which kills it —
 > the server then serves `BadResource: Bad resource ID` on every request while still
-> returning HTTP 200. If that happens: `pkill -f "quarto preview"`, then restart it.
-> While previewing, just save a file; it rebuilds on its own.
+> returning HTTP 200. While previewing, just save a file; it rebuilds on its own.
+>
+> If a render ever hangs with no output, `kill -9` on Quarto can corrupt its Deno cache.
+> Recover with:
+>
+> ```sh
+> pkill -9 -f quarto && rm -rf ~/Library/Caches/quarto && quarto render
+> ```
 
 ---
 
@@ -123,35 +129,19 @@ Jekyll-build the output.
 
 ```sh
 quarto render
-./publish-root.sh     # temporary — see below
 git add -A && git commit -m "Update site"
 git push
 ```
 
-### Why `publish-root.sh` exists
+Pages rebuilds in under a minute. The repo root holds only **source**; `docs/` holds
+the **built output**, and that is what GitHub serves.
 
-GitHub Pages is currently serving this repo's **root**, not `docs/`. With no
-`index.html` at the root, Pages renders `README.md` as the homepage — which is what
-visitors were seeing. `publish-root.sh` copies the built pages and `site_libs/` up to
-the root (and writes `.nojekyll`) so the real site is served at
-`kimyoungwon.github.io/portfolio/`.
+### Pages configuration
 
-It deliberately does **not** copy `assets/` or `styles.css`: those already exist at the
-root as source, and the built HTML references them by the same relative paths.
-
-Do **not** wire this into `post-render`. It writes into the directory `quarto preview`
-watches, which causes an endless render loop.
-
-### The permanent fix
-
-In the repo's **Settings → Pages**, set Source to *Deploy from a branch*, branch
-`master`, folder **`/docs`**. Then clean up the shim:
-
-```sh
-rm publish-root.sh .nojekyll ./*.html
-rm -rf site_libs
-git add -A && git commit -m "Serve from /docs" && git push
-```
+**Settings → Pages** is set to *Deploy from a branch*, branch `master`, folder
+**`/docs`**. If the site ever starts showing this README instead of the homepage, that
+setting has reverted to `/ (root)` — Pages then finds no `index.html` at the root and
+renders `README.md` in its place.
 
 ---
 
