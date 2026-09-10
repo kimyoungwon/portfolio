@@ -164,4 +164,3 @@ a dead project link, and a 648 KB portrait served for a 160 px slot.
 ## Known gaps
 
 - `cv.qmd` covers Positions and Education only; everything else points at the PDF.
-- The homepage says *Seattle, WA*; the CV says Truveta is in *Bellevue, WA*. Both are true.
