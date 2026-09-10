@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Presentations – Youngwon Kim</title>
+<title>Publications – Youngwon Kim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -76,20 +76,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-presentations .list');
+    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-when','listing-date','listing-kind','listing-title','listing-venue','listing-location','listing-note','listing-writeup','listing-abstract','listing-paper',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-kind','listing-title','listing-authors','listing-venue','listing-detail','listing-year','listing-date','listing-url',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-when","listing-date","listing-kind","listing-title","listing-venue","listing-location","listing-note","listing-writeup","listing-abstract","listing-paper"],
+      searchColumns: ["listing-kind","listing-title","listing-authors","listing-venue","listing-detail","listing-year","listing-date","listing-url"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
+    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -336,11 +336,11 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./presentations.html" aria-current="page"> 
+    <a class="nav-link" href="./presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
@@ -391,7 +391,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Presentations</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
@@ -409,302 +409,358 @@ window.Quarto = {
 
 
 <div class="yk-prose">
-  <p>Conference talks, posters, and abstracts, most recent first.</p>
+  <p>Also on
+  <a href="https://scholar.google.com/citations?user=ruSO1P0AAAAJ&amp;hl=en">Google Scholar</a>
+  and <a href="https://orcid.org/0000-0002-6815-6920">ORCID</a>.</p>
 </div>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-presentations">
-<div class="yk-rows">
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
+<div class="quarto-listing quarto-listing-container-custom" id="listing-pubs">
+<section class="yk-section">
+<h2 class="anchored">
+Preprints &amp; under review
+</h2>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-<div>
-<div class="yk-row__what">
-Multi-agent LLM framework predicts one-year risk across multiple cancers
-</div>
-<p class="yk-row__where">
-American Society of Clinical Oncology (ASCO) · Chicago, IL
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://arxiv.org/abs/2604.10386">TrajOnco: A multi-agent framework for temporal reasoning over longitudinal EHR for multi-cancer early detection</a>
+</h3>
+<p class="yk-pub__authors">
+Zeng, S., <b>Kim, Y. W.</b>, Lau, W., Alipour, E., Etzioni, R., Yetisgen, M., &amp; Oka, A.
 </p>
-<p class="yk-row__where">
-TrajOnco estimated one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80.
+<p class="yk-pub__meta">
+<span class="venue">arXiv preprint</span><span class="yk-dot">·</span>arXiv:2604.10386
 </p>
-</div>
-<div class="yk-row__aside">
-<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.16_suppl.10501">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/">Write-up</a>
-</div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
-</div>
-<div>
-<div class="yk-row__what">
-Zero-shot chain-of-agents framework predicts one-year lung cancer risk directly from longitudinal EHR
-</div>
-<p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
-</p>
-<p class="yk-row__where">
-AUROC 0.871 (95% CI 0.855–0.885) with no model training or feature engineering.
+<p class="yk-pub__links">
+<a href="https://arxiv.org/abs/2604.10386">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/">Write-up</a>
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
-</div>
-<div>
-<div class="yk-row__what">
-Patient journey foundation models improve EHR data quality through unit of measure imputation
-</div>
-<p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://www.medrxiv.org/content/10.64898/2026.04.03.26350138v1">Electronic health record-based estimation of Kansas City Cardiomyopathy Questionnaire scores in heart failure</a>
+</h3>
+<p class="yk-pub__authors">
+<b>Kim, Y. W.</b>, Lau, W., Patel, N., Kendrick, K., Wu, A., Feldman, T., Ahern, R., &amp; Oka, A.
 </p>
-<p class="yk-row__where">
-98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units.
+<p class="yk-pub__meta">
+<span class="venue">medRxiv preprint</span><span class="yk-dot">·</span>2026.04.03.26350138
 </p>
-</div>
-<div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/">Write-up</a>
-</div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
-</div>
-<div>
-<div class="yk-row__what">
-Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records
-</div>
-<p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+<p class="yk-pub__links">
+<a href="https://www.medrxiv.org/content/10.64898/2026.04.03.26350138v1">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/">Write-up</a>
+</article>
+</section>
+<section class="yk-section">
+<h2 class="anchored">
+Conference proceedings
+</h2>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
-</div>
-<div>
-<div class="yk-row__what">
-Can a generative patient journey foundation model alleviate the burden of cancer screening?
-</div>
-<p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097">Can a generative patient journey foundation model alleviate the burden of cancer screening?</a>
+</h3>
+<p class="yk-pub__authors">
+Lau, W., Alipour, E., <b>Kim, Y.</b>, Zeng, S., Oka, A., &amp; Nanduri, J.
 </p>
-<p class="yk-row__where">
-Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data.
+<p class="yk-pub__meta">
+<span class="venue">Value in Health</span><span class="yk-dot">·</span>ISPOR 2026 abstract
 </p>
-</div>
-<div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/">Write-up</a>
-</div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2025 · Nov
-</div>
-<div>
-<div class="yk-row__what">
-Predicting early-onset colorectal cancer with large language models
-</div>
-<p class="yk-row__where">
-American Medical Informatics Association (AMIA) · Atlanta, GA
-</p>
-<p class="yk-row__where">
-Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients.
+<p class="yk-pub__links">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/">Paper</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/predicting-early-onset-colorectal-cancer-with-large-language-models/">Write-up</a>
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2025 · May
-</div>
-<div>
-<div class="yk-row__what">
-Development and validation of machine learning risk prediction models for detection of early-onset colorectal cancer: Data from 30 health systems in the United States
-</div>
-<p class="yk-row__where">
-American Society of Clinical Oncology (ASCO) · Chicago, IL
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667">Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records</a>
+</h3>
+<p class="yk-pub__authors">
+<b>Kim, Y.</b>, Lau, W., Alipour, E., Zeng, S., Oka, A., &amp; Nanduri, J.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Value in Health</span><span class="yk-dot">·</span>ISPOR 2026 abstract
+</p>
+<p class="yk-pub__links">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2025.43.16_suppl.3613">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/">Write-up</a>
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2024 · Aug
-</div>
-<div>
-<div class="yk-row__what">
-ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
-</div>
-<p class="yk-row__where">
-Joint Statistical Meetings (JSM) · Portland, OR
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043">Zero-shot lung cancer risk prediction from longitudinal electronic health records with chain-of-agents framework</a>
+</h3>
+<p class="yk-pub__authors">
+Alipour, E., Lau, W., <b>Kim, Y.</b>, Zeng, S., Oka, A., &amp; Nanduri, J.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Value in Health</span><span class="yk-dot">·</span>ISPOR 2026 abstract
+</p>
+<p class="yk-pub__links">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2026
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2024 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-Enhancing factor analysis: Evaluating factor retention accuracy with measurement error
-</div>
-<p class="yk-row__where">
-American Educational Research Association (AERA) · Philadelphia, PA
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055">Patient journey foundation models improve EHR data quality through unit of measure imputation</a>
+</h3>
+<p class="yk-pub__authors">
+Alipour, E., Lau, W., <b>Kim, Y.</b>, Zeng, S., Oka, A., &amp; Nanduri, J.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Value in Health</span><span class="yk-dot">·</span>ISPOR 2026 abstract
+</p>
+<p class="yk-pub__links">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2025
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2024 · Mar
-</div>
-<div>
-<div class="yk-row__what">
-ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
-</div>
-<p class="yk-row__where">
-Association for Education Finance &amp; Policy (AEFP) · Baltimore, MD
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/">Predicting early-onset colorectal cancer with large language models</a>
+</h3>
+<p class="yk-pub__authors">
+Lau, W., <b>Kim, Y.</b>, Parasa, S., Haque, M. E., Oka, A., &amp; Nanduri, J.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">AMIA Annual Symposium Proceedings</span><span class="yk-dot">·</span>2025, 653–662
+</p>
+<p class="yk-pub__links">
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+</section>
+<section class="yk-section">
+<h2 class="anchored">
+Working papers
+</h2>
+<article class="yk-pub">
+<div class="yk-index">
+2025
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2023 · Jul
-</div>
-<div>
-<div class="yk-row__what">
-Exploratory measurement modeling with Lasso
-</div>
-<p class="yk-row__where">
-International Meeting of the Psychometric Society (IMPS) · College Park, MD
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://eric.ed.gov/?id=ED678295">ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring</a>
+</h3>
+<p class="yk-pub__authors">
+<b>Kim, Y. W.</b>, Mozer, R., Al-Adeimi, S., &amp; Miratrix, L.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">EdWorkingPapers, Annenberg Institute at Brown University</span><span class="yk-dot">·</span>No.&nbsp;25-1335
+</p>
+<p class="yk-pub__links">
+<a href="https://eric.ed.gov/?id=ED678295">Link</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+</section>
+<section class="yk-section">
+<h2 class="anchored">
+Journal articles
+</h2>
+<article class="yk-pub">
+<div class="yk-index">
+2023
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2023 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-Exploratory measurement modeling with Lasso
-</div>
-<p class="yk-row__where">
-National Council on Measurement in Education (NCME) · Chicago, IL
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1016/j.asw.2023.100761">Are self-compassionate writers more feedback literate? Exploring undergraduates’ perceptions of feedback constructiveness</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Schallert, D. L., Williamson, Z. H., Lin, S., Williams, K. M., &amp; <b>Kim, Y. W.</b>
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Assessing Writing</span><span class="yk-dot">·</span>57, 100761
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1016/j.asw.2023.100761">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2022
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2022 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-Strive to survive in a pandemic in a foreign country: Korean international students’ well-being during COVID-19
-</div>
-<p class="yk-row__where">
-American Educational Research Association (AERA) · San Diego, CA
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1080/13540602.2022.2098271">How retention and mobility rates differ for teachers of colour</a>
+</h3>
+<p class="yk-pub__authors">
+Elfers, A., Plecki, M., <b>Kim, Y. W.</b>, &amp; Bei, N.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Teachers and Teaching: Theory and Practice</span><span class="yk-dot">·</span>28, 724–741
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1080/13540602.2022.2098271">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2021
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2021 · Jun
-</div>
-<div>
-<div class="yk-row__what">
-Measuring item process data with network analysis methods
-</div>
-<p class="yk-row__where">
-National Council on Measurement in Education (NCME) · Online
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1080/01443410.2021.1951671">Making feedback constructive: The interplay of undergraduates’ motivation with perceptions of feedback specificity and friendliness</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Schallert, D. L., Williams, K. M., Williamson, Z. H., Lin, S., <b>Kim, Y. W.</b>, &amp; Chen, L. H.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Educational Psychology</span><span class="yk-dot">·</span>1–19
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1080/01443410.2021.1951671">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2021
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2021 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-Examining differences in the retention and mobility of teachers of color by racial/ethnic group
-</div>
-<p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.32674/jis.v11i4.2801">“It’s my fault”: Exploring experiences and mental wellness among Korean international graduate students</a>
+</h3>
+<p class="yk-pub__authors">
+Koo, K., <b>Kim, Y. W.</b>, Lee, J., &amp; Nyunt, G.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Journal of International Students</span><span class="yk-dot">·</span>11(4), 790–811
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.32674/jis.v11i4.2801">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2021
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2021 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model
-</div>
-<p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1007/s12144-018-0120-4">A clash of constructs? Re-examining grit in light of academic buoyancy and future time perspective</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., &amp; <b>Kim, Y. W.</b>
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Current Psychology</span><span class="yk-dot">·</span>40(4), 1824–1837
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1007/s12144-018-0120-4">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2018
 </div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2021 · Apr
-</div>
-<div>
-<div class="yk-row__what">
-What does it mean to be an Asian in a pandemic? Exploring experiences of racism and discrimination among Asian international students in the United States during COVID-19
-</div>
-<p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1007/s11031-017-9658-y">“Inside out”: Student appraisals for achievement emotions regarding constructive criticism, positive feedback, and negative feedback on writing</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Williams, K. M., Williamson, Z. H., Lin, S., <b>Kim, Y. W.</b>, &amp; Schallert, D. L.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Motivation and Emotion</span><span class="yk-dot">·</span>42, 236–257
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1007/s11031-017-9658-y">DOI</a>
 </p>
 </div>
-<div class="yk-row__aside">
-
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2018
 </div>
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1016/j.tsc.2018.02.014">When feedback signals failure but offers hope for improvement: A process model of constructive criticism</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Schallert, D. L., Williams, K. M., Williamson, Z. H., Warner, J. R., Lin, S., &amp; <b>Kim, Y. W.</b>
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Thinking Skills and Creativity</span><span class="yk-dot">·</span>30, 42–53
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1016/j.tsc.2018.02.014">DOI</a>
+</p>
 </div>
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2017
 </div>
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.1016/j.tsc.2017.06.002">A meta-analysis on critical thinking and community college student success</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Kim, Y., Davis, C. W., Hoang, T., &amp; <b>Kim, Y. W.</b>
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Thinking Skills and Creativity</span><span class="yk-dot">·</span>26, 71–83
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.1016/j.tsc.2017.06.002">DOI</a>
+</p>
+</div>
+</article>
+<article class="yk-pub">
+<div class="yk-index">
+2017
+</div>
+<div class="yk-pub__body">
+<h3 class="yk-pub__title anchored">
+<a href="https://doi.org/10.3102/0034654316653479">Psychosocial factors and community college student success: A meta-analytic investigation</a>
+</h3>
+<p class="yk-pub__authors">
+Fong, C. J., Davis, C. W., Kim, Y., <b>Kim, Y. W.</b>, Marriott, L. A., &amp; Kim, S.
+</p>
+<p class="yk-pub__meta">
+<span class="venue">Review of Educational Research</span><span class="yk-dot">·</span>87(2), 388–424
+</p>
+<p class="yk-pub__links">
+<a href="https://doi.org/10.3102/0034654316653479">DOI</a>
+</p>
+</div>
+</article>
+</section>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
