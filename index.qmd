@@ -14,16 +14,20 @@ page-layout: article
     <div class="yk-prose">
       <p>I am a machine learning researcher working on high-stakes clinical AI. On
       Truveta's AI &amp; Workflows team I train <strong>foundation models</strong> on
-      longitudinal electronic health records and build the <strong>agent systems</strong>
+      longitudinal electronic health records to predict how patients' health evolves
+      over time, and build the <strong>agent systems</strong>
       that reason over them — multi-agent and deep-agent architectures, LangChain
       pipelines, automated prompt optimization — for oncology and cardiology risk
       prediction, together with the clinical NLU and MCP tooling that connect them to
       real clinical workflows.</p>
-      <p>My training is in <strong>measurement and statistics</strong> (Ph.D.,
-      University of Washington) and <strong>causal inference</strong> (postdoc,
-      Harvard University) — which is why I also build the benchmarks and evaluation
-      frameworks that decide whether any of it can be trusted. Validity is not a
-      final step; it is a design constraint.</p>
+      <p>My Ph.D. in <strong>measurement and statistics</strong> (University of
+      Washington) and postdoctoral training in <strong>causal inference</strong>
+      (Harvard) give me a foundation most ML researchers don't have — evaluation
+      frameworks, latent variable modeling, validity theory — and I've carried it from
+      education and human behavior into high-dimensional healthcare. It's why I also
+      build the benchmarks that decide whether a model is calibrated, interpretable,
+      and fair enough to act on. Validity is not a final step; it is a design
+      constraint.</p>
     </div>
     <nav class="yk-hero__links">
       <a href="cv.html">CV&nbsp;↗</a>
