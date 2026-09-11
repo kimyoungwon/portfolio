@@ -84,8 +84,8 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 .yk-hero__portrait img {
   width: 100%;
   max-width: 9rem;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;            /* no fixed ratio and no object-fit, so the photo is
+                              never cropped — whatever aspect it has, it keeps. */
   border-radius: 3px;
   display: block;
 }
