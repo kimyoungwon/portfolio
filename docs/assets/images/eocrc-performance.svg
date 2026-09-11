@@ -1,40 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img"
-     aria-label="Fine-tuned large language model reached 73 percent sensitivity and 91 percent specificity for early-onset colorectal cancer, across 1,953 patients from 30 US health systems, ages 18 to 44.">
-  <rect width="640" height="360" fill="#F3F2ED"/>
-
-  <!-- eyebrow -->
-  <text x="32" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" letter-spacing="1.1" fill="#5A6270">EARLY-ONSET COLORECTAL CANCER</text>
-  <text x="32" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" letter-spacing="1.1" fill="#8C9099">FINE-TUNED LLM · RETROSPECTIVE COHORT</text>
-
-  <line x1="32" y1="96" x2="608" y2="96" stroke="#E4E3DD" stroke-width="1"/>
-
-  <!-- row 1: sensitivity -->
-  <text x="32" y="149" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-        font-size="14" fill="#5A6270">Sensitivity</text>
-  <rect x="150" y="132" width="390" height="14" rx="4" fill="#E1DFD8"/>
-  <path d="M150 132 H431 A4 4 0 0 1 435 136 V142 A4 4 0 0 1 431 146 H150 Z" fill="#2B4ACB"/>
-  <text x="608" y="149" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="17" fill="#14161A">73%</text>
-
-  <!-- row 2: specificity -->
-  <text x="32" y="209" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-        font-size="14" fill="#5A6270">Specificity</text>
-  <rect x="150" y="192" width="390" height="14" rx="4" fill="#E1DFD8"/>
-  <path d="M150 192 H501 A4 4 0 0 1 505 196 V202 A4 4 0 0 1 501 206 H150 Z" fill="#2B4ACB"/>
-  <text x="608" y="209" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="17" fill="#14161A">91%</text>
-
-  <!-- scale endpoints, recessive -->
-  <text x="150" y="232" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="10" fill="#A9ADB4">0</text>
-  <text x="540" y="232" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="10" fill="#A9ADB4">100</text>
-
-  <line x1="32" y1="280" x2="608" y2="280" stroke="#E4E3DD" stroke-width="1"/>
-  <text x="32" y="308" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="11.5" letter-spacing="0.4" fill="#5A6270">1,953 PATIENTS · 30 US HEALTH SYSTEMS · AGES 18–44</text>
-  <text x="32" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="11.5" letter-spacing="0.4" fill="#8C9099">ASCO 2025 · AMIA 2025</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="A fine-tuned large language model reached 73 percent sensitivity and 91 percent specificity for early-onset colorectal cancer across 1,953 patients from 30 US health systems, ages 18 to 44. AMIA 2025.">
+<rect width="640" height="360" fill="#F3F2ED"/>
+<text x="32" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.1" fill="#5A6270">EARLY-ONSET COLORECTAL CANCER</text>
+<text x="32" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.1" fill="#8C9099">FINE-TUNED LLM · RETROSPECTIVE COHORT</text>
+<line x1="32" y1="90" x2="608" y2="90" stroke="#DAD7CE" stroke-width="1"/>
+<text x="32" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">SENSITIVITY</text>
+<text x="340" y="128" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#14161A">73%</text>
+<rect x="32.0" y="138" width="308.0" height="12" rx="4" fill="#E1DFD8"/>
+<path d="M32.0 138 H252.84000000000003 A4 4 0 0 1 256.84000000000003 142 V146 A4 4 0 0 1 252.84000000000003 150 H32.0 Z" fill="#2B4ACB"/>
+<text x="32" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">SPECIFICITY</text>
+<text x="340" y="186" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#14161A">91%</text>
+<rect x="32.0" y="196" width="308.0" height="12" rx="4" fill="#E1DFD8"/>
+<path d="M32.0 196 H308.28 A4 4 0 0 1 312.28 200 V204 A4 4 0 0 1 308.28 208 H32.0 Z" fill="#2B4ACB"/>
+<text x="32.0" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#A9ADB4">0</text>
+<text x="340.0" y="240" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#A9ADB4">100</text>
+<line x1="376" y1="112" x2="376" y2="266" stroke="#DAD7CE" stroke-width="1"/>
+<text x="400" y="136" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">PATIENTS</text>
+<text x="608" y="136" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#14161A">1,953</text>
+<text x="400" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">HEALTH SYSTEMS</text>
+<text x="608" y="168" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#14161A">30</text>
+<text x="400" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">AGES</text>
+<text x="608" y="200" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#14161A">18–44</text>
+<text x="400" y="232" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="0.9" fill="#8C9099">MODEL</text>
+<text x="608" y="232" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#14161A">FINE-TUNED LLM</text>
+<line x1="32" y1="292" x2="608" y2="292" stroke="#DAD7CE" stroke-width="1"/>
+<text x="32" y="318" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="0.4" fill="#5A6270">SCREENING GUIDELINES EXCLUDE THIS AGE BAND</text>
+<text x="32" y="338" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="0.4" fill="#8C9099">AMIA 2025</text>
 </svg>
