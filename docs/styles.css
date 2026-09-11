@@ -287,16 +287,13 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 .navbar-brand:hover .navbar-title { color: var(--yk-accent); }
 
 /* ── Portrait ─────────────────────────────────────────────────────────────
-   The photo's cream studio wall clashed with the paper ground. A warm
-   monochrome pulls it into the palette; hover restores the full-colour
-   original, so the real photo is still one gesture away.                   */
+   Shown in colour. The earlier warm-monochrome filter existed only to stop a
+   textured cream studio wall clashing with the paper ground; the current
+   headshot has a clean neutral backdrop, so the photo can stand as shot.    */
 .yk-hero__portrait img {
-  filter: grayscale(1) sepia(0.28) saturate(1.12) contrast(1.05);
-  transition: filter 0.45s cubic-bezier(.22,1,.36,1);
   max-width: 10rem;
   border-radius: 2px;
 }
-.yk-hero__portrait img:hover { filter: none; }
 @media (min-width: 48rem) { .yk-hero { grid-template-columns: 1fr 10rem; } }
 
 /* ── Nav links ────────────────────────────────────────────────────────────

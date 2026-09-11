@@ -45,9 +45,6 @@ $footer-fg:            #9BA1AB !default;
 // Figures exported on a white canvas punch holes in a dark page. Opt in per image.
 img.dim { filter: brightness(0.86) contrast(1.04); }
 
-// Portrait: same warm monochrome as light, pulled down so it doesn't glare
-// against a near-black ground. Hover still restores the full-colour photo.
-.yk-hero__portrait img {
-  filter: grayscale(1) sepia(0.24) saturate(1.05) contrast(1.02) brightness(0.82) !important;
-}
-.yk-hero__portrait img:hover { filter: brightness(0.94) !important; }
+// The headshot's light backdrop would glare against a near-black ground, so
+// knock it back a little. Colour is otherwise left alone.
+.yk-hero__portrait img { filter: brightness(0.88) contrast(1.02); }
