@@ -51,17 +51,25 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 .yk-prose p:last-child { margin-bottom: 0; }
 
 /* ── Home: above the fold ───────────────────────────────────────────────── */
-.yk-hero {
+.yk-hero { padding-block: var(--s-7) var(--s-8); }
+
+/* Only the claim shares a row with the portrait. The prose and links below run
+   the full content column, so they align with Recent / Selected work and the
+   photo never reads as a detached side column. */
+.yk-hero__head {
   display: grid;
-  gap: var(--s-6);
   grid-template-columns: 1fr;
-  align-items: start;
-  padding-block: var(--s-7) var(--s-8);
+  gap: var(--s-5);
+  margin-bottom: var(--s-6);
 }
+.yk-hero__portrait { order: -1; }        /* narrow: avatar sits on top */
 @media (min-width: 48rem) {
-  .yk-hero { grid-template-columns: 1fr 9rem; gap: var(--s-8); }
-  .yk-hero__portrait { order: 2; }
-  .yk-hero__body     { order: 1; }
+  .yk-hero__head {
+    grid-template-columns: 1fr auto;
+    gap: var(--s-8);
+    align-items: center;                 /* circle centres against the claim */
+  }
+  .yk-hero__portrait { order: 0; }
 }
 
 .yk-hero__claim {
@@ -79,15 +87,18 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--yk-text-muted);
-  margin: 0 0 var(--s-5);
+  margin: 0;
 }
 .yk-hero__portrait img {
-  width: 100%;
-  max-width: 9rem;
-  height: auto;            /* no fixed ratio and no object-fit, so the photo is
-                              never cropped — whatever aspect it has, it keeps. */
-  border-radius: 3px;
+  width: 9rem;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
+}
+@media (min-width: 48rem) {
+  .yk-hero__portrait img { width: 11rem; }
 }
 .yk-hero__links {
   display: flex;
@@ -257,8 +268,10 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 
 /* Quarto adds its own heading margins; the hero grid owns this spacing. */
 .yk-hero__claim { margin-top: 0; }
-.yk-hero__portrait { align-self: start; }
-.yk-hero__portrait img { margin: 0.4rem 0 0; }
+
+/* The hero intro is deliberately NOT held to --measure: matching the full
+   content width is what keeps it visually tied to the sections below. */
+.yk-hero__prose { max-width: none; }
 
 /* Hero links: accent, but underline only on hover so five in a row don't shout. */
 .yk-hero__links a { text-decoration: none; }
@@ -287,14 +300,11 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 .navbar-brand:hover .navbar-title { color: var(--yk-accent); }
 
 /* ── Portrait ─────────────────────────────────────────────────────────────
-   Shown in colour. The earlier warm-monochrome filter existed only to stop a
-   textured cream studio wall clashing with the paper ground; the current
-   headshot has a clean neutral backdrop, so the photo can stand as shot.    */
-.yk-hero__portrait img {
-  max-width: 10rem;
-  border-radius: 2px;
-}
-@media (min-width: 48rem) { .yk-hero { grid-template-columns: 1fr 10rem; } }
+   Shown in colour and as a LinkedIn-style circle. The source file
+   assets/images/profile-circle.jpg is a pre-cropped square — head and
+   shoulders, deliberately not a face-only crop — so the circle needs no
+   object-position nudging. Sizing lives with the .yk-hero__portrait rule
+   above; this block is just the note.                                      */
 
 /* ── Nav links ────────────────────────────────────────────────────────────
    Matched to the brand so the whole header reads as one mono system, and
