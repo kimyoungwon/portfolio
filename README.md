@@ -42,7 +42,7 @@ fields — no HTML, no templates, no touching the layout.
 
 | To add a… | Edit | Notes |
 |---|---|---|
-| Publication | `publications.yml` | `kind` groups the page. `year` shows in the left rail; `date` is only a sort key. |
+| Publication | `publications.yml` | `kind` groups the page. `year` shows in the left rail; `date` is only a sort key. Optional `status` (e.g. `"In press"`) prints after the venue; optional `link_label` renames the link. |
 | Presentation | `presentations.yml` | `when` is the display string (`"2026 · May"`); `date` only sorts. Optional `writeup` / `abstract` / `paper` / `slides` / `video` links. |
 | Course | `teaching.yml` | `role` groups the page: Lecturer → Computing Assistant → Teaching Assistant. |
 | Write-up / project | `writing.yml` | `group` is `Research write-ups` or `Earlier coursework`. **Give every card an `image`** — the CSS grid leaves holes otherwise. |
@@ -58,7 +58,7 @@ The bolded form **depends on the publication type**, matching how you cite yours
 
 | Group | Form used |
 |---|---|
-| Journal articles, Working papers, Preprints | `Kim, Y. W.` |
+| Accepted, Journal articles, Working papers, Preprints | `Kim, Y. W.` |
 | Conference proceedings | `Kim, Y.` |
 
 This distinction matters: the 2017 *Review of Educational Research* paper has a
@@ -67,8 +67,10 @@ The mapping lives in `_templates/pubs.ejs` (`selfFor`).
 
 ### Publication groups
 
-Rendered in this order: **Preprints & under review** → **Conference proceedings** →
-**Working papers** → **Journal articles**. The journal articles sit last because they
+Rendered in this order: **Accepted** → **Preprints & under review** → **Conference proceedings** →
+**Working papers** → **Journal articles**. *Accepted* holds work accepted but not yet
+published; once it is, move the entry to its final group and swap the preprint URL for the
+DOI. The journal articles sit last because they
 are mostly earlier educational-psychology work, not the current clinical-AI record.
 Change the order in `_templates/pubs.ejs`.
 

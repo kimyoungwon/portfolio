@@ -9,7 +9,8 @@ page-layout: article
   models on longitudinal EHR, LLM and multi-agent risk prediction, evaluation
   frameworks, and the MCP tooling that moves models into production. Ph.D. in
   Measurement &amp; Statistics (University of Washington), postdoctoral training in
-  causal inference (Harvard University).</p>
+  the CARES lab (Causality, Applications, and Research in Education and
+  Statistics), Harvard University.</p>
 </div>
 
 <p class="yk-eyebrow" style="margin-top:1.5rem">
@@ -22,15 +23,15 @@ page-layout: article
     <div class="yk-row__when">2024 –</div>
     <div>
       <div class="yk-row__what">Postdoctoral Researcher</div>
-      <p class="yk-row__where">AI &amp; Workflows team, Truveta · Bellevue, WA</p>
+      <p class="yk-row__where">Intelligence ML team, Truveta · Bellevue, WA</p>
     </div>
     <div class="yk-row__aside"></div>
   </div>
   <div class="yk-row">
     <div class="yk-row__when">2023 – 2024</div>
     <div>
-      <div class="yk-row__what">Postdoctoral Fellow, Causal Inference</div>
-      <p class="yk-row__where">Harvard University · Cambridge, MA</p>
+      <div class="yk-row__what">Postdoctoral Fellow</div>
+      <p class="yk-row__where">CARES lab (Causality, Applications, and Research in Education and Statistics), Harvard Graduate School of Education · Cambridge, MA</p>
     </div>
     <div class="yk-row__aside"></div>
   </div>

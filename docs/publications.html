@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-kind','listing-title','listing-authors','listing-venue','listing-detail','listing-year','listing-date','listing-url',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-kind','listing-title','listing-authors','listing-venue','listing-detail','listing-year','listing-date','listing-url','listing-status','listing-link_label',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-kind","listing-title","listing-authors","listing-venue","listing-detail","listing-year","listing-date","listing-url"],
+      searchColumns: ["listing-kind","listing-title","listing-authors","listing-venue","listing-detail","listing-year","listing-date","listing-url","listing-status","listing-link_label"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -420,7 +420,7 @@ window.Quarto = {
 <div class="quarto-listing quarto-listing-container-custom" id="listing-pubs">
 <section class="yk-section">
 <h2 class="anchored">
-Preprints &amp; under review
+Accepted
 </h2>
 <article class="yk-pub">
 <div class="yk-index">
@@ -434,13 +434,18 @@ Preprints &amp; under review
 Zeng, S., <b>Kim, Y. W.</b>, Lau, W., Alipour, E., Etzioni, R., Yetisgen, M., &amp; Oka, A.
 </p>
 <p class="yk-pub__meta">
-<span class="venue">arXiv preprint</span><span class="yk-dot">·</span>arXiv:2604.10386
+<span class="venue">npj Digital Medicine</span><span class="yk-dot">·</span>In press<span class="yk-dot">·</span>arXiv:2604.10386
 </p>
 <p class="yk-pub__links">
-<a href="https://arxiv.org/abs/2604.10386">Link</a>
+<a href="https://arxiv.org/abs/2604.10386">Preprint</a>
 </p>
 </div>
 </article>
+</section>
+<section class="yk-section">
+<h2 class="anchored">
+Preprints &amp; under review
+</h2>
 <article class="yk-pub">
 <div class="yk-index">
 2026

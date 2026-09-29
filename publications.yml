@@ -3,7 +3,11 @@
 #   year  — the printed/citation year. Also drives the left rail.
 #   date  — sort key only. Use <citation year>-MM-DD.
 #   authors — plain text. Your own name is bolded automatically.
-#   kind    — groups the page: Journal articles / Conference proceedings / Working papers.
+#   kind    — groups the page: Accepted / Preprints & under review /
+#             Conference proceedings / Working papers / Journal articles.
+# Optional:
+#   status     — printed after the venue, e.g. "In press" for accepted work.
+#   link_label — text for the url link (default: "DOI" for journal articles, else "Link").
 # ─────────────────────────────────────────────────────────────────────────────
 
 - kind: "Conference proceedings"
@@ -33,14 +37,16 @@
   date: 2026-05-14
   url: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055"
 
-- kind: "Preprints & under review"
+- kind: "Accepted"
   title: "TrajOnco: A multi-agent framework for temporal reasoning over longitudinal EHR for multi-cancer early detection"
   authors: "Zeng, S., Kim, Y. W., Lau, W., Alipour, E., Etzioni, R., Yetisgen, M., & Oka, A."
-  venue: "arXiv preprint"
+  venue: "npj Digital Medicine"
+  status: "In press"
   detail: "arXiv:2604.10386"
   year: 2026
   date: 2026-04-12
   url: "https://arxiv.org/abs/2604.10386"
+  link_label: "Preprint"
 
 - kind: "Preprints & under review"
   title: "Electronic health record-based estimation of Kansas City Cardiomyopathy Questionnaire scores in heart failure"
