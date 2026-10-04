@@ -22,7 +22,7 @@ page-layout: article
   <div class="yk-row">
     <div class="yk-row__when">2024 –</div>
     <div>
-      <div class="yk-row__what">Postdoctoral Researcher</div>
+      <div class="yk-row__what">Machine Learning Postdoctoral Researcher</div>
       <p class="yk-row__where">Intelligence ML team, Truveta · Bellevue, WA</p>
     </div>
     <div class="yk-row__aside"></div>
@@ -52,6 +52,14 @@ page-layout: article
     <div>
       <div class="yk-row__what">Educational Psychology</div>
       <p class="yk-row__where">University of Texas at Austin · Austin, TX</p>
+    </div>
+    <div class="yk-row__aside"></div>
+  </div>
+  <div class="yk-row">
+    <div class="yk-row__when">B.A.</div>
+    <div>
+      <div class="yk-row__what">International &amp; Area Studies, Counseling Psychology, &amp; Social Welfare</div>
+      <p class="yk-row__where">Handong Global University · Pohang, South Korea</p>
     </div>
     <div class="yk-row__aside"></div>
   </div>

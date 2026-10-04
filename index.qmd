@@ -10,7 +10,7 @@ page-layout: article
   <div class="yk-hero__head">
     <div class="yk-hero__headline">
       <div class="yk-hero__claim" role="heading" aria-level="1">I build clinical AI systems — and the evidence that they work.</div>
-      <p class="yk-hero__identity">Postdoctoral Researcher · Truveta · Bellevue, WA</p>
+      <p class="yk-hero__identity">Machine Learning Postdoctoral Researcher · Truveta · Bellevue, WA</p>
     </div>
     <div class="yk-hero__portrait">
       <img src="assets/images/profile-circle.jpg" alt="Youngwon Kim" width="512" height="512">
@@ -64,7 +64,7 @@ page-layout: article
 <div class="yk-row__when">2026 · May</div>
 <div>
 <div class="yk-row__what">Multi-agent LLM framework predicts one-year risk across multiple cancers</div>
-<p class="yk-row__where">American Society of Clinical Oncology (ASCO) · Chicago, IL</p>
+<p class="yk-row__where">Oral presentation · American Society of Clinical Oncology (ASCO) · Chicago, IL</p>
 </div>
 <div class="yk-row__aside"></div>
 </div>

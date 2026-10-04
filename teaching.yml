@@ -5,7 +5,7 @@
   date: 2021-07-01
   when: "Summers 2020, 2021"
   title: "Online Summer Workshop on Applied Statistics"
-  venue: "Handong Global University"
+  venue: "School of Counseling Psychology and Social Welfare, Handong Global University"
   location: "Pohang, South Korea"
   links:
     - text: "Syllabus 2020"
@@ -40,6 +40,13 @@
   links:
     - text: "Syllabus"
       url: "assets/files/PSYCH209Syllabus.pdf"
+
+- role: "Teaching Assistant"
+  date: 2017-10-01
+  when: "Autumn 2017"
+  title: "EDPSY 302: Child Development and Learning"
+  venue: "College of Education, University of Washington"
+  location: "Seattle, WA"
 
 - role: "Teaching Assistant"
   date: 2017-01-01

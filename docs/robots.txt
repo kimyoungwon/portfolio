@@ -1,1 +1,1 @@
-Sitemap: https://kimyoungwon.github.io/sitemap.xml
+Sitemap: https://kimyoungwon.github.io/portfolio/sitemap.xml

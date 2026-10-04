@@ -1,54 +1,123 @@
 # ADDING A TALK: copy a block. `when` is what displays; `date` only sorts.
-# `kind` groups the list: invited | conference
+# `kind` groups the list (invited talks render first): invited | conference
+# `format` is printed after the location: Invited talk, Oral presentation, Poster, Paper, …
+# Links (all optional): paper, abstract, writeup, slides, video, event
+
+# ── Invited talks ────────────────────────────────────────────────────────────
 
 - when: "2026 · May"
-  date: 2026-05-17
-  kind: conference
-  title: "Can a generative patient journey foundation model alleviate the burden of cancer screening?"
-  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
-  location: "Philadelphia, PA"
-  note: "Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data."
-  writeup: "https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/"
-  abstract: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097"
+  date: 2026-05-15
+  kind: invited
+  title: "Research with healthcare databases"
+  venue: "AI in Therapeutic Science, Gachon University"
+  location: "South Korea (online)"
+  format: "Invited talk"
+
+- when: "2026 · Jan"
+  date: 2026-01-15
+  kind: invited
+  title: "Clinical AI research with large-scale healthcare data"
+  venue: "Healthcare Simulation and Optimization Lab, Incheon National University"
+  location: "South Korea (online)"
+  format: "Invited talk"
+
+- when: "2024 · Nov"
+  date: 2024-11-15
+  kind: invited
+  title: "Large language model research in education"
+  venue: "VIP Data-Driven Education program, Georgia Institute of Technology"
+  location: "Atlanta, GA (online)"
+  format: "Invited talk"
+
+- when: "2023 · Oct"
+  date: 2023-10-20
+  kind: invited
+  title: "Modern prediction algorithms for factor analyses: Comparing accuracy-efficiency trade-offs"
+  venue: "Mathematical Sciences Research Seminar, Bentley University"
+  location: "Waltham, MA (online)"
+  format: "Invited talk"
+  event: "https://events.bentley.edu/event/mathematical_sciences_research_seminar_9062"
+
+- when: "2023 · Oct"
+  date: 2023-10-10
+  kind: invited
+  title: "Enhancing factor analysis: Evaluating factor retention accuracy with measurement error"
+  venue: "CARES Lab, Harvard Graduate School of Education / Harvard Department of Statistics"
+  location: "Cambridge, MA"
+  format: "Invited talk"
+
+- when: "2021 · Apr"
+  date: 2021-04-15
+  kind: invited
+  title: "Racism and the racialized experience among Asian international students in the U.S."
+  venue: "ACPA 2021 International Colloquium: Support for international students during and after COVID-19"
+  location: "Online"
+  format: "Invited panel"
+  event: "https://myacpa.org/2021-international-colloquium/"
+
+- when: "2020 · Jul"
+  date: 2020-07-15
+  kind: invited
+  title: "Racism and racialized identities: The experience among Asian international students in the United States"
+  venue: "ACPA Commission for Global Dimensions of Student Development"
+  location: "Online"
+  format: "Invited panel"
+
+# ── Conference presentations ─────────────────────────────────────────────────
 
 - when: "2026 · May"
   date: 2026-05-29
   kind: conference
-  title: "Multi-agent LLM framework predicts one-year risk across multiple cancers"
+  title: "Predicting multi-cancer risk from EHR data using multi-agent LLMs"
   venue: "American Society of Clinical Oncology (ASCO)"
   location: "Chicago, IL"
+  format: "Oral presentation"
   note: "TrajOnco estimated one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80."
   writeup: "https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/"
-  abstract: "https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.16_suppl.10501"
+  abstract: "https://doi.org/10.1200/JCO.2026.44.16_suppl.10501"
 
 - when: "2026 · May"
   date: 2026-05-20
   kind: conference
-  title: "Zero-shot chain-of-agents framework predicts one-year lung cancer risk directly from longitudinal EHR"
+  title: "Zero-shot lung cancer risk prediction from longitudinal electronic health records with chain-of-agents framework"
   venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
   location: "Philadelphia, PA"
+  format: "Poster"
   note: "AUROC 0.871 (95% CI 0.855–0.885) with no model training or feature engineering."
   writeup: "https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/"
-  abstract: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043"
+  abstract: "https://doi.org/10.1016/j.jval.2026.03.1566"
 
 - when: "2026 · May"
   date: 2026-05-19
   kind: conference
-  title: "Patient journey foundation models improve EHR data quality through unit of measure imputation"
+  title: "Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records"
   venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
   location: "Philadelphia, PA"
-  note: "98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units."
-  writeup: "https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/"
-  abstract: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055"
+  format: "Poster"
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/"
+  abstract: "https://doi.org/10.1016/j.jval.2026.03.1567"
 
 - when: "2026 · May"
   date: 2026-05-18
   kind: conference
-  title: "Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records"
+  title: "Can a generative patient journey foundation model alleviate the burden of cancer screening?"
   venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
   location: "Philadelphia, PA"
-  writeup: "https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/"
-  abstract: "https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667"
+  format: "Poster"
+  note: "Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data."
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/"
+  abstract: "https://doi.org/10.1016/j.jval.2026.03.1671"
+
+- when: "2026 · May"
+  date: 2026-05-17
+  kind: conference
+  title: "Patient journey foundation model for scalable imputation of missing units of measurement in electronic health records data"
+  venue: "International Society for Pharmacoeconomics and Outcomes Research (ISPOR)"
+  location: "Philadelphia, PA"
+  format: "Poster"
+  note: "98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units."
+  writeup: "https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/"
+  abstract: "https://doi.org/10.1016/j.jval.2026.03.2128"
 
 - when: "2025 · Nov"
   date: 2025-11-15
@@ -56,6 +125,7 @@
   title: "Predicting early-onset colorectal cancer with large language models"
   venue: "American Medical Informatics Association (AMIA)"
   location: "Atlanta, GA"
+  format: "Paper"
   note: "Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients."
   writeup: "https://www.truveta.com/blog/research/predicting-early-onset-colorectal-cancer-with-large-language-models/"
   paper: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12919599/"
@@ -66,8 +136,9 @@
   title: "Development and validation of machine learning risk prediction models for detection of early-onset colorectal cancer: Data from 30 health systems in the United States"
   venue: "American Society of Clinical Oncology (ASCO)"
   location: "Chicago, IL"
+  format: "Poster"
   writeup: "https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/"
-  abstract: "https://ascopubs.org/doi/abs/10.1200/JCO.2025.43.16_suppl.3613"
+  abstract: "https://doi.org/10.1200/JCO.2025.43.16_suppl.3613"
 
 - when: "2024 · Aug"
   date: 2024-08-05
@@ -75,6 +146,7 @@
   title: "ChatGPT vs. machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring"
   venue: "Joint Statistical Meetings (JSM)"
   location: "Portland, OR"
+  format: "Paper"
 
 - when: "2024 · Apr"
   date: 2024-04-11
@@ -82,13 +154,15 @@
   title: "Enhancing factor analysis: Evaluating factor retention accuracy with measurement error"
   venue: "American Educational Research Association (AERA)"
   location: "Philadelphia, PA"
+  format: "Paper"
 
 - when: "2024 · Mar"
   date: 2024-03-14
   kind: conference
-  title: "ChatGPT vs. machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring"
+  title: "Assessing essay grading with machine learning and large language models: A comparative study on efficacy and accuracy"
   venue: "Association for Education Finance & Policy (AEFP)"
   location: "Baltimore, MD"
+  format: "Paper"
 
 - when: "2023 · Jul"
   date: 2023-07-24
@@ -96,6 +170,7 @@
   title: "Exploratory measurement modeling with Lasso"
   venue: "International Meeting of the Psychometric Society (IMPS)"
   location: "College Park, MD"
+  format: "Paper"
 
 - when: "2023 · Apr"
   date: 2023-04-12
@@ -103,6 +178,7 @@
   title: "Exploratory measurement modeling with Lasso"
   venue: "National Council on Measurement in Education (NCME)"
   location: "Chicago, IL"
+  format: "Paper"
 
 - when: "2022 · Apr"
   date: 2022-04-21
@@ -110,6 +186,7 @@
   title: "Strive to survive in a pandemic in a foreign country: Korean international students' well-being during COVID-19"
   venue: "American Educational Research Association (AERA)"
   location: "San Diego, CA"
+  format: "Paper"
 
 - when: "2021 · Jun"
   date: 2021-06-11
@@ -117,6 +194,7 @@
   title: "Measuring item process data with network analysis methods"
   venue: "National Council on Measurement in Education (NCME)"
   location: "Online"
+  format: "Paper"
 
 - when: "2021 · Apr"
   date: 2021-04-11
@@ -124,6 +202,7 @@
   title: "Examining differences in the retention and mobility of teachers of color by racial/ethnic group"
   venue: "American Educational Research Association (AERA)"
   location: "Online"
+  format: "Paper"
 
 - when: "2021 · Apr"
   date: 2021-04-09
@@ -131,6 +210,7 @@
   title: "Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model"
   venue: "American Educational Research Association (AERA)"
   location: "Online"
+  format: "Paper"
 
 - when: "2021 · Apr"
   date: 2021-04-08
@@ -138,3 +218,125 @@
   title: "What does it mean to be an Asian in a pandemic? Exploring experiences of racism and discrimination among Asian international students in the United States during COVID-19"
   venue: "American Educational Research Association (AERA)"
   location: "Online"
+  format: "Paper"
+
+- when: "2020 · Apr"
+  date: 2020-04-20
+  kind: conference
+  title: "Executive function difficulty, self-esteem, happiness, gender, and parent's income as the predictors of digital addiction"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Francisco, CA"
+  format: "Paper accepted; conference canceled"
+
+- when: "2020 · Apr"
+  date: 2020-04-19
+  kind: conference
+  title: "What makes them happy? A qualitative study on Korean international graduate students' experiences and psychological well-being"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Francisco, CA"
+  format: "Paper accepted; conference canceled"
+
+- when: "2020 · Apr"
+  date: 2020-04-16
+  kind: conference
+  title: "Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model"
+  venue: "Korean-American Educational Researchers Association (KAERA)"
+  location: "San Francisco, CA"
+  format: "Paper accepted; conference canceled"
+
+- when: "2020 · Apr"
+  date: 2020-04-15
+  kind: conference
+  title: "The effectiveness of focusing art therapy on PTSD and cultural adjustment among North Korean refugee girls"
+  venue: "Korean-American Educational Researchers Association (KAERA)"
+  location: "San Francisco, CA"
+  format: "Paper accepted; conference canceled"
+
+- when: "2019 · Apr"
+  date: 2019-04-06
+  kind: conference
+  title: "Trajectories of parents' socioeconomic status, child-parent interaction, children's self-control, school readiness, and academic performance"
+  venue: "American Educational Research Association (AERA)"
+  location: "Toronto, ON"
+  format: "Paper"
+  slides: "https://docs.google.com/presentation/d/1ZN4aDZzsOtd8FRu4JvSlWoBJdMQNfzAx7QQ1aIHmZ0A/edit?usp=sharing"
+
+- when: "2019 · Apr"
+  date: 2019-04-04
+  kind: conference
+  title: "What makes them happy? Korean international graduate students' personal and professional experiences and emotional health"
+  venue: "Korean-American Educational Researchers Association (KAERA)"
+  location: "Toronto, ON"
+  format: "Paper"
+
+- when: "2019 · Mar"
+  date: 2019-03-05
+  kind: conference
+  title: "What makes them happy? Asian international graduate students' personal and professional experiences and emotional health"
+  venue: "ACPA – College Student Educators International"
+  location: "Boston, MA"
+  format: "Paper"
+
+- when: "2017 · Apr"
+  date: 2017-04-30
+  kind: conference
+  title: "A meta-analysis of noncognitive factors and community college student success at 4-year institutions"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Antonio, TX"
+  format: "Paper"
+
+- when: "2017 · Apr"
+  date: 2017-04-29
+  kind: conference
+  title: "Do noncognitive interventions enhance community college student success? A systematic review and meta-analysis"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Antonio, TX"
+  format: "Paper"
+
+- when: "2017 · Apr"
+  date: 2017-04-28
+  kind: conference
+  title: "Self-kindness in the face of criticism: Self-compassion influences undergraduates' perceptions of constructive feedback"
+  venue: "American Educational Research Association (AERA)"
+  location: "San Antonio, TX"
+  format: "Paper"
+
+- when: "2016 · Aug"
+  date: 2016-08-15
+  kind: conference
+  title: "A meta-analysis of noncognitive factors and community college transfer student success at four-year institutions"
+  venue: "Texas Higher Education Symposium"
+  location: "Austin, TX"
+  format: "Paper"
+
+- when: "2016 · Apr"
+  date: 2016-04-10
+  kind: conference
+  title: "Psychosocial and self-regulatory correlates of community college student success: A systematic review and meta-analysis"
+  venue: "American Educational Research Association (AERA)"
+  location: "Washington, DC"
+  format: "Paper"
+
+- when: "2016 · Apr"
+  date: 2016-04-09
+  kind: conference
+  title: "Making feedback constructive: The interplay of undergraduates' mastery goal orientation with feedback specificity and friendliness"
+  venue: "American Educational Research Association (AERA)"
+  location: "Washington, DC"
+  format: "Paper"
+
+- when: "2016 · Apr"
+  date: 2016-04-05
+  kind: conference
+  title: "Make up your mind: A person-centered approach to growth and fixed mindsets among Chinese undergraduates"
+  venue: "Chinese American Educational Research & Development Association (CAERDA)"
+  location: "Washington, DC"
+  format: "Paper"
+
+- when: "2016 · Mar"
+  date: 2016-03-15
+  kind: conference
+  title: "A meta-analysis on critical thinking and community college student achievement"
+  venue: "Council for the Study of Community Colleges (CSCC)"
+  location: "Plano, TX"
+  format: "Paper"

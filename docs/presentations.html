@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-when','listing-date','listing-kind','listing-title','listing-venue','listing-location','listing-note','listing-writeup','listing-abstract','listing-paper',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-when','listing-date','listing-kind','listing-title','listing-venue','listing-location','listing-format','listing-event','listing-note','listing-writeup','listing-abstract','listing-paper','listing-slides',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-when","listing-date","listing-kind","listing-title","listing-venue","listing-location","listing-note","listing-writeup","listing-abstract","listing-paper"],
+      searchColumns: ["listing-when","listing-date","listing-kind","listing-title","listing-venue","listing-location","listing-format","listing-event","listing-note","listing-writeup","listing-abstract","listing-paper","listing-slides"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -409,13 +409,17 @@ window.Quarto = {
 
 
 <div class="yk-prose">
-  <p>Conference talks, posters, and abstracts, most recent first.</p>
+  <p>Invited talks and conference presentations, most recent first.</p>
 </div>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-custom" id="listing-presentations">
+<section class="yk-section">
+<h2 class="anchored">
+Invited talks
+</h2>
 <div class="yk-rows">
 <div class="yk-row">
 <div class="yk-row__when">
@@ -423,17 +427,136 @@ window.Quarto = {
 </div>
 <div>
 <div class="yk-row__what">
-Multi-agent LLM framework predicts one-year risk across multiple cancers
+Research with healthcare databases
 </div>
 <p class="yk-row__where">
-American Society of Clinical Oncology (ASCO) · Chicago, IL
+AI in Therapeutic Science, Gachon University · South Korea (online) · Invited talk
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2026 · Jan
+</div>
+<div>
+<div class="yk-row__what">
+Clinical AI research with large-scale healthcare data
+</div>
+<p class="yk-row__where">
+Healthcare Simulation and Optimization Lab, Incheon National University · South Korea (online) · Invited talk
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2024 · Nov
+</div>
+<div>
+<div class="yk-row__what">
+Large language model research in education
+</div>
+<p class="yk-row__where">
+VIP Data-Driven Education program, Georgia Institute of Technology · Atlanta, GA (online) · Invited talk
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2023 · Oct
+</div>
+<div>
+<div class="yk-row__what">
+Modern prediction algorithms for factor analyses: Comparing accuracy-efficiency trade-offs
+</div>
+<p class="yk-row__where">
+Mathematical Sciences Research Seminar, Bentley University · Waltham, MA (online) · Invited talk
+</p>
+</div>
+<div class="yk-row__aside">
+<a href="https://events.bentley.edu/event/mathematical_sciences_research_seminar_9062">Event</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2023 · Oct
+</div>
+<div>
+<div class="yk-row__what">
+Enhancing factor analysis: Evaluating factor retention accuracy with measurement error
+</div>
+<p class="yk-row__where">
+CARES Lab, Harvard Graduate School of Education / Harvard Department of Statistics · Cambridge, MA · Invited talk
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2021 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Racism and the racialized experience among Asian international students in the U.S.
+</div>
+<p class="yk-row__where">
+ACPA 2021 International Colloquium: Support for international students during and after COVID-19 · Online · Invited panel
+</p>
+</div>
+<div class="yk-row__aside">
+<a href="https://myacpa.org/2021-international-colloquium/">Event</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2020 · Jul
+</div>
+<div>
+<div class="yk-row__what">
+Racism and racialized identities: The experience among Asian international students in the United States
+</div>
+<p class="yk-row__where">
+ACPA Commission for Global Dimensions of Student Development · Online · Invited panel
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+</div>
+</section>
+<section class="yk-section">
+<h2 class="anchored">
+Conference presentations
+</h2>
+<div class="yk-rows">
+<div class="yk-row">
+<div class="yk-row__when">
+2026 · May
+</div>
+<div>
+<div class="yk-row__what">
+Predicting multi-cancer risk from EHR data using multi-agent LLMs
+</div>
+<p class="yk-row__where">
+American Society of Clinical Oncology (ASCO) · Chicago, IL · Oral presentation
 </p>
 <p class="yk-row__where">
 TrajOnco estimated one-year risk across 15 cancer types directly from longitudinal EHR, with AUROCs of 0.64–0.80.
 </p>
 </div>
 <div class="yk-row__aside">
-<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.16_suppl.10501">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/">Write-up</a>
+<a href="https://doi.org/10.1200/JCO.2026.44.16_suppl.10501">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/multi-agent-llm-cancer-risk-prediction/">Write-up</a>
 </div>
 </div>
 <div class="yk-row">
@@ -442,36 +565,17 @@ TrajOnco estimated one-year risk across 15 cancer types directly from longitudin
 </div>
 <div>
 <div class="yk-row__what">
-Zero-shot chain-of-agents framework predicts one-year lung cancer risk directly from longitudinal EHR
+Zero-shot lung cancer risk prediction from longitudinal electronic health records with chain-of-agents framework
 </div>
 <p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA · Poster
 </p>
 <p class="yk-row__where">
 AUROC 0.871 (95% CI 0.855–0.885) with no model training or feature engineering.
 </p>
 </div>
 <div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017043">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/">Write-up</a>
-</div>
-</div>
-<div class="yk-row">
-<div class="yk-row__when">
-2026 · May
-</div>
-<div>
-<div class="yk-row__what">
-Patient journey foundation models improve EHR data quality through unit of measure imputation
-</div>
-<p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
-</p>
-<p class="yk-row__where">
-98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units.
-</p>
-</div>
-<div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526017055">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/">Write-up</a>
+<a href="https://doi.org/10.1016/j.jval.2026.03.1566">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-trajonco-multi-cancer-early-detection/">Write-up</a>
 </div>
 </div>
 <div class="yk-row">
@@ -483,11 +587,11 @@ International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Phi
 Characterizing oncology patient journeys and health state transitions using a data-driven Markov transition matrix in large-scale electronic health records
 </div>
 <p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA · Poster
 </p>
 </div>
 <div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526022667">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/">Write-up</a>
+<a href="https://doi.org/10.1016/j.jval.2026.03.1567">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-oncology-patient-journeys-markov-transition-matrix/">Write-up</a>
 </div>
 </div>
 <div class="yk-row">
@@ -499,14 +603,33 @@ International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Phi
 Can a generative patient journey foundation model alleviate the burden of cancer screening?
 </div>
 <p class="yk-row__where">
-International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA · Poster
 </p>
 <p class="yk-row__where">
 Evaluated on 1.42M patient records across four cancer types: specificity 0.89–0.98, NPV 0.85–0.94, with no labeled training data.
 </p>
 </div>
 <div class="yk-row__aside">
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1098301526018097">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/">Write-up</a>
+<a href="https://doi.org/10.1016/j.jval.2026.03.1671">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-patient-journey-foundation-model-cancer-screening/">Write-up</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2026 · May
+</div>
+<div>
+<div class="yk-row__what">
+Patient journey foundation model for scalable imputation of missing units of measurement in electronic health records data
+</div>
+<p class="yk-row__where">
+International Society for Pharmacoeconomics and Outcomes Research (ISPOR) · Philadelphia, PA · Poster
+</p>
+<p class="yk-row__where">
+98% accuracy imputing missing or incorrect units of measure across 438 unique UCUM units.
+</p>
+</div>
+<div class="yk-row__aside">
+<a href="https://doi.org/10.1016/j.jval.2026.03.2128">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/ispor-2026-foundation-model-uom-imputation-ehr-data/">Write-up</a>
 </div>
 </div>
 <div class="yk-row">
@@ -518,7 +641,7 @@ Evaluated on 1.42M patient records across four cancer types: specificity 0.89–
 Predicting early-onset colorectal cancer with large language models
 </div>
 <p class="yk-row__where">
-American Medical Informatics Association (AMIA) · Atlanta, GA
+American Medical Informatics Association (AMIA) · Atlanta, GA · Paper
 </p>
 <p class="yk-row__where">
 Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients.
@@ -537,11 +660,11 @@ Fine-tuned LLM reached 73% sensitivity at 91% specificity across 1,953 patients.
 Development and validation of machine learning risk prediction models for detection of early-onset colorectal cancer: Data from 30 health systems in the United States
 </div>
 <p class="yk-row__where">
-American Society of Clinical Oncology (ASCO) · Chicago, IL
+American Society of Clinical Oncology (ASCO) · Chicago, IL · Poster
 </p>
 </div>
 <div class="yk-row__aside">
-<a href="https://ascopubs.org/doi/abs/10.1200/JCO.2025.43.16_suppl.3613">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/">Write-up</a>
+<a href="https://doi.org/10.1200/JCO.2025.43.16_suppl.3613">Abstract</a><span class="yk-dot">·</span><a href="https://www.truveta.com/blog/research/research-insights/asco-2025-machine-learning-colorectal-cancer/">Write-up</a>
 </div>
 </div>
 <div class="yk-row">
@@ -553,7 +676,7 @@ American Society of Clinical Oncology (ASCO) · Chicago, IL
 ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
 </div>
 <p class="yk-row__where">
-Joint Statistical Meetings (JSM) · Portland, OR
+Joint Statistical Meetings (JSM) · Portland, OR · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -569,7 +692,7 @@ Joint Statistical Meetings (JSM) · Portland, OR
 Enhancing factor analysis: Evaluating factor retention accuracy with measurement error
 </div>
 <p class="yk-row__where">
-American Educational Research Association (AERA) · Philadelphia, PA
+American Educational Research Association (AERA) · Philadelphia, PA · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -582,10 +705,10 @@ American Educational Research Association (AERA) · Philadelphia, PA
 </div>
 <div>
 <div class="yk-row__what">
-ChatGPT vs.&nbsp;machine learning: Assessing the efficacy and accuracy of large language models for automated essay scoring
+Assessing essay grading with machine learning and large language models: A comparative study on efficacy and accuracy
 </div>
 <p class="yk-row__where">
-Association for Education Finance &amp; Policy (AEFP) · Baltimore, MD
+Association for Education Finance &amp; Policy (AEFP) · Baltimore, MD · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -601,7 +724,7 @@ Association for Education Finance &amp; Policy (AEFP) · Baltimore, MD
 Exploratory measurement modeling with Lasso
 </div>
 <p class="yk-row__where">
-International Meeting of the Psychometric Society (IMPS) · College Park, MD
+International Meeting of the Psychometric Society (IMPS) · College Park, MD · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -617,7 +740,7 @@ International Meeting of the Psychometric Society (IMPS) · College Park, MD
 Exploratory measurement modeling with Lasso
 </div>
 <p class="yk-row__where">
-National Council on Measurement in Education (NCME) · Chicago, IL
+National Council on Measurement in Education (NCME) · Chicago, IL · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -633,7 +756,7 @@ National Council on Measurement in Education (NCME) · Chicago, IL
 Strive to survive in a pandemic in a foreign country: Korean international students’ well-being during COVID-19
 </div>
 <p class="yk-row__where">
-American Educational Research Association (AERA) · San Diego, CA
+American Educational Research Association (AERA) · San Diego, CA · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -649,7 +772,7 @@ American Educational Research Association (AERA) · San Diego, CA
 Measuring item process data with network analysis methods
 </div>
 <p class="yk-row__where">
-National Council on Measurement in Education (NCME) · Online
+National Council on Measurement in Education (NCME) · Online · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -665,7 +788,7 @@ National Council on Measurement in Education (NCME) · Online
 Examining differences in the retention and mobility of teachers of color by racial/ethnic group
 </div>
 <p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+American Educational Research Association (AERA) · Online · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -681,7 +804,7 @@ American Educational Research Association (AERA) · Online
 Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model
 </div>
 <p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+American Educational Research Association (AERA) · Online · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -697,7 +820,247 @@ American Educational Research Association (AERA) · Online
 What does it mean to be an Asian in a pandemic? Exploring experiences of racism and discrimination among Asian international students in the United States during COVID-19
 </div>
 <p class="yk-row__where">
-American Educational Research Association (AERA) · Online
+American Educational Research Association (AERA) · Online · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2020 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Executive function difficulty, self-esteem, happiness, gender, and parent’s income as the predictors of digital addiction
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Francisco, CA · Paper accepted; conference canceled
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2020 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+What makes them happy? A qualitative study on Korean international graduate students’ experiences and psychological well-being
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Francisco, CA · Paper accepted; conference canceled
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2020 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Understanding the role of academic achievement and psychosocial factors on adolescent depression: A latent growth model
+</div>
+<p class="yk-row__where">
+Korean-American Educational Researchers Association (KAERA) · San Francisco, CA · Paper accepted; conference canceled
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2020 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+The effectiveness of focusing art therapy on PTSD and cultural adjustment among North Korean refugee girls
+</div>
+<p class="yk-row__where">
+Korean-American Educational Researchers Association (KAERA) · San Francisco, CA · Paper accepted; conference canceled
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2019 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Trajectories of parents’ socioeconomic status, child-parent interaction, children’s self-control, school readiness, and academic performance
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Toronto, ON · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+<a href="https://docs.google.com/presentation/d/1ZN4aDZzsOtd8FRu4JvSlWoBJdMQNfzAx7QQ1aIHmZ0A/edit?usp=sharing">Slides</a>
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2019 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+What makes them happy? Korean international graduate students’ personal and professional experiences and emotional health
+</div>
+<p class="yk-row__where">
+Korean-American Educational Researchers Association (KAERA) · Toronto, ON · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2019 · Mar
+</div>
+<div>
+<div class="yk-row__what">
+What makes them happy? Asian international graduate students’ personal and professional experiences and emotional health
+</div>
+<p class="yk-row__where">
+ACPA – College Student Educators International · Boston, MA · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2017 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+A meta-analysis of noncognitive factors and community college student success at 4-year institutions
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Antonio, TX · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2017 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Do noncognitive interventions enhance community college student success? A systematic review and meta-analysis
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Antonio, TX · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2017 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Self-kindness in the face of criticism: Self-compassion influences undergraduates’ perceptions of constructive feedback
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · San Antonio, TX · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2016 · Aug
+</div>
+<div>
+<div class="yk-row__what">
+A meta-analysis of noncognitive factors and community college transfer student success at four-year institutions
+</div>
+<p class="yk-row__where">
+Texas Higher Education Symposium · Austin, TX · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2016 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Psychosocial and self-regulatory correlates of community college student success: A systematic review and meta-analysis
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Washington, DC · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2016 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Making feedback constructive: The interplay of undergraduates’ mastery goal orientation with feedback specificity and friendliness
+</div>
+<p class="yk-row__where">
+American Educational Research Association (AERA) · Washington, DC · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2016 · Apr
+</div>
+<div>
+<div class="yk-row__what">
+Make up your mind: A person-centered approach to growth and fixed mindsets among Chinese undergraduates
+</div>
+<p class="yk-row__where">
+Chinese American Educational Research &amp; Development Association (CAERDA) · Washington, DC · Paper
+</p>
+</div>
+<div class="yk-row__aside">
+
+</div>
+</div>
+<div class="yk-row">
+<div class="yk-row__when">
+2016 · Mar
+</div>
+<div>
+<div class="yk-row__what">
+A meta-analysis on critical thinking and community college student achievement
+</div>
+<p class="yk-row__where">
+Council for the Study of Community Colleges (CSCC) · Plano, TX · Paper
 </p>
 </div>
 <div class="yk-row__aside">
@@ -705,6 +1068,7 @@ American Educational Research Association (AERA) · Online
 </div>
 </div>
 </div>
+</section>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -792,7 +1156,7 @@ American Educational Research Association (AERA) · Online
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kimyoungwon\.github\.io");
+        var filterRegex = new RegExp("https:\/\/kimyoungwon\.github\.io\/portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

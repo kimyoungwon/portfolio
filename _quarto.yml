@@ -9,7 +9,7 @@ project:
 website:
   title: "Youngwon Kim"
   description: "Machine learning researcher building and validating clinical AI: foundation models on longitudinal EHR, LLM and multi-agent risk prediction, and the evaluation frameworks that decide whether to trust them."
-  site-url: https://kimyoungwon.github.io
+  site-url: https://kimyoungwon.github.io/portfolio/
   navbar:
     logo: ""
     title: "Youngwon Kim"
