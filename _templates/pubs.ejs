@@ -9,7 +9,7 @@
    const rank  = (k) => { const i = TYPES.findIndex(([t]) => t === k); return i < 0 ? TYPES.length : i; };
    const label = (k) => (TYPES.find(([t]) => t === k) || [k, k])[1];
    // Sections by research area, current work first. Unknown areas render last under their raw name.
-   const AREAS = [["ai", "AI, machine learning & statistics"], ["edpsych", "Education & psychology"]];
+   const AREAS = [["ai", "AI, Machine Learning & Statistics"], ["edpsych", "Education & Psychology"]];
    const seen  = [...new Set(items.map(i => i.area))];
    const areas = AREAS.filter(([a]) => seen.includes(a)).concat(seen.filter(a => !AREAS.some(([k]) => k === a)).map(a => [a, a])); %>
 <% for (const [area, heading] of areas) {

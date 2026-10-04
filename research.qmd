@@ -13,9 +13,10 @@ page-layout: article
 <article class="yk-theme">
   <h2 class="yk-theme__title">Foundation models trained on patient journeys can predict what happens next — if the modeling respects the data</h2>
   <div class="yk-prose">
-    <p>On Truveta's Intelligence ML team I train and evaluate oncology foundation models on
-    longitudinal electronic health records, and build the LLM and machine learning
-    systems that turn them into risk predictions. <strong>TrajOnco</strong>, a
+    <p>On Truveta's Intelligence ML team I train and evaluate oncology-specific and
+    general-purpose clinical foundation models on longitudinal electronic health
+    records, and build the LLM and machine learning systems that turn them into risk
+    predictions for cancer and heart failure. <strong>TrajOnco</strong>, a
     training-free multi-agent framework, does temporal reasoning over sequential
     clinical events and reaches AUROCs of 0.64–0.80 across 15 cancer types with no
     task-specific training; a zero-shot chain-of-agents variant reaches 0.871 for
@@ -40,11 +41,12 @@ page-layout: article
     report their psychometric properties. I build the frameworks that establish
     validity and reliability before a metric is used to make a claim: <strong>evaluator
     calibration</strong>, benchmark quality, bias detection, and uncertainty
-    quantification — including clinical validity evaluation for the oncology
-    foundation models above, and
-    <strong>EHR-based estimation of KCCQ scores</strong> in heart failure, where
-    the whole question is whether a model-derived score means what the
-    patient-reported instrument means.</p>
+    quantification. For the foundation models above, that is a
+    <strong>multi-level benchmark suite</strong> that runs from low- and mid-level
+    tasks up to simulated real-world clinical cases, with checks for clinical
+    validity. In heart failure, it is <strong>EHR-based estimation of KCCQ
+    scores</strong>, where the whole question is whether a model-derived score
+    means what the patient-reported instrument means.</p>
     <p>Earlier: the <strong>rcttext</strong> R package for bringing NLP into
     randomized controlled trials at Harvard, and a comparative study of large
     language models against tree-based machine learning for high-stakes essay

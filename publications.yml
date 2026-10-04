@@ -5,7 +5,7 @@
 #   authors — plain text. Your own name is bolded automatically
 #             ("Kim, Y." in proceedings and abstracts, "Kim, Y. W." elsewhere).
 #   area    — which section the entry appears in (sections render in this order):
-#             ai = AI, machine learning & statistics / edpsych = Education & psychology.
+#             ai = AI, Machine Learning & Statistics / edpsych = Education & Psychology.
 #   kind    — publication type. Printed as a label on each entry, and sets order
 #             within a section, strongest first (order lives in _templates/pubs.ejs):
 #             Peer-reviewed articles / Peer-reviewed conference proceedings /
@@ -15,7 +15,7 @@
 #   link_label — text for the url link (default: "DOI" for doi.org links, else "Link").
 # ─────────────────────────────────────────────────────────────────────────────
 
-# ── AI, machine learning & statistics ────────────────────────────────────────
+# ── AI, Machine Learning & Statistics ────────────────────────────────────────
 
 - kind: "Peer-reviewed articles"
   area: "ai"
@@ -119,7 +119,7 @@
   date: 2025-06-01
   url: "https://doi.org/10.1200/JCO.2025.43.16_suppl.3613"
 
-# ── Education & psychology ───────────────────────────────────────────────────
+# ── Education & Psychology ───────────────────────────────────────────────────
 
 - kind: "Peer-reviewed articles"
   area: "edpsych"

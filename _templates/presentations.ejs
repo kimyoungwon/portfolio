@@ -1,4 +1,4 @@
-<% const groups = [["conference", "Conference presentations"], ["invited", "Invited talks"]]; %>
+<% const groups = [["conference", "Conference Presentations"], ["invited", "Invited Talks"]]; %>
 <% for (const [kind, label] of groups) { const rows = items.filter(i => i.kind === kind); if (!rows.length) continue; %>
 <section class="yk-section">
 <h2><%= label %></h2>
