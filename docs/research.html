@@ -365,9 +365,9 @@ ul.task-list li input[type="checkbox"] {
     clinical events and reaches AUROCs of 0.64–0.80 across 15 cancer types with no
     task-specific training; a zero-shot chain-of-agents variant reaches 0.871 for
     one-year lung cancer risk.</p>
-    <p>Alongside the risk models sit <strong>clinical NLU pipelines</strong> that pull
-    structured disease status and patient trajectories out of messy real-world text.
-    And the same patient-journey models do less glamorous but equally necessary
+    <p>Alongside the risk models sits <strong>clinical NLU</strong>: MCP tools that pull
+    structured disease status and patient trajectories out of messy real-world text,
+    with an agent framework that interprets what the models return. And the same patient-journey models do less glamorous but equally necessary
     work: imputing missing units of measure at 98% accuracy across 438 UCUM units,
     and deriving health-state transition matrices empirically rather than by
     assumption. High-dimensional temporal EHR data is not clean, and a model that
