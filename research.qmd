@@ -48,9 +48,10 @@ page-layout: article
     clinically plausible progression.</p>
     <p>In heart failure, <strong>EHR-based estimation of KCCQ scores</strong> turns on
     whether a model-derived score means what the patient-reported instrument means.
-    Earlier, at Harvard: testing LLM graders against human scores for high-stakes
+    Earlier, at Harvard, I tested LLM graders against human scores for high-stakes
     essay scoring, the reliability question behind any model-graded evaluation, and
-    the <strong>rcttext</strong> R package for text outcomes in randomized trials.</p>
+    helped develop <strong>rcttext</strong>, an R package for analyzing text outcomes
+    in randomized trials.</p>
   </div>
   <p class="yk-theme__related">
     Related: <a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">AEFP &amp; JSM 2024</a>
