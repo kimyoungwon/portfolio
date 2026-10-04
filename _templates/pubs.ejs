@@ -1,20 +1,30 @@
 <% const SHORT_SELF = ["Peer-reviewed conference proceedings", "Published conference abstracts"];
    const selfFor = (k) => SHORT_SELF.includes(k) ? "Kim, Y." : "Kim, Y. W.";
-   // Strongest work first: full peer-reviewed papers, then unreviewed papers, then abstracts.
-   const order = ["Peer-reviewed articles", "Peer-reviewed conference proceedings", "Preprints", "Working papers", "Published conference abstracts"];
-   const seen  = [...new Set(items.map(i => i.kind))];
-   const kinds = order.filter(k => seen.includes(k)).concat(seen.filter(k => !order.includes(k))); %>
-<% for (const kind of kinds) { %>
+   // Publication types, strongest first, with the label printed on each entry.
+   const TYPES = [["Peer-reviewed articles", "Journal article"],
+                  ["Peer-reviewed conference proceedings", "Conference paper"],
+                  ["Preprints", "Preprint"],
+                  ["Working papers", "Working paper"],
+                  ["Published conference abstracts", "Conference abstract"]];
+   const rank  = (k) => { const i = TYPES.findIndex(([t]) => t === k); return i < 0 ? TYPES.length : i; };
+   const label = (k) => (TYPES.find(([t]) => t === k) || [k, k])[1];
+   // Sections by research area, current work first. Unknown areas render last under their raw name.
+   const AREAS = [["ai", "AI, machine learning & statistics"], ["edpsych", "Education & psychology"]];
+   const seen  = [...new Set(items.map(i => i.area))];
+   const areas = AREAS.filter(([a]) => seen.includes(a)).concat(seen.filter(a => !AREAS.some(([k]) => k === a)).map(a => [a, a])); %>
+<% for (const [area, heading] of areas) {
+     // Within a section: by type, strongest first; items arrive newest-first and the sort is stable.
+     const rows = items.filter(i => i.area === area).sort((a, b) => rank(a.kind) - rank(b.kind)); %>
 <section class="yk-section">
-<h2><%= kind %></h2>
-<% for (const item of items.filter(i => i.kind === kind)) { %>
+<h2><%= heading %></h2>
+<% for (const item of rows) { %>
 <article class="yk-pub">
 <div class="yk-index"><%= item.year %></div>
 <div class="yk-pub__body">
 <h3 class="yk-pub__title"><% if (item.url) { %><a href="<%= item.url %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></h3>
 <p class="yk-pub__authors"><% const SELF = selfFor(item.kind); const parts = String(item.authors).split(SELF); for (let i = 0; i < parts.length; i++) { %><%= parts[i] %><% if (i < parts.length - 1) { %><b><%= SELF %></b><% } } %></p>
 <p class="yk-pub__meta"><span class="venue"><%= item.venue %></span><% if (item.status) { %><span class="yk-dot">·</span><%= item.status %><% } %><% if (item.detail) { %><span class="yk-dot">·</span><%= item.detail %><% } %></p>
-<p class="yk-pub__links"><% const ls=[]; if(item.url) ls.push([item.link_label || (/doi\.org\//.test(item.url)?"DOI":"Link"),item.url]); if(item.pdf) ls.push(['PDF',item.pdf]); if(item.code) ls.push(['Code',item.code]); for (let j=0;j<ls.length;j++) { %><% if (j>0) { %><span class="yk-dot">·</span><% } %><a href="<%= ls[j][1] %>"><%= ls[j][0] %></a><% } %></p>
+<p class="yk-pub__links"><span class="yk-pub__type"><%= label(item.kind) %></span><% const ls=[]; if(item.url) ls.push([item.link_label || (/doi\.org\//.test(item.url)?"DOI":"Link"),item.url]); if(item.pdf) ls.push(['PDF',item.pdf]); if(item.code) ls.push(['Code',item.code]); for (let j=0;j<ls.length;j++) { %><span class="yk-dot">·</span><a href="<%= ls[j][1] %>"><%= ls[j][0] %></a><% } %></p>
 </div>
 </article>
 <% } %>

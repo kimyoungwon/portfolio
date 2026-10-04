@@ -14,6 +14,6 @@ page-layout: article
 
 ```{=html}
 <div class="yk-prose">
-  <p>Invited talks and conference presentations, most recent first.</p>
+  <p>Conference presentations and invited talks, most recent first.</p>
 </div>
 ```

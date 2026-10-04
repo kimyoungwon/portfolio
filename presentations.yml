@@ -1,5 +1,6 @@
 # ADDING A TALK: copy a block. `when` is what displays; `date` only sorts.
-# `kind` groups the list (invited talks render first): invited | conference
+# `kind` groups the list (conference presentations render first): conference | invited
+# Invited talks start in 2023; earlier ones live only in the CV PDF.
 # `format` is printed after the location: Invited talk, Oral presentation, Poster, Paper, …
 # Links (all optional): paper, abstract, writeup, slides, video, event
 
@@ -45,25 +46,6 @@
   venue: "CARES Lab, Harvard Graduate School of Education / Harvard Department of Statistics"
   location: "Cambridge, MA"
   format: "Invited talk"
-
-- when: "2021 · Apr"
-  date: 2021-04-15
-  kind: invited
-  title: "Racism and the racialized experience among Asian international students in the U.S."
-  venue: "ACPA 2021 International Colloquium: Support for international students during and after COVID-19"
-  location: "Online"
-  format: "Invited panel"
-  event: "https://myacpa.org/2021-international-colloquium/"
-
-- when: "2020 · Jul"
-  date: 2020-07-15
-  kind: invited
-  title: "Racism and racialized identities: The experience among Asian international students in the United States"
-  venue: "ACPA Commission for Global Dimensions of Student Development"
-  location: "Online"
-  format: "Invited panel"
-
-# ── Conference presentations ─────────────────────────────────────────────────
 
 - when: "2026 · May"
   date: 2026-05-29

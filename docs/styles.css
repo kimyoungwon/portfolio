@@ -169,6 +169,7 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
   margin: 0;
 }
 .yk-pub__links a { color: var(--yk-accent); text-decoration: none; }
+.yk-pub__type { color: var(--yk-text-muted); }
 .yk-pub__links a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
 
 .yk-dot { color: var(--yk-text-faint); margin-inline: 0.5em; }

@@ -55,14 +55,6 @@ page-layout: article
     </div>
     <div class="yk-row__aside"></div>
   </div>
-  <div class="yk-row">
-    <div class="yk-row__when">B.A.</div>
-    <div>
-      <div class="yk-row__what">International &amp; Area Studies, Counseling Psychology, &amp; Social Welfare</div>
-      <p class="yk-row__where">Handong Global University · Pohang, South Korea</p>
-    </div>
-    <div class="yk-row__aside"></div>
-  </div>
 </section>
 
 <section class="yk-section">

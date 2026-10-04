@@ -14,7 +14,10 @@ page-layout: article
 
 ```{=html}
 <div class="yk-prose">
-  <p>Also on
+  <p>Current AI and statistics work first, then earlier education and psychology
+  research. Each section leads with peer-reviewed papers, and every entry is
+  labelled with its type. The <a href="assets/files/Kim_Youngwon_CV.pdf">CV</a>
+  lists everything by publication type. Also on
   <a href="https://scholar.google.com/citations?user=ruSO1P0AAAAJ&amp;hl=en">Google Scholar</a>
   and <a href="https://orcid.org/0000-0002-6815-6920">ORCID</a>.</p>
 </div>
