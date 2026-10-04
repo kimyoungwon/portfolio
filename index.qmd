@@ -18,23 +18,20 @@ page-layout: article
   </div>
 
   <div class="yk-prose yk-hero__prose">
-    <p>I am a machine learning researcher working on high-stakes clinical AI. On
-    Truveta's Intelligence ML team I train and evaluate <strong>foundation models</strong> on
-    longitudinal electronic health records to predict how patients' health evolves
-    over time, and build the <strong>agent systems</strong>
-    that reason over them — multi-agent and deep-agent architectures, LangChain
-    pipelines, automated prompt optimization — for oncology and cardiology risk
-    prediction, together with MCP tools for clinical NLU and agent-based
-    interpretation of model outputs that connect them to real clinical workflows.</p>
-    <p>My Ph.D. in <strong>measurement and statistics</strong> (University of
-    Washington) and postdoctoral training in Harvard's <strong>CARES Lab</strong>
-    (Causality, Applications, and Research in Education and Statistics) give me a
-    foundation most ML researchers don't have — evaluation
-    frameworks, latent variable modeling, validity theory — and I've carried it from
-    education and human behavior into high-dimensional healthcare. It's why I also
-    build the benchmarks that decide whether a model is calibrated, interpretable,
-    and fair enough to act on. Validity is not a final step; it is a design
-    constraint.</p>
+    <p>I am a machine learning researcher trained in measurement science. On
+    Truveta's Intelligence ML team I work across the model lifecycle on longitudinal
+    electronic health records. I <strong>train</strong> clinical foundation models on
+    10 million patients, including reinforcement learning that steers generated
+    patient journeys toward real ones. I build the <strong>benchmarks and
+    evaluations</strong> that test them, and the <strong>pipelines</strong> (MCP
+    tools, agent systems, dashboards) that carry them into clinical workflows.</p>
+    <p>The thread through all of it is measurement. My Ph.D. in <strong>measurement
+    and statistics</strong> (University of Washington) and postdoctoral training in
+    Harvard's <strong>CARES Lab</strong> (Causality, Applications, and Research in
+    Education and Statistics) taught me to ask whether a number means what we think
+    it means, whether it is a benchmark score, an LLM grader, or a model-estimated
+    patient-reported outcome. I ask it at every stage, not just at the end. Validity
+    is not a final step; it is a design constraint.</p>
   </div>
 
   <nav class="yk-hero__links">
@@ -100,7 +97,7 @@ page-layout: article
 <div class="yk-row__when">2026</div>
 <div>
 <div class="yk-row__what"><a href="https://arxiv.org/abs/2604.10386">TrajOnco: multi-agent temporal reasoning over longitudinal EHR for multi-cancer early detection</a></div>
-<p class="yk-row__where">A training-free multi-agent LLM framework reaching AUROCs of 0.64–0.80 across 15 cancer types. Accepted at <em>npj Digital Medicine</em> (in press); oral presentation at ASCO 2026.</p>
+<p class="yk-row__where">A training-free multi-agent LLM framework reaching AUROCs of 0.64–0.80 across 15 cancer types; I built its benchmark data, supervised baselines, and evaluations. Accepted at <em>npj Digital Medicine</em> (in press); oral presentation at ASCO 2026.</p>
 </div>
 <div class="yk-row__aside"></div>
 </div>

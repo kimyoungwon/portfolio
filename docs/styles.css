@@ -234,7 +234,15 @@ time, .yk-year, .yk-index, .yk-meta { font-variant-numeric: tabular-nums; }
 /* ── Research themes ───────────────────────────────────────────────────── */
 .yk-theme { padding-block: var(--s-6); }
 .yk-theme + .yk-theme { border-top: 1px solid var(--yk-rule); }
+.yk-theme > .yk-eyebrow { margin-bottom: var(--s-2); }
 .yk-theme__title { font-size: 1.5rem; line-height: 1.25; margin: 0 0 var(--s-3); }
+/* The measurement question each stage answers: one italic line under the title. */
+.yk-theme__question {
+  max-width: var(--measure);
+  font-style: italic;
+  color: var(--yk-text-muted);
+  margin: 0 0 var(--s-4);
+}
 .yk-theme__related {
   font-family: var(--bs-font-monospace, monospace);
   font-size: 0.75rem;

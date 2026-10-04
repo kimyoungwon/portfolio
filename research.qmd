@@ -5,77 +5,98 @@ page-layout: article
 
 ```{=html}
 <div class="yk-prose" style="margin-bottom:2rem">
-  <p>Four threads. Two are about building systems that predict something useful
-  from messy clinical data; two are about knowing whether to believe them. They
-  are not separable problems, and treating them as one job is the whole approach.</p>
+  <p>My work follows a model through its life — trained, evaluated, deployed — with
+  one discipline underneath all of it: measurement. Each stage asks its own version
+  of the same question: does this number mean what we think it means?</p>
+  <p>Most of the code behind this work is proprietary to Truveta. The papers,
+  abstracts, and write-ups linked below are its public record.</p>
 </div>
 
 <article class="yk-theme">
+  <p class="yk-eyebrow">01 · Train</p>
   <h2 class="yk-theme__title">Foundation models trained on patient journeys can predict what happens next — if the modeling respects the data</h2>
+  <p class="yk-theme__question">Does a generated patient journey contain the diagnoses and biomarkers that real ones do?</p>
   <div class="yk-prose">
-    <p>On Truveta's Intelligence ML team I train and evaluate oncology-specific and
+    <p>On Truveta's Intelligence ML team I train oncology-specific and
     general-purpose clinical foundation models on longitudinal electronic health
-    records, and build the LLM and machine learning systems that turn them into risk
-    predictions for cancer and heart failure. <strong>TrajOnco</strong>, a
-    training-free multi-agent framework, does temporal reasoning over sequential
-    clinical events and reaches AUROCs of 0.64–0.80 across 15 cancer types with no
-    task-specific training; a zero-shot chain-of-agents variant reaches 0.871 for
-    one-year lung cancer risk.</p>
-    <p>Alongside the risk models sits <strong>clinical NLU</strong>: MCP tools that pull
-    structured disease status and patient trajectories out of messy real-world text,
-    with an agent framework that interprets what the models return. And the same patient-journey models do less glamorous but equally necessary
-    work: imputing missing units of measure at 98% accuracy across 438 UCUM units,
-    and deriving health-state transition matrices empirically rather than by
-    assumption. High-dimensional temporal EHR data is not clean, and a model that
-    pretends otherwise will be confidently wrong.</p>
+    records from 10 million patients. Our patient-journey foundation model (PJFM) is
+    time-aware and forecasts trajectories by causal language modeling.</p>
+    <p>Because the training data are messy, the events that matter most — specific
+    diagnoses, key biomarkers — are the ones a plain generative model gets wrong. I
+    am now post-training PJFM with <strong>reinforcement learning</strong>, using
+    rewards that pull generated journeys toward real ones and weight the clinically
+    important events.</p>
+    <p>Clean inputs are part of training, not a preliminary. The same models impute
+    missing units of measure at 98% accuracy across 438 UCUM units, and derive
+    health-state transition matrices empirically rather than by assumption. I also
+    build ML and LLM risk models, for early-onset colorectal cancer across 30 U.S.
+    health systems and for heart failure.</p>
   </div>
   <p class="yk-theme__related">
-    Related: <a href="publications.html">TrajOnco (<em>npj Digital Medicine</em>)</a><span class="yk-dot">·</span><a href="presentations.html">ASCO 2026</a><span class="yk-dot">·</span><a href="presentations.html">ISPOR 2026</a><span class="yk-dot">·</span><a href="writing.html">Write-ups</a>
+    Related: <a href="presentations.html">ISPOR 2026</a><span class="yk-dot">·</span><a href="publications.html">Colorectal cancer LLM (AMIA)</a><span class="yk-dot">·</span><a href="writing.html">Write-ups</a>
   </p>
 </article>
 
 <article class="yk-theme">
+  <p class="yk-eyebrow">02 · Evaluate</p>
   <h2 class="yk-theme__title">An evaluation is a measurement instrument, and should be validated like one</h2>
+  <p class="yk-theme__question">Does the score mean what we think it means?</p>
   <div class="yk-prose">
-    <p>Benchmarks and model-as-judge systems are instruments that almost never
-    report their psychometric properties. I build the frameworks that establish
-    validity and reliability before a metric is used to make a claim: <strong>evaluator
-    calibration</strong>, benchmark quality, bias detection, and uncertainty
-    quantification. For the foundation models above, that is a
-    <strong>multi-level benchmark suite</strong> that runs from low- and mid-level
-    tasks up to simulated real-world clinical cases, with checks for clinical
-    validity. In heart failure, it is <strong>EHR-based estimation of KCCQ
-    scores</strong>, where the whole question is whether a model-derived score
-    means what the patient-reported instrument means.</p>
-    <p>Earlier: the <strong>rcttext</strong> R package for bringing NLP into
-    randomized controlled trials at Harvard, and a comparative study of large
-    language models against tree-based machine learning for high-stakes essay
-    scoring — which is the same question wearing different clothes.</p>
+    <p>Benchmarks and model-as-judge systems are instruments that rarely report their
+    psychometric properties. I build evaluations that establish validity and
+    reliability before a metric is used to make a claim. For PJFM that is a
+    <strong>multi-level evaluation framework</strong>: low-level evals of the encoder
+    and decoder models and mid-level evals of generation quality, run multi-shard on
+    an H100 cluster.</p>
+    <p>The benchmarks grew in stages: one cancer, then all cancers, then 17
+    representative diseases across the general population, compared with the
+    published DT-Transformer through ICD-10 and SNOMED CT mappings. Simulations of
+    ongoing patient journeys and targeted scenarios, such as specific medications,
+    test whether generated trajectories follow causal, clinically plausible
+    progression.</p>
+    <p>Honest baselines are part of the instrument. <strong>TrajOnco</strong>, a
+    zero-shot multi-agent LLM framework, reaches AUROCs of 0.64–0.80 across 15
+    cancer types. I built its benchmark data, supervised baselines (logistic
+    regression, KNN, and XGBoost on 337K patients), and evaluations; the XGBoost
+    baseline (AUROC 0.796) set the bar the agent system was measured against
+    (0.785).</p>
+    <p>In heart failure, <strong>EHR-based estimation of KCCQ scores</strong> (R² =
+    0.53, with controls for temporal leakage) turns on whether a model-derived score
+    means what the patient-reported instrument means. Earlier, at Harvard, I tested
+    LLM graders and tree-based machine learning against human scores for high-stakes
+    essay scoring, the reliability question behind any model-graded evaluation, and
+    built <strong>rcttext</strong>, an R package for text outcomes in randomized
+    trials.</p>
   </div>
   <p class="yk-theme__related">
-    Related: <a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">AEFP &amp; JSM 2024</a>
+    Related: <a href="publications.html">TrajOnco (<em>npj Digital Medicine</em>)</a><span class="yk-dot">·</span><a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">ASCO 2026</a>
   </p>
 </article>
 
 <article class="yk-theme">
+  <p class="yk-eyebrow">03 · Deploy</p>
   <h2 class="yk-theme__title">Tooling decides whether a good model ever reaches anyone</h2>
+  <p class="yk-theme__question">Will the people who need the signal see it in time, and in context?</p>
   <div class="yk-prose">
     <p>A model that only runs in a notebook has not been deployed. I build the layer
-    that carries one into use: <strong>agent frameworks</strong> — multi-agent and
-    deep-agent architectures, LangChain pipelines — alongside automated prompt
-    optimization, Model Context Protocol servers, interactive data visualization, and
-    end-to-end pipeline monitoring, so that the people making decisions can interrogate
-    a prediction rather than just receive it.</p>
-    <p>This is engineering, not methodology, and I think it is underrated. Most of
-    the distance between a promising result and a used one is infrastructure.</p>
+    that carries one into use: <strong>MCP tools</strong> for clinical NLU that pull
+    structured disease status and patient trajectories out of messy real-world text,
+    and <strong>agent frameworks</strong> — multi-agent and deep-agent
+    architectures, LangChain pipelines — that interpret what the models return.</p>
+    <p>Around them sit automated prompt optimization, interactive dashboards, and
+    end-to-end pipeline monitoring, so the people making decisions can interrogate a
+    prediction rather than just receive it. Most of the distance between a promising
+    result and a used one is infrastructure.</p>
   </div>
   <p class="yk-theme__related">
-    Related: <a href="cv.html">MCP tooling</a><span class="yk-dot">·</span><a href="writing.html">Educational process mining</a>
+    Related: <a href="assets/files/Kim_Youngwon_CV.pdf">CV</a><span class="yk-dot">·</span><a href="writing.html">Write-ups</a>
   </p>
 </article>
 
 <article class="yk-theme">
+  <p class="yk-eyebrow">04 · Foundations</p>
   <h2 class="yk-theme__title">Classical measurement theory and modern machine learning improve each other</h2>
+  <p class="yk-theme__question">What are we actually measuring?</p>
   <div class="yk-prose">
     <p>My doctoral work was on factor analysis and prediction algorithms, and I
     keep returning to the seam between them: gradient boosting to improve
