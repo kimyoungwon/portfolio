@@ -19,18 +19,14 @@ page-layout: article
   <div class="yk-prose">
     <p>On Truveta's Intelligence ML team I train oncology-specific and
     general-purpose clinical foundation models on longitudinal electronic health
-    records from 10 million patients. Our patient-journey foundation model (PJFM) is
-    time-aware and forecasts trajectories by causal language modeling.</p>
-    <p>Because the training data are messy, the events that matter most — specific
-    diagnoses, key biomarkers — are the ones a plain generative model gets wrong. I
-    am now post-training PJFM with <strong>reinforcement learning</strong>, using
-    rewards that pull generated journeys toward real ones and weight the clinically
-    important events.</p>
-    <p>Clean inputs are part of training, not a preliminary. The same models impute
-    missing units of measure at 98% accuracy across 438 UCUM units, and derive
-    health-state transition matrices empirically rather than by assumption. I also
-    build ML and LLM risk models, for early-onset colorectal cancer across 30 U.S.
-    health systems and for heart failure.</p>
+    records. Because the training data are messy, the events that matter most —
+    specific diagnoses, key biomarkers — are the ones a plain generative model gets
+    wrong. So I am adding <strong>reinforcement learning</strong> that pulls generated
+    patient journeys toward real ones.</p>
+    <p>Clean inputs are part of training, not a preliminary: the same models impute
+    missing units of measure and derive health-state transitions from the data rather
+    than by assumption. I also build ML and LLM risk models for cancer and heart
+    failure.</p>
   </div>
   <p class="yk-theme__related">
     Related: <a href="presentations.html">ISPOR 2026</a><span class="yk-dot">·</span><a href="publications.html">Colorectal cancer LLM (AMIA)</a><span class="yk-dot">·</span><a href="writing.html">Write-ups</a>
@@ -44,32 +40,20 @@ page-layout: article
   <div class="yk-prose">
     <p>Benchmarks and model-as-judge systems are instruments that rarely report their
     psychometric properties. I build evaluations that establish validity and
-    reliability before a metric is used to make a claim. For PJFM that is a
-    <strong>multi-level evaluation framework</strong>: low-level evals of the encoder
-    and decoder models and mid-level evals of generation quality, run multi-shard on
-    an H100 cluster.</p>
-    <p>The benchmarks grew in stages: one cancer, then all cancers, then 17
-    representative diseases across the general population, compared with the
-    published DT-Transformer through ICD-10 and SNOMED CT mappings. Simulations of
-    ongoing patient journeys and targeted scenarios, such as specific medications,
-    test whether generated trajectories follow causal, clinically plausible
-    progression.</p>
-    <p>Honest baselines are part of the instrument. <strong>TrajOnco</strong>, a
-    zero-shot multi-agent LLM framework, reaches AUROCs of 0.64–0.80 across 15
-    cancer types. I built its benchmark data, supervised baselines (logistic
-    regression, KNN, and XGBoost on 337K patients), and evaluations; the XGBoost
-    baseline (AUROC 0.796) set the bar the agent system was measured against
-    (0.785).</p>
-    <p>In heart failure, <strong>EHR-based estimation of KCCQ scores</strong> (R² =
-    0.53, with controls for temporal leakage) turns on whether a model-derived score
-    means what the patient-reported instrument means. Earlier, at Harvard, I tested
-    LLM graders and tree-based machine learning against human scores for high-stakes
+    reliability before a metric is used to make a claim. For our patient-journey
+    foundation model, that means a <strong>multi-level evaluation framework</strong>,
+    from checks of the model itself to the quality of what it generates.</p>
+    <p>Its benchmarks widen in stages, from one cancer to all cancers to diseases
+    across the general population. Simulations test whether generated journeys follow
+    clinically plausible progression.</p>
+    <p>In heart failure, <strong>EHR-based estimation of KCCQ scores</strong> turns on
+    whether a model-derived score means what the patient-reported instrument means.
+    Earlier, at Harvard: testing LLM graders against human scores for high-stakes
     essay scoring, the reliability question behind any model-graded evaluation, and
-    built <strong>rcttext</strong>, an R package for text outcomes in randomized
-    trials.</p>
+    the <strong>rcttext</strong> R package for text outcomes in randomized trials.</p>
   </div>
   <p class="yk-theme__related">
-    Related: <a href="publications.html">TrajOnco (<em>npj Digital Medicine</em>)</a><span class="yk-dot">·</span><a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">ASCO 2026</a>
+    Related: <a href="publications.html">KCCQ (medRxiv)</a><span class="yk-dot">·</span><a href="publications.html">LLMs vs. ML for essay scoring</a><span class="yk-dot">·</span><a href="presentations.html">AEFP &amp; JSM 2024</a>
   </p>
 </article>
 
