@@ -38,8 +38,10 @@
   venue: "Department of Psychology, University of Washington"
   location: "Seattle, WA"
   links:
-    - text: "Syllabus"
-      url: "assets/files/PSYCH209Syllabus.pdf"
+    - text: "Syllabus (Autumn 2018)"
+      url: "assets/files/PSYCH209Syllabus_autumn2018.pdf"
+    - text: "Syllabus (Winter 2019)"
+      url: "assets/files/PSYCH209Syllabus_winter2019.pdf"
 
 - role: "Teaching Assistant"
   date: 2017-10-01
@@ -55,10 +57,8 @@
   venue: "Department of Statistics and Data Sciences, University of Texas at Austin"
   location: "Austin, TX"
   links:
-    - text: "Syllabus (Autumn)"
-      url: "assets/files/SDS332Syllabus_autumn.pdf"
-    - text: "Syllabus (Winter)"
-      url: "assets/files/SDS332Syllabus_winter.pdf"
+    - text: "Syllabus"
+      url: "assets/files/SDS332Syllabus_spring2017.pdf"
 
 - role: "Teaching Assistant"
   date: 2015-09-01

@@ -122,7 +122,6 @@
   when: "2019"
   desc: "Structural equation modeling of parent–child interaction and academic performance. AERA conference poster."
   tags: "SEM · Longitudinal"
-  url: "https://docs.google.com/presentation/d/1ZN4aDZzsOtd8FRu4JvSlWoBJdMQNfzAx7QQ1aIHmZ0A/edit?usp=sharing"
   image: "assets/images/school_readiness.png"
 
 - group: "Earlier Coursework"
@@ -131,7 +130,6 @@
   when: "2019"
   desc: "Analysis of the Fragile Families and Child Wellbeing Study."
   tags: "Python · Survey data"
-  url: "https://docs.google.com/presentation/d/1CBdOoMyH-GIANb6Vf_ko4P8so9EJc3fdPcAZZKdaoEA/edit?usp=sharing"
   image: "assets/images/Fragile_family.png"
 
 - group: "Earlier Coursework"

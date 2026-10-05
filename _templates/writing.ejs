@@ -1,4 +1,4 @@
-<% const order = ["Research write-ups", "Earlier coursework"];
+<% const order = ["Research Write-ups", "Earlier Coursework"];
    const seen  = [...new Set(items.map(i => i.group))];
    const groups = order.filter(g => seen.includes(g)).concat(seen.filter(g => !order.includes(g))); %>
 <% for (const group of groups) { %>

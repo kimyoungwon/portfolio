@@ -42,10 +42,10 @@ fields — no HTML, no templates, no touching the layout.
 
 | To add a… | Edit | Notes |
 |---|---|---|
-| Publication | `publications.yml` | `kind` groups the page. `year` shows in the left rail; `date` is only a sort key. Optional `status` (e.g. `"In press"`) prints after the venue; optional `link_label` renames the link. |
-| Presentation | `presentations.yml` | `when` is the display string (`"2026 · May"`); `date` only sorts. Optional `writeup` / `abstract` / `paper` / `slides` / `video` links. |
+| Publication | `publications.yml` | `area` picks the section (`ai` or `edpsych`); `kind` is the publication type, printed on each entry and used to order it. `year` shows in the left rail; `date` is only a sort key. Optional `status` (e.g. `"In press"`) prints after the venue; optional `link_label` renames the link. |
+| Presentation | `presentations.yml` | `kind` is `conference` or `invited` (conference renders first; invited talks start in 2023). `when` is the display string (`"2026 · May"`); `date` only sorts. Optional `format` (Oral presentation, Poster, Paper…) and `writeup` / `abstract` / `paper` / `slides` / `video` / `event` links. |
 | Course | `teaching.yml` | `role` groups the page: Lecturer → Computing Assistant → Teaching Assistant. |
-| Write-up / project | `writing.yml` | `group` is `Research write-ups` or `Earlier coursework`. **Give every card an `image`** — the CSS grid leaves holes otherwise. |
+| Write-up / project | `writing.yml` | `group` is `Research Write-ups` or `Earlier Coursework` (exact spelling; the order lives in `_templates/writing.ejs`). **Give every card an `image`** — the CSS grid leaves holes otherwise. |
 
 Prose pages are ordinary files: `index.qmd` (home), `research.qmd`, `cv.qmd`.
 
@@ -56,10 +56,10 @@ escapes HTML inside data values and it would render as literal `&lt;b&gt;`.
 
 The bolded form **depends on the publication type**, matching how you cite yourself:
 
-| Group | Form used |
+| `kind` | Form used |
 |---|---|
-| Accepted, Journal articles, Working papers, Preprints | `Kim, Y. W.` |
-| Conference proceedings | `Kim, Y.` |
+| Peer-reviewed articles, Preprints, Working papers | `Kim, Y. W.` |
+| Peer-reviewed conference proceedings, Published conference abstracts | `Kim, Y.` |
 
 This distinction matters: the 2017 *Review of Educational Research* paper has a
 **different** author also listed as `Kim, Y.`, and only your `Kim, Y. W.` is bolded there.
@@ -67,12 +67,13 @@ The mapping lives in `_templates/pubs.ejs` (`selfFor`).
 
 ### Publication groups
 
-Rendered in this order: **Accepted** → **Preprints & under review** → **Conference proceedings** →
-**Working papers** → **Journal articles**. *Accepted* holds work accepted but not yet
-published; once it is, move the entry to its final group and swap the preprint URL for the
-DOI. The journal articles sit last because they
-are mostly earlier educational-psychology work, not the current clinical-AI record.
-Change the order in `_templates/pubs.ejs`.
+The page has two sections by research area: **AI, Machine Learning & Statistics** first,
+then **Education & Psychology**. Within each, entries run strongest type first: Peer-reviewed
+articles → Peer-reviewed conference proceedings → Preprints → Working papers → Published
+conference abstracts, newest first within a type. Accepted work is a Peer-reviewed article
+with `status: "In press"`; once it is published, drop the status and swap the preprint URL
+for the DOI. The CV PDF keeps the conventional type-grouped order. Change either order in
+`_templates/pubs.ejs`.
 
 ---
 
